@@ -1,0 +1,317 @@
+﻿Taller Prßctico: Selecci¾n de
+Flujos de Trabajo de IA
+Descubrimiento de problemas y dise±o de soluciones con Inteligencia
+Artificial
+
+Estructura del Taller de 10 Horas
+Horas 1-2: Anßlisis del Problema 1
+Revisi¾n del dominio asignado y formulaci¾n del
+problema especÝfico. Identificaci¾n de necesidades del
+usuario y restricciones tÚcnicas.
+2 Horas 3-4: Selecci¾n de Flujos de IA
+Investigaci¾n de modelos apropiados, anßlisis de
+requisitos de datos y dise±o del flujo de trabajo.
+Horas 5-7: Construcci¾n del Prototipo 3
+Evaluaci¾n de herramientas disponibles.
+Implementaci¾n usando herramientas basadas en
+navegador y cuadernos en la nube. Integraci¾n de
+4 Horas 8-9: Evaluaci¾n y Refinamiento
+modelos y pruebas iniciales.
+Validaci¾n del prototipo, anßlisis de riesgos Úticos y
+medici¾n del desempe±o. Preparaci¾n del material de
+Hora 10: Presentaci¾n Final 5
+presentaci¾n.
+Exposici¾n oral de 10 minutos por equipo. Sesi¾n de
+preguntas y retroalimentaci¾n del instructor.
+
+Dominios de Problema Asignados
+Cada equipo trabajarß en uno de estos contextos reales para aplicar las tÚcnicas de IA aprendidas:
+Salud Justicia Educaci¾n
+Diagn¾stico, telemedicina, gesti¾n de Anßlisis de casos, asistencia legal, TutorÝa personalizada, evaluaci¾n
+recursos hospitalarios predicci¾n de sentencias automßtica, accesibilidad
+Ciudad Empresa Transporte
+Gesti¾n urbana, trßfico, servicios Optimizaci¾n de procesos, anßlisis de LogÝstica, rutas, mantenimiento
+p·blicos, planificaci¾n mercado, CRM predictivo, seguridad
+Medio Ambiente
+Monitoreo ecol¾gico, cambio climßtico, recursos naturales
+
+Selecci¾n de Flujos de Trabajo de IA
+Criterios de Selecci¾n
+Tipo de problema: clasificaci¾n,
+predicci¾n, generaci¾n
+Naturaleza de los datos: texto, imagen,
+audio, tabular
+Requisitos de tiempo real vs.
+procesamiento batch
+Disponibilidad de datos etiquetados
+Restricciones de privacidad y costo
+Herramientas Clave
+IA basada en navegador (ChatGPT, Gemini,
+Claude), cuadernos en la nube (Google
+Colab, Kaggle Notebooks), APIs de IA
+(OpenAI, Hugging Face)
+
+Paso a Paso: Selecci¾n del Flujo de IA
+01 02
+MAPEO DE CARACTER═STICAS DEL PROBLEMA MATRIZ DE DECISIËN
+Identificaci¾n de las particularidades de cada desafÝo: Estructurar las opciones con una tabla comparativa:
+Tipo de problema: ┐Es clasificaci¾n (categorizar datos), Columnas: Tipo de modelo | Entrada | Salida | Herramienta
+predicci¾n (estimar valores futuros), generaci¾n (crear recomendada | Complejidad
+contenido nuevo) o b·squeda/recuperaci¾n?
+Filas: LLM (texto│texto), Visi¾n (imagen│texto/clasificaci¾n),
+Naturaleza de datos: ┐QuÚ tipo de datos tiene? (texto, Tabular (datos│predicci¾n), Multimodal (m·ltiples entradas)
+imßgenes, audio, datos tabulares, video, combinados)
+Volumen de datos: ┐Cußntos ejemplos tiene disponibles?
+(pocos <100, moderado 100-10k, grande >10k)
+Restricciones: ┐Necesita tiempo real? ┐Hay limitaciones de
+privacidad? ┐Presupuesto limitado?
+03 04
+INVESTIGACIËN DE MODELOS DISPONIBLES SELECCIËN DE HERRAMIENTAS SIN
+INSTALACIËN
+Anßlisis detallado de las soluciones existentes:
+Evaluaci¾n de plataformas y servicios listos para usar:
+Modelos gratuitos vs. de pago
+┐QuÚ tipo de problemas resuelve?
+Capacidades especÝficas del modelo
+┐Cußl es el costo (gratuito/pago)?
+Requisitos de datos de entrenamiento
+┐Cußl es la curva de aprendizaje?
+Latencia y lÝmites de uso
+┐QuÚ datos necesita como entrada?
+
+GuÝa Prßctica: ChatGPT/Gemini para Anßlisis de
+Texto
+01 02 03
+ACTIVIDAD 1: AN┴LISIS DE ACTIVIDAD 2: EXTRACCIËN DE ACTIVIDAD 3: GENERACIËN DE
+SENTIMIENTOS CON LLM INFORMACIËN CONTENIDO SINT╔TICO
+ESTRUCTURADA
+Objetivo: Clasificar opiniones de usuarios Objetivo: Crear datos de entrenamiento
+usando un modelo de lenguaje Objetivo: Convertir texto no estructurado usando IA
+en datos organizados
+Instrucciones paso a paso: Instrucciones:
+Instrucciones:
+1. Acceder a ChatGPT (chat.openai.com) 1. Definir el tipo de contenido que
+o Google Gemini (gemini.google.com) 1. Preparar un conjunto de textos de tu necesitas (descripciones de productos,
+dominio (noticias, reportes, emails, reportes)
+2. Crear un prompt estructurado: "Analiza
+descripciones)
+el siguiente texto y clasifica el 2. Proporcionar 2-3 ejemplos de alta
+sentimiento como POSITIVO, 2. Crear un prompt de extracci¾n: "Extrae calidad
+NEGATIVO o NEUTRAL. Explica la siguiente informaci¾n del texto y
+3. Usar prompt: "Basßndote en estos
+brevemente tu razonamiento. Texto: devuelve en formato JSON: - Entidad
+ejemplos, genera 5 variaciones mßs en
+[INSERTAR TEXTO DEL USUARIO]" principal - Fecha - Ubicaci¾n - Acci¾n
+el mismo estilo: [EJEMPLOS]"
+realizada Texto: [INSERTAR]"
+3. Probar con 5-10 ejemplos de tu
+4. Revisar manualmente cada generaci¾n
+dominio 3. Ejecutar 10 ejemplos
+5. Documentar: ┐Cußntas generaciones
+4. Documentar resultados en una tabla: 4. Validar que el JSON sea correcto
+fueron ·tiles? ┐Cußles necesitaron
+Texto | Sentimiento predicho |
+5. Medir: ┐QuÚ informaci¾n se extrajo edici¾n?
+Confianza | Correcci¾n manual
+correctamente? ┐QuÚ se perdi¾?
+5. Calcular precisi¾n: (predicciones
+correctas / total) Î 100
+
+GuÝa Prßctica: Plataformas Low-Code (Make,
+Zapier, Bubble)
+01 02
+ACTIVIDAD 1: AUTOMATIZACIËN CON MAKE ACTIVIDAD 2: INTEGRACIËN DE SERVICIOS
+(ANTES INTEGROMAT) CON ZAPIER
+Objetivo: Crear flujos de trabajo automatizados sin c¾digo Objetivo: Conectar m·ltiples herramientas de IA en un flujo
+Instrucciones: Instrucciones:
+1. Registrarse en make.com (versi¾n gratuita disponible) 1. Registrarse en zapier.com
+2. Crear un nuevo escenario (Scenario) 2. Crear un nuevo Zap (automatizaci¾n)
+3. Agregar primer m¾dulo: Trigger (disparador) 3. Configurar Trigger (inicio):
+Seleccionar: "Webhook" o "Google Sheets" Opci¾n: "Google Forms" o "Webhook"
+Configurar para recibir datos de entrada Seleccionar evento: "New Response"
+4. Agregar m¾dulo de IA: OpenAI 4. Agregar Action (acci¾n):
+Conectar tu API key de OpenAI Buscar "OpenAI" o "ChatGPT"
+Seleccionar modelo (GPT-3.5 o GPT-4) Seleccionar: "Create Chat Completion"
+Mapear entrada: datos del trigger │ prompt Mapear campos: pregunta del formulario │ prompt
+5. Agregar m¾dulo de salida: Google Sheets o Email 5. Agregar segundo Action:
+Guardar respuesta de IA en hoja de cßlculo Guardar en "Google Sheets" o "Airtable"
+6. Probar el flujo: Ejecutar manualmente Mapear: respuesta de IA │ columna
+7. Documentar: ┐Cußntos datos procesados? ┐Cußl fue el costo? 6. Activar el Zap
+7. Documentar: Flujo completo, n·mero de ejecuciones, errores
+03 04
+ACTIVIDAD 3: PROTOTIPADO VISUAL CON ACTIVIDAD 4: EVALUACIËN DE FLUJOS
+BUBBLE AUTOMATIZADOS
+Objetivo: Crear interfaz de usuario para tu soluci¾n de IA Objetivo: Medir eficiencia y costo de automatizaci¾n
+Instrucciones: Instrucciones:
+1. Registrarse en bubble.io 1. Registrar mÚtricas para cada flujo:
+2. Crear una nueva aplicaci¾n Tiempo de procesamiento por solicitud
+3. Dise±ar interfaz: N·mero de solicitudes procesadas
+Agregar Input field para que usuario escriba pregunta Costo total (API calls Î precio por call)
+Agregar Button "Enviar" Tasa de error
+Agregar Text element para mostrar respuesta 2. Crear tabla de comparaci¾n:
+Herramienta | Tiempo setup | Costo mensual | Facilidad (1-5)
+4. Configurar flujo de datos:
+| Escalabilidad
+Click en Button │ Workflow
+3. Documentar:
+Agregar acci¾n: "Call external API"
+┐Cußl herramienta fue mßs rßpida de implementar?
+URL: https://api.openai.com/v1/chat/completions
+┐Cußl tiene mejor relaci¾n costo-beneficio?
+MÚtodo: POST
+┐Cußl es mßs escalable para producci¾n?
+Headers: Authorization: Bearer [tu_api_key]
+4. Recomendaci¾n final: ┐Cußl usarÝas para tu soluci¾n?
+Body: {"model": "gpt-3.5-turbo", "messages": [{"role":
+"user", "content": Input_field.value}]}
+5. Mapear respuesta:
+Text element │ Set text to: API
+response.choices[0].message.content
+6. Probar en preview
+7. Documentar: Funcionalidades implementadas, problemas
+encontrados
+
+Checklist de Implementaci¾n: De la Selecci¾n a la
+Ejecuci¾n
+01 02 03
+FASE 1: AN┴LISIS Y SELECCIËN FASE 2: PREPARACIËN DE FASE 3: PROTOTIPADO CON
+(Horas 1-2) DATOS (Horas 3-4) HERRAMIENTAS BASADAS EN
+NAVEGADOR (Horas 5-7)
+Mapear caracterÝsticas del problema Recopilar datos del dominio (mÝnimo
+(tipo, datos, volumen, restricciones) 50-100 ejemplos) Configurar cuenta en herramienta
+seleccionada
+Crear matriz de decisi¾n con opciones Limpiar y estructurar datos (CSV, JSON,
+de modelos etc.) Crear primer flujo de trabajo simple
+Investigar modelos disponibles Crear conjunto de prueba (10-20% de Procesar 10-20 ejemplos de prueba
+(gratuitos vs. pago) datos)
+Evaluar resultados (precisi¾n,
+Seleccionar herramienta sin Documentar caracterÝsticas de los relevancia, tiempo)
+instalaci¾n mßs apropiada datos
+Documentar capturas de pantalla del
+Documentar justificaci¾n de la Identificar posibles sesgos en los datos proceso
+selecci¾n
+Refinar prompts o parßmetros basado
+en resultados
+Crear versi¾n mejorada del flujo
+04 05
+FASE 4: INTEGRACIËN Y ESCALADO (Horas 8- FASE 5: EVALUACIËN CR═TICA (Horas 9-10)
+9)
+Analizar resultados vs. objetivos
+Conectar m·ltiples herramientas (si aplica)
+Identificar limitaciones tÚcnicas
+Procesar conjunto completo de datos
+Evaluar riesgos Úticos (sesgo, privacidad)
+Medir mÚtricas de desempe±o
+Documentar lecciones aprendidas
+Documentar c¾digo/configuraci¾n
+Preparar material para presentaci¾n
+Crear manual de uso del prototipo
+Preparar evidencia visual (screenshots, videos)
+DOCUMENTACIËN REQUERIDA POR CADA ACTIVIDAD:
+Descripci¾n de la tarea
+Pasos ejecutados (con capturas de pantalla)
+Resultados obtenidos (n·meros, mÚtricas)
+Problemas encontrados y soluciones
+Tiempo invertido
+Costo (si aplica)
+Conclusiones
+PREGUNTAS CLAVE A RESPONDER:
+1. ┐Por quÚ seleccionaste esta herramienta especÝfica?
+2. ┐Cußl fue la precisi¾n/calidad de los resultados?
+3. ┐QuÚ limitaciones tÚcnicas encontraste?
+4. ┐Cußles son los riesgos Úticos de tu soluci¾n?
+5. ┐Cußl serÝa el siguiente paso para producci¾n?
+6. ┐Cußnto costarÝa escalar esta soluci¾n?
+7. ┐QuÚ datos adicionales necesitarÝas?
+
+MetodologÝa de Trabajo en Equipo
+Descubrir
+Identificar el problema especÝfico en el dominio asignado y analizar impacto potencial
+Definir
+Formular problem statement claro, identificar usuarios y establecer criterios de Úxito
+Dise±ar
+Seleccionar modelos, dise±ar flujo de trabajo y mapear requerimientos de datos
+Prototipar
+Construir MVP funcional usando herramientas sin instalaci¾n y validar concepto
+Evaluar
+Medir desempe±o, analizar riesgos Úticos y documentar resultados
+El trabajo en equipo debe ser colaborativo, con roles rotativos: coordinador, investigador, desarrollador, evaluador y comunicador.
+
+Dise±o del P¾ster de Presentaci¾n
+El p¾ster debe presentarse en formato digital (A1 vertical) en gamma.app y contener las siguientes secciones:
+1. TÝtulo y Equipo 2. Problema
+Nombre del proyecto, dominio, integrantes del equipo y Problem statement, contexto, usuarios objetivo y
+curso necesidades identificadas
+3. Soluci¾n de IA 4. Implementaci¾n
+Flujo de trabajo seleccionado, modelos utilizados y Herramientas usadas, capturas de pantalla, c¾digo clave y
+arquitectura del sistema proceso de construcci¾n
+5. Resultados 6. Evaluaci¾n CrÝtica
+Prototipo funcional, mÚtricas de desempe±o y evidencia de Anßlisis de riesgos Úticos, sesgo, privacidad y limitaciones
+validaci¾n tÚcnicas
+
+Entregables del Taller
+1. P¾ster Digital (60%) 3. Prototipo Funcional (10%)
+Dise±o profesional y coherente en gamma.app MVP implementado y operativo
+Contenido completo de todas las secciones C¾digo compartido y reproducible
+Visualizaciones claras y legibles Documentaci¾n tÚcnica bßsica
+Evidencia tÚcnica y documentaci¾n
+Criterios Adicionales
+2. Presentaci¾n Oral (30%)
+Originalidad en el enfoque del problema
+Exposici¾n de 10 minutos por equipo Rigurosidad en la evaluaci¾n
+Claridad en la comunicaci¾n Consideraci¾n de aspectos Úticos
+Respuestas a preguntas del instructor Calidad de la comunicaci¾n visual
+Coordinaci¾n del equipo
+
+R·brica de Evaluaci¾n Detallada
+CategorÝa Nivel Excelente (5 pts) Criterios
+Problem Statement Definici¾n clara y especÝfica Identifica usuario, necesidad, contexto y
+mÚtricas de Úxito
+Selecci¾n de IA Justificaci¾n tÚcnica s¾lida Modelos apropiados, anßlisis de alternativas,
+mapeo de datos
+Implementaci¾n Prototipo funcional completo Herramientas sin instalaci¾n, integraci¾n
+correcta, evidencia de funcionamiento
+Evaluaci¾n CrÝtica Anßlisis profundo de riesgos Sesgo, alucinaciones, privacidad, impacto social,
+limitaciones
+MÚtricas de Desempe±o Medici¾n basada en evidencia Calidad, tiempo, costo, precisi¾n, recall, tiempo
+de respuesta
+Dise±o del P¾ster Visual profesional y claro JerarquÝa visual, legibilidad, imßgenes
+apropiadas, coherencia
+Presentaci¾n Oral Comunicaci¾n efectiva Claridad, fluidez, manejo del tiempo, respuestas
+a preguntas
+Colaboraci¾n Participaci¾n equitativa Rol de cada miembro, coordinaci¾n,
+contribuciones visibles
+Calificaci¾n final: Suma de puntos (mßximo 40) convertidos a escala 0-5.0
+
+Herramientas Sin Instalaci¾n Recomendadas
+IA de Lenguaje (LLMs) Cuadernos en la Nube
+ChatGPT, Gemini, Claude: para anßlisis de texto, generaci¾n de Google Colab, Kaggle Notebooks: ejecuci¾n de c¾digo Python,
+contenido, extracci¾n de informaci¾n. Acceso directo sin integraci¾n con APIs de IA, procesamiento de datos sin
+instalaci¾n. configuraci¾n local.
+Generaci¾n de Imßgenes APIs de IA
+DALL-E, Midjourney, Stable Diffusion: creaci¾n de imßgenes OpenAI API, Hugging Face, Vertex AI: acceso programßtico a
+desde texto. ┌til para prototipado visual y generaci¾n de datos de modelos avanzados. Cuotas gratuitas disponibles para
+entrenamiento. estudiantes.
+Anßlisis de Datos Plataformas Low-Code
+Google Sheets con funciones de IA, Airtable: procesamiento Make, Zapier, Bubble: integraci¾n de servicios de IA en flujos
+tabular, anßlisis estadÝstico, visualizaci¾n bßsica sin c¾digo automatizados. Prototipado rßpido sin programaci¾n profunda.
+complejo.
+
+Consejos para el ╔xito en el Taller
+1. Empiecen con el 2. Valoren la Viabilidad 3. Documenten Todo
+Problema, No con la TÚcnica
+Capturas de pantalla, c¾digo
+Soluci¾n
+Analicen si tienen acceso a datos, si el ejecutado, mÚtricas obtenidas,
+No busquen d¾nde aplicar IA. modelo requerido estß disponible y si decisiones tomadas. Esto facilitarß la
+Identifiquen primero un problema real pueden construir el prototipo en 10 construcci¾n del p¾ster y la
+relevante en su dominio y luego horas con las herramientas asignadas. presentaci¾n.
+determinen si IA es apropiado.
+4. Prueben Temprano y Frecuentemente 5. Consideren la ╔tica desde el Inicio
+Validen cada componente antes de integrar. Un prototipo Identifiquen sesgos potenciales, riesgos de privacidad y
+simple que funciona es mejor que uno complejo que no consecuencias sociales antes de implementar. La evaluaci¾n
+funciona. Útica no es un adorno, es fundamental.
+Recuerden: El objetivo no es crear una soluci¾n perfecta, sino demostrar que pueden aplicar metodologÝa rigurosa para
+descubrir problemas, seleccionar flujos de IA apropiados y construir prototipos evaluados crÝticamente.
+
+

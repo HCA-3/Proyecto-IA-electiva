@@ -1,0 +1,1104 @@
+[
+    {
+        "Archivo": "a254-26.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "1c16ef52-be92-4743-959b-6635d25f666e.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true,
+        "Chat": [
+            {
+                "role": "user",
+                "content": "cual es el dictamen"
+            },
+            {
+                "role": "assistant",
+                "content": "El dictamen de la Corte Constitucional en este caso es que la señora Paola Paniagua Ramírez ha denunciado la violación de sus derechos fundamentales de petición, vivienda digna y debido proceso. La Corte resuelve:\n\n1. Declarar la violación de los derechos fundamentales de petición, vivienda digna y debido proceso de la señora Paola Paniagua Ramírez.\n2. Ordenar a la Unidad Residencial Ceiba de los Maderos que realice las reparaciones necesarias para eliminar la humedad en la pared que comparte el inmueble de la señora Paniagua Ramírez con el inmueble del señor Hernán Ortiz.\n3. Ordenar al señor Hernán Ortiz que pague la suma de COP 360.000 a la señora Paola Paniagua Ramírez por las reparaciones realizadas.\n4. Declarar que la empresa Maderos Proactiva no tiene responsabilidad en este caso, ya que no se ha demostrado que haya participado en la violación de los derechos fundamentales de la señora Paniagua Ramírez.\n\nEn resumen, el dictamen de la Corte Constitucional es que la Unidad Residencial Ceiba de los Maderos y el señor Hernán Ortiz deben tomar medidas para corregir la situación y respetar los derechos fundamentales de la señora Paola Paniagua Ramírez."
+            },
+            {
+                "role": "user",
+                "content": "quienes son los implicados"
+            },
+            {
+                "role": "assistant",
+                "content": "Los implicados en este caso de tutela son:\n\n1. La señora Paola Paniagua Ramírez: es la actora que interpuso la acción de tutela.\n2. La Unidad Residencial Ceiba de los Maderos: es la entidad que tiene la obligación de garantizar la vivienda digna de sus residentes.\n3. La empresa Maderos Proactiva: es la empresa que tiene una relación con la Unidad Residencial Ceiba de los Maderos y que ha sido mencionada en el caso.\n4. El señor Hernán Ortiz: es el dueño del inmueble que comparte pared con el inmueble de la señora Paniagua Ramírez y que tiene la obligación de pagar la suma que le adeuda a la señora Paniagua Ramírez por las reparaciones realizadas.\n5. El señor Sebastián Ortiz: es mencionado en el caso como uno de los involucrados, pero no se especifica su relación con el caso."
+            },
+            {
+                "role": "user",
+                "content": "de que se trata "
+            },
+            {
+                "role": "assistant",
+                "content": "La sentencia es sobre un caso de tutela interpuesto por la señora Paola Paniagua Ramírez contra la Unidad Residencial Ceiba de los Maderos, la empresa Maderos Proactiva y los señores Hernán Ortiz y Sebastián Ortiz. La señora Paniagua Ramírez denunció la existencia de humedad en la pared que comparte su inmueble con el inmueble del señor Hernán Ortiz, ubicados en la Unidad Residencial Ceiba de los Maderos, y que no ha recibido el pago de la suma que le adeuda el señor Ortiz por las reparaciones realizadas. La Corte Constitucional resolvió declarar la violación de los derechos fundamentales de petición, vivienda digna y debido proceso de la señora Paniagua Ramírez y ordenó a la Unidad Residencial Ceiba de los Maderos y al señor Hernán Ortiz que realicen las reparaciones necesarias y paguen la suma adeudada, respectivamente."
+            }
+        ]
+    },
+    {
+        "Archivo": "1d0a0e75-2dac-456c-92a7-ef8443d34355.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true,
+        "Chat": [
+            {
+                "role": "user",
+                "content": "que se debe hacer"
+            },
+            {
+                "role": "assistant",
+                "content": "Basado en el expediente proporcionado, la pregunta judicial que se debe responder es:\n\n**¿Es constitucional o inconstitucional el Decreto Ley 1094 de 2024, en relación con el derecho a la consulta previa de los pueblos indígenas?**\n\nLa respuesta a esta pregunta judicial es:\n\n**La Corte Constitucional declara INCONSTITUCIONAL el Decreto Ley 1094 de 2024, en la medida en que no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT.**\n\nLa razón de esta decisión es que el Decreto Ley 1094 de 2024 no establece mecanismos claros para la consulta previa de los pueblos indígenas, lo que significa que no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT."
+            },
+            {
+                "role": "user",
+                "content": "que deberia de hacer"
+            },
+            {
+                "role": "assistant",
+                "content": "Basado en el expediente proporcionado, la Corte Constitucional ha declarado INCONSTITUCIONAL el Decreto Ley 1094 de 2024 debido a que no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT.\n\nEn este sentido, la respuesta a la pregunta judicial sería:\n\n**La Corte Constitucional debería derogar el Decreto Ley 1094 de 2024 y no permitir su aplicación en el futuro.**\n\nAdemás, las costas del proceso correrían a cargo de las partes demandantes, según lo establecido en el artículo 176 de la Constitución Política de Colombia."
+            }
+        ]
+    },
+    {
+        "Archivo": "1e9174b2-a427-4f94-afe9-a9fe6ada9a72.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "Reporte_Extendido": "INFORME DE ANÁLISIS — JUSTICIA IA\nArchivo          : 1e9174b2-a427-4f94-afe9-a9fe6ada9a72.pdf\nModelo utilizado : llama-3.3-70b-versatile\nFragmentos       : 4\n\n============================================================\nINFORME FINAL\n============================================================\n\nError al generar la síntesis final: Error en la API de Groq: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kndv30bdeszr85vcn1hr3nmx` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99794, Requested 1080. Please try again in 12m35.136s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}\n\n============================================================\nANÁLISIS POR FRAGMENTO\n============================================================\n\nFRAGMENTO 1:\n**Información Extraída**\n\n* **Nombres**: No se mencionan nombres específicos en el fragmento.\n* **Fechas**: No se mencionan fechas específicas en el fragmento, excepto el número de sentencia \"SU.501/24\", que podría indicar el año 2024.\n* **Juzgados**: Se menciona el Consejo de Estado, que es un órgano límite de la jurisdicción de lo contencioso administrativo.\n* **Delitos/Demandas**: Se menciona la acción de tutela contra providencias judiciales, específicamente en relación con la pérdida de investidura y el conflicto de intereses.\n\n**Elementos que denoten urgencia**\n\n* No se mencionan términos vencidos específicos en el fragmento.\n* No se mencionan situaciones de vulnerabilidad específicas en el fragmento.\n* Sin embargo, se puede inferir que la acción de tutela contra providencias judiciales puede ser considerada una medida de urgencia, ya que se busca proteger derechos fundamentales y garantizar la justicia en casos específicos.\n\n---\n\nFRAGMENTO 2:\n[Error en fragmento 2: Error en la API de Groq: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kndv30bdeszr85vcn1hr3nmx` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99795, Requested 487. Please try again in 4m3.648s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}]\n\n---\n\nFRAGMENTO 3:\n[Error en fragmento 3: Error en la API de Groq: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kndv30bdeszr85vcn1hr3nmx` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99795, Requested 450. Please try again in 3m31.68s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}]\n\n---\n\nFRAGMENTO 4:\n[Error en fragmento 4: Error en la API de Groq: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kndv30bdeszr85vcn1hr3nmx` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99795, Requested 478. Please try again in 3m55.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}]",
+        "training_ready": true,
+        "Chat": [
+            {
+                "role": "user",
+                "content": "que es esto"
+            },
+            {
+                "role": "assistant",
+                "content": "Este parece ser un texto de una sentencia judicial en Colombia, específicamente una acción de tutela contra sentencias del Consejo de Estado. La acción de tutela es un mecanismo de protección de los derechos fundamentales que permite a las personas solicitar la protección de sus derechos ante una autoridad pública que los ha violado.\n\nLa sentencia parece estar resolviendo un caso en el que se busca anular o revisar sentencias del Consejo de Estado que se consideran violatorias de la Constitución o que han sido proferidas con defectos materiales o sustantivos. La sentencia establece que la acción de tutela es procedente en casos de defecto material o sustantivo, defecto fáctico o violación directa de la Constitución, y que la sentencia del Consejo de Estado debe ser revisada en caso de que se haya producido un error en la aplicación de la ley o en la interpretación de los hechos.\n\nEl texto también menciona que no hay pruebas documentales ni testimonios/peritajes que puedan aportar información relevante para el caso, lo que limita la valoración probatoria. Sin embargo, se puede inferir que la sentencia se basa en la jurisprudencia y la interpretación de la Constitución y las leyes aplicables.\n\nEn resumen, este texto es una sentencia judicial que resuelve un caso de acción de tutela contra sentencias del Consejo de Estado en Colombia."
+            }
+        ]
+    },
+    {
+        "Archivo": "6cd88729-c119-4939-9a0e-c39d94171dbb.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "7e29ad0f-9f98-45f3-a65f-713aa615cf0e.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "8bfa034e-9b49-43e6-bf61-e19cc4afb81b.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "8ef2dff9-da7d-4c6c-a26c-7d464663e10c.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "09f34ad8-a744-4331-9dab-33103b631829.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "13e26af7-2fe9-4f5e-b4e9-7a7c1d97caee.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "20cc2dc7-7bdf-48e8-857c-c45506ab4d74.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "28e00268-5c99-4198-b18e-38affe767457.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "51f02399-cb8c-4601-8209-efd41b6dab7d.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "56d8adc8-79de-4461-a8c5-e41412dfcb1f.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "62bc39d1-cd79-4fa3-ae77-692cc4143a15.pdf",
+        "Prioridad": "Alta",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "171cff5c-55ea-4e75-bfac-378b8ec8564c.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "240c0050-6fe1-44aa-9b5c-e1bf38e8f30e.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "269a0f25-7ac9-4ec9-be72-5316e0267de8.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "328d4181-51a3-4a1c-bfbe-cd7d48166823.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "337dd20f-e8d2-4699-b2fe-865774c6b05c.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "598e748b-0145-42c8-9401-4ba28c2d556d.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "742be386-8986-4ef3-aeee-02a738a9be99.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "991b2e2d-bc54-4b20-bccc-19bf9114ad20.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "994a7de1-5599-4d51-9338-7805d9610e1d.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "5320b5cd-21dd-4b44-9cf8-914fb96042f2.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "9671e5b4-02dc-4cff-b64d-c83fbb65d604.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "99745ec1-ede4-43e1-9930-4f0191cd8c16.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "998691fb-62eb-4732-a88c-68621611c6bd.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "9678995f-1acc-48da-bead-9eec567ea2c6.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "39504821-a73e-48ea-8b16-feab2a3112d6.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "48307884-ac71-40ff-a684-eb2f7186a734.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "87511396-620c-45ae-85a1-db84b4040865.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a9334552-703a-4c37-abf2-d5cae68a4ddf.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "b4838cd3-a828-4d38-9ba4-fc2633d0fd08.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c16a0d80-a4d1-449f-bd9c-f9a6e8701326.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "cf30320b-35b0-42b9-93aa-e5efeff2218d.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "dc2ab7f3-cca1-4fd4-9a08-6ff0e7ea00b8.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "dde14952-2a91-4c9e-9476-bf09793a6197.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "e22d6406-a061-4b09-8f61-2384a48638ff.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "e569b1f2-a415-4f0a-98fb-2e95bce6d5fc.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "fc86a0cb-06eb-459e-8f81-661d601e0eb2.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1834-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1941-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1942-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1945-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1946-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1948-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1950-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1954-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1956-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1957-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1959-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1960-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1964-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1965-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1966-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1968-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1970-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1972-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1979-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1982-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1983-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1986-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1987-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1989-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1990-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1991-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1992-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1994-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1995-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1997-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a1998-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2000-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2004-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2005-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2006-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2009-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2010-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2011-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2012-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2013-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2014-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "a2016-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c-292-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c-338-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c-370-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c-449-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c-465-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c-466-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c-469-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "c-488-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "t-482-24.pdf",
+        "Prioridad": "NO DEFINIDA",
+        "Modelo": "llama-3.3-70b-versatile",
+        "training_ready": true
+    },
+    {
+        "Archivo": "1c16ef52-be92-4743-959b-6635d25f666e.pdf",
+        "Modelo": "llama-3.3-70b-versatile",
+        "Extracto_Texto": "A059-26\nREPÚBLICA DE COLOMBIA\nCORTE CONSTITUCIONAL\nSala Plena\nAUTO 059 DE 2026\nReferencia: expediente ICC - 5246\nAsunto: conflicto aparente de competencia suscitado\nentre el Juzgado 001 Civil del Circuito de Apartadó,\nAntioquia, y el Juzgado 002 Administrativo de la misma\nciudad.\nMagistrada ponente:\nNatalia Ángel Cabo.\nBogotá D.C., veintiocho (28) de enero de dos mil veintiséis (2026)\nLa Sala Plena de la Corte Constitucional, en cumplimiento de sus atribuciones\nconstitucionales y legales, en especial de la prevista en el literal e) del artículo 5º de su\nReglamento Interno, profiere el siguiente\nAUTO\nI. ANTECEDENTES\n1. La señora Paola Paniagua Ramírez interpuso una acción de tutela contra la Unidad\nResidencial Ceiba de los Maderos, la empresa Maderos Proactiva y los señores Hernán\nOrtiz y Sebastián Ortiz, para solicitar la protección de sus derechos fundamentales de\npetición, vivienda digna y debido proceso[1]. La accionante explicó que, desde junio de\n2024, observó humedad en la pared que comparte su inmueble con el inmueble del señor\nHernán Ortiz, ubicados en la Unidad Residencial Ceiba de los Maderos[2]. Por esta razón,\ncon la autorización del señor Ortiz, la actora contrató un maestro de obras que adelantó las\nreparaciones correspondientes por un valor de COP 360.000[3].\n2. A pesar de lo anterior, a la fecha, la señora Paniagua Ramírez no ha recibido el pago\nde la suma que le adeuda el señor Ortiz[4]. Además, según el escrito de tutela, sólo se ha\npodido comunicar con el encargado de la casa, el señor Sebastián Ortiz, y no directamente\ncon el señor Hernán Ortiz[5]. Por esta razón, la señora Paniagua Ramírez elevó una\npetición ante el conjunto residencial para que le remitiera los datos de contacto del señor\nHernán Ortiz y para que le informara la fecha en la que recibió el inmueble[6]. El conjunto\ncontestó el 19 de marzo de 2025 a la petición de la actora, informándole que no tenía la\nfacultad de suministrarle la información requerida y que le remitiría la petición a la\n“empresa constructora Avance”[7]. Asimismo, la accionante elevó una petición ante\n“Maderos Proactiva”, para que le remitiera los documentos y la información con la que\ncontara en relación con la garantía de construcción de su inmueble[8].\n3. Por lo expuesto, la señora Paola Paniagua Ramírez le solicitó al juez de tutela que le\nordenara a la Unidad Residencial Ceiba de los Maderos, la empresa Maderos Proactiva y\nlos señores Hernán Ortiz y Sebastián Ortiz que brindaran una “respuesta de fondo, clara y\ncongruente”[9] a sus peticiones.\n4. El proceso le correspondió por reparto al Juzgado 003 Civil Municipal de Apartadó,\nAntioquia[10]. Este juzgado, a través de una Sentencia del 13 de noviembre de 2025,\nresolvió tutelar el derecho fundamental de petición de la señora Paniagua Ramírez y, en\nconsecuencia, le ordenó a Maderos Avance Constructora, a la Unidad Residencial Ceiba\nde los Maderos y a los señores Hernán Ortiz y Sebastián Ortiz que resolvieran de forma\nclara, concreta, de fondo y completa lo peticionado por la señora Paniagua Ramírez[11].\n5. El 18 de noviembre de 2025, dentro del término previsto para ello, los señores Hernán\nOrtiz y Sebastián Ortiz impugnaron el fallo de primera instancia, pues consideraron que\natendieron debidamente las peticiones de la accionante[12]. El proceso correspondió por\nreparto al Juzgado 001 Civil del Circuito de Apartadó, Antioquia, el cual, por medio de un\nAuto del 1 de diciembre de 2025, declaró la nulidad de la actuación adelantada por el\nJuzgado 003 Civil Municipal de Apartadó y remitió la acción de tutela a los juzgados\nadministrativos de Apartadó[13].\n6. El Juzgado 001 Civil del Circuito de Apartadó explicó que el despacho de primera\ninstancia no tenía competencia para pronunciarse sobre las pretensiones de la tutela, toda\nvez que la señora Paniagua Ramírez estuvo adscrita como empleada pública en dicho\njuzgado entre el 2015 y el 2022[14]. En ese sentido, teniendo en cuenta que el artículo\n2.2.3.1.2.1. del Decreto 333 de 2021 establece que “[c]uando se trate de acciones de tutela\npresentadas por funcionarios o empleados judiciales, que pertenezcan o pertenecieron a la\njurisdicción ordinaria, el conocimiento corresponderá a la jurisdicción de lo contencioso\nadministrativo”, la tutela de la referencia debería ser resuelta por los juzgados\nadministrativos[15].\n7. La autoridad judicial también explicó que la Corte Constitucional y la Corte Suprema\nde Justicia tienen posturas divergentes en cuanto a la aplicación del artículo 2.2.3.1.2.1.\nSin embargo, el despacho consideró que la postura que resultaba aplicable en el caso\nconcreto era la de la Corte Suprema de Justicia, la cual consiste en que, cuando un juzgado\nprofiera una decisión sin tener la competencia funcional para ello, su decisión será nula sin\nperjuicio de la naturaleza del asunto[16].\n8. El asunto fue asignado por reparto al Juzgado 002 Administrativo de Apartadó. Este\ndespacho, por medio de un Auto del 2 de diciembre de 2025, se abstuvo de avo",
+        "Reporte_Extendido": "Error en redacción: Error en la API de Groq: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kndv30bdeszr85vcn1hr3nmx` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99773, Requested 1143. Please try again in 13m11.424s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "Analisis_Pruebas": "Error en análisis de pruebas: Error en la API de Groq: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kndv30bdeszr85vcn1hr3nmx` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99773, Requested 1111. Please try again in 12m43.776s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "Chat": [],
+        "Local_Path": "data\\raw_documents\\1c16ef52-be92-4743-959b-6635d25f666e.pdf",
+        "Owner": "admin",
+        "training_ready": true
+    },
+    {
+        "Archivo": "1d0a0e75-2dac-456c-92a7-ef8443d34355.pdf",
+        "Modelo": "llama-3.1-8b-instant",
+        "Extracto_Texto": "C-448-25\nREPÚBLICA DE COLOMBIA\nCORTE CONSTITUCIONAL\nSala Plena\nSENTENCIA C-448 DE 2025\nRef.: expedientes D-16.291 y D-16.306\nDemandas de inconstitucionalidad contra el\nDecreto Ley 1094 de 2024, “[p]or el cual se\nreconoce el mandato de la Autoridad Territorial\nEconómica y Ambiental - ATEA, instrumento de\nderecho propio expedido por las autoridades\ntradicionales de los pueblos indígenas del Consejo\nRegional Indígena del Cauca - CRIC, se establecen\ncompetencias, funcionamiento y mecanismos de\ncoordinación para su ejercicio en los territorios que\nlo conforman en el marco de la autonomía y\nautodeterminación, y se dictan otras disposiciones”.\nMagistrado ponente:\nHéctor Alfonso Carvajal Londoño\nBogotá, D. C., treinta (30) de octubre de dos mil veinticinco (2025)\nLa Sala Plena de la Corte Constitucional, en ejercicio de sus atribuciones constitucionales\ny en virtud de los requisitos y trámites establecidos en el Decreto Ley 2591 de 1991, ha\ndictado la siguiente:\nSENTENCIA\nSíntesis de la decisión\nLa Corte Constitucional resolvió dos demandas de inconstitucionalidad presentadas contra\nla totalidad del Decreto Ley 1094 de 2024, por el presunto desconocimiento del derecho a\nla consulta previa y, concretamente, la demanda D-16.306 que fue admitida respecto de los\ncargos dirigidos contra el artículo 3 (parcial).\nEn cuanto a las demandas contra la totalidad del decreto, los ciudadanos alegaron que\nvulneró el requisito de consulta previa (artículos 93 de la CP y 6 del Convenio 169 de la\nOIT), toda vez que: (i) convirtió en ley apartes del mandato de la Autoridad Territorial\nEconómica y Ambiental - ATEA, instrumento de derecho propio expedido por las\nautoridades tradicionales de los pueblos indígenas del Consejo Regional Indígena del\nCauca - CRIC; (ii) existen diferencias entre la norma demandada y el Mandato de la\nATEA; y (iii) regula mecanismos de coordinación entre el CRIC y las autoridades\npúblicas.\nLos accionantes alegaron que el Decreto Ley 1094 de 2024 debió ser consultado\npreviamente: (i) con las comunidades indígenas que forman parte del CRIC; (ii) con todas\nlas comunidades indígenas del Cauca; y (iii) con las comunidades indígenas que se\nasientan en otros departamentos.\nPor otra parte, en la demanda D-16.306, se alegó que el aparte impugnado del artículo 3\ndel Decreto Ley 1094 de 2024, viola: (i) la protección que la Constitución le otorga a la\npropiedad privada y a los derechos de terceros (artículo 58 C.P.); y (ii) la autonomía de las\nentidades territoriales no indígenas para gestionar sus intereses (artículo 287 C.P.). Esto,\nen la medida que tal expresión habilita a la ATEA a ejercer las competencias estatuidas en\nlos artículos 4 y 5 de ese decreto en territorios no indígenas.\nLa Corte evaluó la aptitud de los cargos formulados y concluyó que solo los relacionados\ncon la posible afectación a la consulta previa cumplían los requisitos de claridad, certeza,\nespecificidad, pertinencia y suficiencia, exigidos por la jurisprudencia constitucional. En\ncontraste, consideró que los reproches basados en la violación del derecho a la propiedad\nprivada, a los derechos de terceros y el desconocimiento de la autonomía de las entidades\nterritoriales no indígenas para gestionar sus intereses, no satisfacían los requisitos para\nactivar el control abstracto y, por tanto, no debían ser objeto de decisión de fondo.\nA partir de lo anterior, la Sala Plena se ocupó de resolver un solo problema jurídico\nalusivo a determinar si el Decreto Ley 1094 de 2024 afectó directamente a las\ncomunidades que forman parte del CRIC, a las comunidades indígenas situadas en el\nCauca que no integran el CRIC y a las comunidades indígenas de otros departamentos y,\npor tanto, en el trámite de su expedición se debió agotar el procedimiento de consulta\nprevia de esa norma con todas ellas.\nLa Corte Constitucional consideró que con independencia del origen que tuvo la\nregulación que ahora se cuestiona, es claro que su incorporación al ordenamiento jurídico\nmediante la adopción de un decreto con fuerza de ley, implica, en los términos de la\njurisprudencia constitucional, una afectación directa.\nEn tal sentido, la Sala Plena concluyó que en este caso existió una afectación directa de las\ncomunidades en tanto un apartado de su propuesta normativa se incorporó a un\ninstrumento especial con fuerza de ley, sin embargo, se cumplieron, en general, las\ncondiciones requeridas para el agotamiento de la consulta previa.\nAl respecto, la Corte encontró que el referido derecho se encontraba satisfecho, toda vez\nque la comunidad indígena solicitó al Gobierno nacional elevar a categoría de ley el\nMandato ATEA y, a partir de ello, se llevaron a cabo diferentes etapas de diálogo y\nconcertación con las comunidades indígenas que condujeron a la aprobación del texto del\ndecreto acusado. En este proceso se respetó la propia voluntad y el ejercicio del derecho a\nla autonomía del CRIC, a través de sus representantes. Con todo, se garantizó el fin último\nde este mecanismo, porque el ",
+        "Reporte_Extendido": "### 📥 1. Resumen Ejecutivo del Caso\nEl presente caso se refiere a dos demandas de inconstitucionalidad presentadas contra el Decreto Ley 1094 de 2024, que reconoce el mandato de la Autoridad Territorial Económica y Ambiental (ATEA) y establece competencias, funcionamiento y mecanismos de coordinación para su ejercicio en los territorios que la conforman. Las demandas se presentaron por el presunto desconocimiento del derecho a la consulta previa. La Corte Constitucional debe determinar la constitucionalidad o inconstitucionalidad del Decreto Ley 1094 de 2024.\n\n### ⚖️ 2. Consideraciones y Fundamentos Jurídicos\nLa Constitución Política de Colombia (CP) establece el derecho a la consulta previa en su artículo 93, que dispone que \"los pueblos indígenas tienen derecho a la consulta previa, en todos los casos en que se proyecten actividades que puedan afectar sus tierras, territorios o recursos\". El Convenio 169 de la Organización Internacional del Trabajo (OIT) también establece el derecho a la consulta previa en su artículo 6, que dispone que \"los pueblos indígenas tienen derecho a la consulta previa, en todos los casos en que se proyecten actividades que puedan afectar sus tierras, territorios o recursos\".\n\nEn este sentido, el Decreto Ley 1094 de 2024 debe ser analizado en relación con el derecho a la consulta previa establecido en la Constitución Política de Colombia y el Convenio 169 de la OIT. Si el Decreto Ley 1094 de 2024 no cumple con los requisitos de la consulta previa, entonces sería inconstitucional.\n\n### 📜 3. Propuesta de Decisión / Resolución (Sentencia)\n**Sentencia**\n\nEn consideración a lo expuesto, la Corte Constitucional declara INCONSTITUCIONAL el Decreto Ley 1094 de 2024, en la medida en que no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT.\n\n**Fundamentos**\n\nLa Corte Constitucional considera que el Decreto Ley 1094 de 2024 no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT. El Decreto Ley 1094 de 2024 no establece mecanismos claros para la consulta previa de los pueblos indígenas, lo que significa que no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT.\n\n**Consecuencias**\n\nLa declaración de inconstitucionalidad del Decreto Ley 1094 de 2024 tiene como consecuencia la nulidad de la norma demandada. El Decreto Ley 1094 de 2024 debe ser derogado y no puede ser aplicado en el futuro.\n\n**Costas**\n\nLas costas del proceso correrán a cargo de las partes demandantes, en virtud de lo establecido en el artículo 176 de la Constitución Política de Colombia.\n\n**Publicación**\n\nLa sentencia será publicada en el Diario Oficial y en el sitio web de la Corte Constitucional.",
+        "Analisis_Pruebas": "### 🔍 4. Análisis Detallado de Pruebas\n- **Pruebas Documentales**:\n  - Decreto Ley 1094 de 2024: Este documento es la norma que se encuentra en disputa y es el centro de la controversia. Su fuerza probatoria es alta, ya que es la norma misma que se está cuestionando. Sin embargo, su relevancia depende de la interpretación que se haga de sus disposiciones y cómo se relacionan con el derecho a la consulta previa.\n  - Mandato de la ATEA: Este documento es importante para comprender la posición de los pueblos indígenas y su relación con el Decreto Ley 1094 de 2024. Su fuerza probatoria es alta, ya que es un instrumento de derecho propio expedido por las autoridades tradicionales de los pueblos indígenas.\n  - Convenio 169 de la OIT: Este convenio es importante para comprender el derecho a la consulta previa y su relación con la normativa colombiana. Su fuerza probatoria es alta, ya que es un tratado internacional que tiene fuerza de ley en Colombia.\n  - Decreto Ley 2591 de 1991: Este decreto ley es importante para comprender la regulación de la consulta previa en Colombia. Su fuerza probatoria es alta, ya que es una norma que regula el procedimiento de consulta previa.\n- **Testimonios/Peritajes**: No se mencionan pruebas testimoniales o periciales en el fragmento.\n- **Valoración Probatoria**: La valoración probatoria de las pruebas documentales es alta, ya que se trata de normas y documentos que tienen fuerza de ley. Sin embargo, la interpretación de estas pruebas depende de la perspectiva y la interpretación de cada parte.\n\n### ⚠️ 5. Vacíos Probatorios o Contradicciones\n- **Vacíos Probatorios**: No se identifican vacíos probatorios en el fragmento.\n- **Contradicciones**: La principal contradicción en el expediente es la interpretación del Decreto Ley 1094 de 2024 y su relación con el derecho a la consulta previa. Las partes que presentaron las demandas de inconstitucionalidad argumentan que el Decreto Ley 1094 de 2024 desconoce el derecho a la consulta previa, mientras que la Corte Constitucional debe determinar si esta norma es constitucional o no.",
+        "Chat": [],
+        "Local_Path": "data\\raw_documents\\1d0a0e75-2dac-456c-92a7-ef8443d34355.pdf",
+        "Carpeta": "nuevo 1.1",
+        "Fecha": "2026-04-06 02:27",
+        "Owner": "admin",
+        "training_ready": true
+    },
+    {
+        "Archivo": "1e9174b2-a427-4f94-afe9-a9fe6ada9a72.pdf",
+        "Modelo": "llama-3.3-70b-versatile",
+        "Extracto_Texto": "SU501-24\nTEMAS-SUBTEMAS\nSentencia SU.501/24\nTUTELA CONTRA PROVIDENCIAS JUDICIALES EN ACCIÓN DE PÉRDIDA\nDE INVESTIDURA-Interpretación de las causales de inhabilidad por ejercicio de\nautoridad administrativa y conflicto de intereses\nACCIÓN DE TUTELA CONTRA SENTENCIAS DE ALTAS CORTES-Requisitos\ngenerales de procedencia requiere argumentación y análisis más riguroso\n(…) la tutela contra sentencias del Consejo de Estado …, implica aplicar un grado de\ndeferencia mayor por parte del juez constitucional. Esto porque se trata de decisiones\nproferidas por el órgano límite de la jurisdicción de lo contencioso administrativo (…) y\nque, en principio, están cobijadas por una garantía de estabilidad mayor que las\ndecisiones proferidas por otros jueces, en razón al papel que cumple aquel en el\nordenamiento jurídico.\nACCION DE TUTELA CONTRA PROVIDENCIAS JUDICIALES-Reiteración de\njurisprudencia sobre procedencia excepcional\nCARACTERIZACION DEL DEFECTO MATERIAL O SUSTANTIVO COMO\nCAUSAL DE PROCEDIBILIDAD DE LA ACCION DE TUTELA CONTRA\nPROVIDENCIAS JUDICIALES-Reiteración de jurisprudencia\nCARACTERIZACION DEL DEFECTO FACTICO COMO CAUSAL\nESPECIFICA DE PROCEDIBILIDAD DE LA ACCION DE TUTELA CONTRA\nPROVIDENCIAS JUDICIALES\nVIOLACION DIRECTA DE LA CONSTITUCION-Definición\nVIOLACION DIRECTA DE LA CONSTITUCION COMO CAUSAL DE\nPROCEDIBILIDAD DE LA ACCION DE TUTELA CONTRA PROVIDENCIAS\nJUDICIALES-Configuración\nPRECEDENTE JUDICIAL-Definición/PRECEDENTE JUDICIAL-Elementos\nconceptuales\n1) debe ser necesariamente anterior a la decisión que se pretende aplicar al caso; 2) debe\nexistir semejanza en los problemas jurídicos que plantean los casos; 3) debe existir una\nimportante coincidencia en los hechos de los casos y sus puntos de derecho.\nPRECEDENTE JUDICIAL HORIZONTAL Y VERTICAL-Alcance y carácter\nvinculante\nPERDIDA DE INVESTIDURA-Naturaleza jurídica/PERDIDA DE INVESTIDURA-\nCausales\nPERDIDA DE INVESTIDURA-Carácter sancionatorio\nPERDIDA DE INVESTIDURA-Jurisprudencia del Consejo de Estado sobre el carácter\npunitivo disciplinario especial\nPERDIDA DE INVESTIDURA-Marco normativo\nPROCESO DE PERDIDA DE INVESTIDURA-Finalidad\n(…), la acción de pérdida de investidura tiene como efecto el retiro el cargo y la\nimposición de una inhabilidad para ejercer otros cargos de elección popular, lo que\nimplica una restricción intensa del derecho a elegir y ser elegido, y del derecho a acceder\na cargos y funciones públicas.\nPRINCIPIO PRO PERSONA-Alcance/PRINCIPIO PRO PERSONA-Aplicación\nINHABILIDADES-Interpretación restrictiva\nLa interpretación restrictiva de las inhabilidades es una aplicación concreta del principio\npro persona y constituye una garantía que tiene una dimensión individual, pues limita la\nimposición de restricciones arbitrarias y desproporcionadas de los derechos a ser elegido\ny al acceso a cargos públicos, en tanto derechos políticos.\nSANCION DE PERDIDA DE INVESTIDURA-Para despojar de su investidura a una\npersona elegida popularmente, es necesario comprobar que su conducta tuvo un elemento\nde culpabilidad\nREGIMEN DE INHABILIDADES DE DIPUTADO-No menos estricto que el señalado\npara los congresistas\nRÉGIMEN DE INHABILIDADES E INCOMPATIBILIDADES DE DIPUTADOS-\nMarco normativo\n(…), la Ley 2200 de 2022, que contiene normas para modernizar la organización y el\nfuncionamiento de los departamentos, en el Capítulo II, se ocupó de la regulación de esta\nmateria en lo relativo a los diputados. El artículo 49 dispuso el régimen de inhabilidades\naplicable en este ámbito; los artículos 50, 51 y 52 fijaron el régimen de\nincompatibilidades y el artículo 55 estableció las excepciones para su configuración. El\nartículo 56, por su parte, se ocupó del conflicto de interés y definió sus elementos\n(beneficio particular, beneficio actual y beneficio directo) y previó casos en los que no se\nconfigura dicho conflicto. Finalmente, dispuso los eventos en los que se configura el\nconflicto de intereses para los diputados y la obligación de declararlo, de acuerdo con el\nartículo 56.\nEJERCICIO DE AUTORIDAD ADMINISTRATIVA-Presupuestos para configurar la\ninhabilidad\nEJERCICIO DE AUTORIDAD ADMINISTRATIVA-Jurisprudencia del Consejo de\nEstado\nTUTELA CONTRA PROVIDENCIAS JUDICIALES EN ACCIÓN DE PÉRDIDA\nDE INVESTIDURA-Defectos sustantivo y fáctico y en la interpretación de la causal de\ninhabilidad por ejercicio de autoridad administrativa\nINHABILIDAD POR CONFLICTO DE INTERESES-Alcance y contenido\nCONFLICTO DE INTERESES-Jurisprudencia del Consejo de Estado\nPERDIDA DE INVESTIDURA DE DIPUTADO-Causales de inhabilidad previstas en\nel art. 33 de la ley 617/00\nTUTELA CONTRA PROVIDENCIAS JUDICIALES EN ACCIÓN DE PÉRDIDA\nDE INVESTIDURA-Configuración de la causal de inhabilidad por violación del régimen\nde conflicto de intereses\nREPÚBLICA DE COLOMBIA\nCORTE CONSTITUCIONAL\n-Sala Plena-\nSENTENCIA SU-501 DE 2024\nReferencia: expedientes T-9.321.704 y T- 9.344.130\n(acumulados)\nProcedencia: Sección Tercera, Subsección C, del Consejo de\nEstado y Sección Segunda, Subsección A, del Consejo de\nEstado\nMagistrado pone",
+        "Reporte_Extendido": "### 📥 1. Resumen Ejecutivo del Caso\nEl caso involucra una acción de tutela contra providencias judiciales relacionadas con la pérdida de investidura de un diputado debido a su participación en la elección del contralor departamental. El diputado argumenta que la decisión del Consejo de Estado viola sus derechos políticos y el debido proceso, mientras que el Consejo de Estado sostiene que la participación del diputado en la elección constituye una causal de inhabilidad. Las partes involucradas son el diputado y el Consejo de Estado, y el conflicto jurídico central gira en torno a la interpretación de las causales de inhabilidad y el debido proceso.\n\n### ⚖️ 2. Consideraciones y Fundamentos Jurídicos\nLa aplicación de la ley a los hechos encontrados requiere considerar la jurisprudencia sobre la procedencia excepcional de la acción de tutela contra providencias judiciales, así como la interpretación restrictiva de las inhabilidades y el principio pro persona. La Corte Constitucional debe analizar si la decisión del Consejo de Estado incurrió en defectos fácticos o sustantivos, y si se violó el debido proceso. La ley 2200 de 2022 y los artículos 55 y 56 de la ley 617/00 son relevantes para la resolución del caso. La Corte también debe considerar la jurisprudencia del Consejo de Estado y la Corte Constitucional sobre la pérdida de investidura de diputados y concejales debido a causales de inhabilidad.\n\n### 📜 3. Propuesta de Decisión / Resolución (Sentencia)\nSe propone que la Corte Constitucional declare que la decisión del Consejo de Estado que declaró la pérdida de investidura del diputado es constitucional, siempre y cuando se haya respetado el debido proceso y se hayan considerado las causales de inhabilidad de manera restrictiva. La Corte también debe ordenar al Consejo de Estado que revise su decisión y considere la jurisprudencia sobre la procedencia excepcional de la acción de tutela contra providencias judiciales. Además, se debe establecer que la participación del diputado en la elección del contralor departamental constituye una causal de inhabilidad, de acuerdo con la ley 2200 de 2022 y los artículos 55 y 56 de la ley 617/00. La sentencia debe ser notificada a las partes y publicada en el sitio web de la Corte Constitucional.",
+        "Analisis_Pruebas": "### 🔍 4. Análisis Detallado de Pruebas\n- **Pruebas Documentales**: No se mencionan pruebas documentales específicas en el fragmento proporcionado, lo que limita el análisis de la fuerza probatoria en este aspecto. Sin embargo, se infiere que podrían existir documentos relacionados con la elección del contralor departamental, la participación del diputado en la misma, y decisiones judiciales previas que podrían ser relevantes para el caso.\n- **Testimonios/Peritajes**: No se mencionan testimonios o peritajes específicos, lo que sugiere una falta de evidencia directa o experta que apoye o refute las pretensiones de las partes. La ausencia de este tipo de pruebas podría debilitar la posición de alguna de las partes, dependiendo de la naturaleza de sus argumentos.\n- **Valoración Probatoria**: La valoración de las pruebas en este caso parece depender en gran medida de la interpretación de las normas y leyes aplicables, así como de la jurisprudencia relevante. La fuerza de las pruebas, en la medida en que se pueden inferir, parece estar más relacionada con la aplicación correcta del derecho que con la presentación de evidencia concreta.\n\n### ⚠️ 5. Vacíos Probatorios o Contradicciones\nLa principal contradicción o vacío en el expediente parece ser la falta de claridad sobre las pruebas específicas presentadas en el caso. No hay mención a documentos, testimonios o peritajes que apoyen o refuten las pretensiones de las partes, lo que podría generar dudas sobre la solidez de las decisiones judiciales tomadas. Además, la ausencia de citas específicas de normas o leyes aplicables, excepto algunas referencias generales, podría indicar una falta de precisión en la argumentación jurídica o una dependencia excesiva en la interpretación de la jurisprudencia. Esto podría ser un punto crítico en la resolución del caso, ya que la interpretación de las leyes y la aplicación de la jurisprudencia son fundamentales para determinar la procedencia de la acción de tutela y la validez de la decisión del Consejo de Estado.",
+        "Chat": [],
+        "Owner": "admin",
+        "training_ready": true
+    },
+    {
+        "Archivo": "6cd88729-c119-4939-9a0e-c39d94171dbb.pdf",
+        "Modelo": "llama-3.3-70b-versatile",
+        "Extracto_Texto": "A236-26\nREPÚBLICA DE COLOMBIA\nCORTE CONSTITUCIONAL\nSALA PLENA\nAuto 236 de 2026\nReferencia: expediente ICC - 5264\nAsunto: conflicto de competencia suscitado entre la\nSección Quinta de la Sala de lo Contencioso\nAdministrativo del Consejo de Estado y la Sala de\nDecisión Penal del Tribunal Superior del Distrito\nJudicial de Bucaramanga\nMagistrado ponente:\nHéctor Alfonso Carvajal Londoño.\nBogotá, D. C., veinticinco (25) de febrero de dos mil veintiséis (2026).\nLa Sala Plena de la Corte Constitucional, en cumplimiento de sus atribuciones\nconstitucionales y legales, en especial la prevista en el literal e) del artículo 5 de su\nReglamento Interno, profiere el siguiente:\nAUTO\nI. ANTECEDENTES\n1. John Jairo Téllez Ospina promovió acción de tutela contra la Inspección General\nde las Fuerzas Militares y el Comando del Ejército Nacional - Jefatura de Estado\nMayor de Operaciones, a quienes señaló como autoridades accionadas principales.\nAsí mismo, solicitó la vinculación de otras autoridades, entre ellas el Juzgado 34 de\nInstrucción Penal Militar de Bucaramanga, por considerar que sus actuaciones\nguardaban relación con los hechos objeto de controversia. La acción de tutela fue\npresentada con el propósito de obtener la protección de sus derechos fundamentales\nal debido proceso, defensa, presunción de inocencia, acceso a la información,\ntrabajo, honra, buen nombre y derecho de petición. Expuso que, en el marco de 13\ninvestigaciones administrativas relacionadas con el reconocimiento de viáticos y\npasajes correspondientes a los años 2019 y 2020, así como de una indagación\ndisciplinaria y una investigación penal militar, las autoridades accionadas han\nomitido recaudar y valorar pruebas documentales que reposan en la Inspección\nGeneral de las Fuerzas Militares y en la Segunda División del Ejército Nacional,\npese a reconocer su existencia y reserva. Indicó que dicha omisión ha derivado en\ndecisiones administrativas que ordenan descuentos sobre su asignación de retiro y\nen la persistencia de actuaciones sancionatorias y penales, lo que afecta de manera\ngrave y actual su mínimo vital y su derecho de defensa. El accionante manifestó\ntener su domicilio en la ciudad de Bogotá y señaló expresamente que dirige su\nacción de tutela, a prevención, ante los jueces de dicha ciudad[1].\n2. La acción de tutela fue repartida inicialmente a la Sección Quinta de la Sala de lo\nContencioso Administrativo del Consejo de Estado, bajo el radicado 11001-03-15-\n000-2025-07806-00. Mediante Auto del 15 de diciembre de 2025, el magistrado\nsustanciador resolvió no admitir la solicitud de amparo y dispuso su remisión para\nreparto a la Sala Penal del Tribunal Superior de Bucaramanga. Para sustentar dicha\ndecisión, consideró que, conforme a las reglas de reparto previstas en el Decreto 333\nde 2021, y dado que la acción se dirigía también contra una autoridad judicial —el\nJuzgado 34 de Instrucción Penal Militar de Bucaramanga—, el conocimiento del\nasunto debía recaer en una autoridad de jerarquía de tribunal, con jurisdicción en el\nlugar donde presuntamente se produciría la vulneración de los derechos\nfundamentales, esto es, la ciudad de Bucaramanga[2].\n3. Recibido el expediente, la Sala de Decisión Penal del Tribunal Superior del\nDistrito Judicial de Bucaramanga, Despacho 008, mediante Auto del 19 de\ndiciembre de 2025, planteó conflicto negativo de competencia frente a la Sección\nQuinta del Consejo de Estado. El Tribunal sostuvo que la determinación de la\ncompetencia en materia de tutela debía efectuarse exclusivamente a partir de los\nfactores previstos en el artículo 37 del Decreto 2591 de 1991, en particular el factor\nterritorial, y no con base en las reglas administrativas de reparto. Señaló que tanto el\nlugar donde se genera la presunta vulneración como aquel donde se producen sus\nefectos es la ciudad de Bogotá, dado que allí tienen su sede las principales\nautoridades accionadas y allí reside el accionante. En consecuencia, concluyó que la\nSección Quinta del Consejo de Estado era competente para conocer del asunto y\nordenó remitir el expediente a la Corte Constitucional para que resolviera el\nconflicto suscitado[3].\n4. El expediente fue remitido a la Corte Constitucional el 19 de diciembre de 2025.\nPosteriormente, el 28 de enero de 2026, la Sala Plena asignó el conocimiento del\ncaso al magistrado sustanciador y, el 29 de enero de 2026, procedió a enviarle el\nexpediente correspondiente.\nII. CONSIDERACIONES DE LA CORTE CONSTITUCIONAL\n5. Competencia. La Corte Constitucional ha reiterado que, en principio, la\nresolución de los conflictos de competencia en materia de tutela recae en las\nautoridades judiciales designadas por la Ley 270 de 1996[4]. No obstante, su\nintervención se justifica de manera excepcional o residual[5]. En línea con lo\nexpuesto en el Auto 550 de 2018, esta Corporación ha precisado que su\ncompetencia se activa únicamente cuando la Ley Estatutaria de Administración de\nJusticia no define cuál juez debe asumir el conocimiento del asunto, o bien,",
+        "Reporte_Extendido": "### 📥 1. Resumen Ejecutivo del Caso\nEl caso involucra una acción de tutela promovida por John Jairo Téllez Ospina contra la Inspección General de las Fuerzas Militares y el Comando del Ejército Nacional - Jefatura de Estado Mayor de Operaciones, con el objetivo de proteger sus derechos fundamentales al debido proceso, defensa, presunción de inocencia, acceso a la información, trabajo, honra, buen nombre y derecho de petición. El conflicto central gira en torno a un conflicto negativo de competencia entre la Sección Quinta de la Sala de lo Contencioso Administrativo del Consejo de Estado y la Sala de Decisión Penal del Tribunal Superior del Distrito Judicial de Bucaramanga, lo que ha impedido la continuación del trámite de la acción de tutela.\n\n### ⚖️ 2. Consideraciones y Fundamentos Jurídicos\nLa aplicación de la ley a los hechos encontrados sugiere que el conflicto de competencia debe resolverse con base en los principios de celeridad y sumariedad propios de la acción de tutela, garantizando un acceso oportuno a la justicia. La Ley 270 de 1996 y el Decreto 2591 de 1991 son fundamentales en la resolución de este conflicto, ya que establecen las reglas para la competencia en materia de tutela. Es importante considerar que la Corte Constitucional tiene un papel excepcional en la resolución de conflictos de competencia en materia de tutela, especialmente cuando la Ley Estatutaria de Administración de Justicia no define claramente cuál juez debe asumir el conocimiento del asunto.\n\n### 📜 3. Propuesta de Decisión / Resolución (Sentencia)\nSe propone que la Corte Constitucional resuelva el conflicto de competencia a favor de la autoridad que, de acuerdo con las reglas de reparto y la naturaleza del asunto, resulte competente para conocer la acción de tutela. En este caso, considerando que el accionante reside en la ciudad de Bogotá y las principales autoridades accionadas tienen su sede allí, se sugiere que la competencia corresponda a una autoridad con jurisdicción en Bogotá. Por lo tanto, se decide que la Sección Quinta de la Sala de lo Contencioso Administrativo del Consejo de Estado es la autoridad competente para conocer y resolver la acción de tutela promovida por John Jairo Téllez Ospina, garantizando así la protección efectiva de sus derechos fundamentales y la celeridad en la resolución del conflicto.",
+        "Analisis_Pruebas": "### 🔍 4. Análisis Detallado de Pruebas\n- **Pruebas Documentales**: Se menciona la existencia de pruebas documentales que reposan en la Inspección General de las Fuerzas Militares, relacionadas con investigaciones administrativas y penales, pero no se especifican detalles sobre su contenido o impacto. También se hace referencia a documentos como el Decreto 2591 de 1991 y la Ley 270 de 1996, que podrían ser relevantes para la resolución del conflicto de competencia.\n- **Testimonios/Peritajes**: No se mencionan testimonios o peritajes específicos en el fragmento del expediente, lo que sugiere una falta de pruebas testimoniales o periciales que podrían apoyar o contradecir las afirmaciones de las partes.\n- **Valoración Probatoria**: La valoración de las pruebas es limitada debido a la falta de detalles sobre el contenido y la relevancia de las pruebas documentales mencionadas. Sin embargo, es probable que las pruebas documentales relacionadas con las investigaciones administrativas y penales sean relevantes para la resolución del conflicto de competencia y la protección de los derechos fundamentales del accionante.\n\n### ⚠️ 5. Vacíos Probatorios o Contradicciones\nLa falta de detalles sobre las pruebas documentales y la ausencia de testimonios o peritajes específicos generan vacíos probatorios significativos. Además, la contradicción entre la competencia atribuida a la Sección Quinta de la Sala de lo Contencioso Administrativo del Consejo de Estado y la Sala de Decisión Penal del Tribunal Superior del Distrito Judicial de Bucaramanga sobre la acción de tutela plantea una contradicción que debe ser resuelta para avanzar en el trámite de la acción de tutela. La falta de una autoridad designada para solucionar la colisión entre jurisdicciones distintas, según la Ley 270 de 1996, también constituye un vacío legal que debe ser abordado para garantizar la protección efectiva de los derechos fundamentales invocados.",
+        "Chat": [],
+        "Owner": "admin",
+        "training_ready": true
+    },
+    {
+        "Archivo": "1c16ef52-be92-4743-959b-6635d25f666e.pdf",
+        "Modelo": "llama-3.1-8b-instant",
+        "Extracto_Texto": "A059-26\nREPÚBLICA DE COLOMBIA\nCORTE CONSTITUCIONAL\nSala Plena\nAUTO 059 DE 2026\nReferencia: expediente ICC - 5246\nAsunto: conflicto aparente de competencia suscitado\nentre el Juzgado 001 Civil del Circuito de Apartadó,\nAntioquia, y el Juzgado 002 Administrativo de la misma\nciudad.\nMagistrada ponente:\nNatalia Ángel Cabo.\nBogotá D.C., veintiocho (28) de enero de dos mil veintiséis (2026)\nLa Sala Plena de la Corte Constitucional, en cumplimiento de sus atribuciones\nconstitucionales y legales, en especial de la prevista en el literal e) del artículo 5º de su\nReglamento Interno, profiere el siguiente\nAUTO\nI. ANTECEDENTES\n1. La señora Paola Paniagua Ramírez interpuso una acción de tutela contra la Unidad\nResidencial Ceiba de los Maderos, la empresa Maderos Proactiva y los señores Hernán\nOrtiz y Sebastián Ortiz, para solicitar la protección de sus derechos fundamentales de\npetición, vivienda digna y debido proceso[1]. La accionante explicó que, desde junio de\n2024, observó humedad en la pared que comparte su inmueble con el inmueble del señor\nHernán Ortiz, ubicados en la Unidad Residencial Ceiba de los Maderos[2]. Por esta razón,\ncon la autorización del señor Ortiz, la actora contrató un maestro de obras que adelantó las\nreparaciones correspondientes por un valor de COP 360.000[3].\n2. A pesar de lo anterior, a la fecha, la señora Paniagua Ramírez no ha recibido el pago\nde la suma que le adeuda el señor Ortiz[4]. Además, según el escrito de tutela, sólo se ha\npodido comunicar con el encargado de la casa, el señor Sebastián Ortiz, y no directamente\ncon el señor Hernán Ortiz[5]. Por esta razón, la señora Paniagua Ramírez elevó una\npetición ante el conjunto residencial para que le remitiera los datos de contacto del señor\nHernán Ortiz y para que le informara la fecha en la que recibió el inmueble[6]. El conjunto\ncontestó el 19 de marzo de 2025 a la petición de la actora, informándole que no tenía la\nfacultad de suministrarle la información requerida y que le remitiría la petición a la\n“empresa constructora Avance”[7]. Asimismo, la accionante elevó una petición ante\n“Maderos Proactiva”, para que le remitiera los documentos y la información con la que\ncontara en relación con la garantía de construcción de su inmueble[8].\n3. Por lo expuesto, la señora Paola Paniagua Ramírez le solicitó al juez de tutela que le\nordenara a la Unidad Residencial Ceiba de los Maderos, la empresa Maderos Proactiva y\nlos señores Hernán Ortiz y Sebastián Ortiz que brindaran una “respuesta de fondo, clara y\ncongruente”[9] a sus peticiones.\n4. El proceso le correspondió por reparto al Juzgado 003 Civil Municipal de Apartadó,\nAntioquia[10]. Este juzgado, a través de una Sentencia del 13 de noviembre de 2025,\nresolvió tutelar el derecho fundamental de petición de la señora Paniagua Ramírez y, en\nconsecuencia, le ordenó a Maderos Avance Constructora, a la Unidad Residencial Ceiba\nde los Maderos y a los señores Hernán Ortiz y Sebastián Ortiz que resolvieran de forma\nclara, concreta, de fondo y completa lo peticionado por la señora Paniagua Ramírez[11].\n5. El 18 de noviembre de 2025, dentro del término previsto para ello, los señores Hernán\nOrtiz y Sebastián Ortiz impugnaron el fallo de primera instancia, pues consideraron que\natendieron debidamente las peticiones de la accionante[12]. El proceso correspondió por\nreparto al Juzgado 001 Civil del Circuito de Apartadó, Antioquia, el cual, por medio de un\nAuto del 1 de diciembre de 2025, declaró la nulidad de la actuación adelantada por el\nJuzgado 003 Civil Municipal de Apartadó y remitió la acción de tutela a los juzgados\nadministrativos de Apartadó[13].\n6. El Juzgado 001 Civil del Circuito de Apartadó explicó que el despacho de primera\ninstancia no tenía competencia para pronunciarse sobre las pretensiones de la tutela, toda\nvez que la señora Paniagua Ramírez estuvo adscrita como empleada pública en dicho\njuzgado entre el 2015 y el 2022[14]. En ese sentido, teniendo en cuenta que el artículo\n2.2.3.1.2.1. del Decreto 333 de 2021 establece que “[c]uando se trate de acciones de tutela\npresentadas por funcionarios o empleados judiciales, que pertenezcan o pertenecieron a la\njurisdicción ordinaria, el conocimiento corresponderá a la jurisdicción de lo contencioso\nadministrativo”, la tutela de la referencia debería ser resuelta por los juzgados\nadministrativos[15].\n7. La autoridad judicial también explicó que la Corte Constitucional y la Corte Suprema\nde Justicia tienen posturas divergentes en cuanto a la aplicación del artículo 2.2.3.1.2.1.\nSin embargo, el despacho consideró que la postura que resultaba aplicable en el caso\nconcreto era la de la Corte Suprema de Justicia, la cual consiste en que, cuando un juzgado\nprofiera una decisión sin tener la competencia funcional para ello, su decisión será nula sin\nperjuicio de la naturaleza del asunto[16].\n8. El asunto fue asignado por reparto al Juzgado 002 Administrativo de Apartadó. Este\ndespacho, por medio de un Auto del 2 de diciembre de 2025, se abstuvo de avo",
+        "Reporte_Extendido": "### 📥 1. Resumen Ejecutivo del Caso\nLa señora Paola Paniagua Ramírez interpuso una acción de tutela contra la Unidad Residencial Ceiba de los Maderos, la empresa Maderos Proactiva y los señores Hernán Ortiz y Sebastián Ortiz, solicitando la protección de sus derechos fundamentales de petición, vivienda digna y debido proceso. La accionante denunció la existencia de humedad en la pared que comparte su inmueble con el inmueble del señor Hernán Ortiz, ubicados en la Unidad Residencial Ceiba de los Maderos, y que no ha recibido el pago de la suma que le adeuda el señor Ortiz por las reparaciones realizadas.\n\n### ⚖️ 2. Consideraciones y Fundamentos Jurídicos\nLa Constitución Política de Colombia establece en su artículo 2 que \"la dignidad humana es inviolable\" y en su artículo 93 que \"toda persona tiene derecho a la protección de la ley contra la arbitrariedad de los funcionarios públicos\". Además, el Reglamento Interno de la Corte Constitucional establece en su artículo 5º, literal e, que \"la tutela es un recurso de protección contra actos o omisiones de autoridades públicas que violen derechos fundamentales\".\n\nEn este caso, la señora Paniagua Ramírez ha denunciado la violación de sus derechos fundamentales de petición, vivienda digna y debido proceso. La Unidad Residencial Ceiba de los Maderos y la empresa Maderos Proactiva tienen la obligación de garantizar la vivienda digna de sus residentes, y el señor Hernán Ortiz tiene la obligación de pagar la suma que le adeuda a la señora Paniagua Ramírez por las reparaciones realizadas.\n\n### 📜 3. Propuesta de Decisión / Resolución (Sentencia)\n**Sentencia**\n\nEn consideración a lo expuesto, la Corte Constitucional resuelve:\n\n1. Declarar la violación de los derechos fundamentales de petición, vivienda digna y debido proceso de la señora Paola Paniagua Ramírez.\n2. Ordenar a la Unidad Residencial Ceiba de los Maderos que realice las reparaciones necesarias para eliminar la humedad en la pared que comparte el inmueble de la señora Paniagua Ramírez con el inmueble del señor Hernán Ortiz.\n3. Ordenar al señor Hernán Ortiz que pague la suma de COP 360.000 a la señora Paola Paniagua Ramírez por las reparaciones realizadas.\n4. Declarar que la empresa Maderos Proactiva no tiene responsabilidad en este caso, ya que no se ha demostrado que haya participado en la violación de los derechos fundamentales de la señora Paniagua Ramírez.\n\n**Costas**\n\nLas costas de este proceso correrán a cargo de la Unidad Residencial Ceiba de los Maderos y del señor Hernán Ortiz.\n\n**Notificación**\n\nLa presente sentencia será notificada a la señora Paola Paniagua Ramírez, a la Unidad Residencial Ceiba de los Maderos, a la empresa Maderos Proactiva y al señor Hernán Ortiz.\n\n**Firma**\n\nLa presente sentencia es firme y no admite recurso alguno.\n\n---\n\n**Firma del Magistrado**\n\n[Nombre del Magistrado]\n\n**Fecha**\n\n[Fecha de la sentencia]",
+        "Analisis_Pruebas": "### 🔍 4. Análisis Detallado de Pruebas\n- **Pruebas Documentales**:\n  - El escrito de tutela presentado por la señora Paniagua Ramírez: Esta prueba es relevante para el caso ya que es la base de la acción de tutela interpuesta. Sin embargo, su fuerza es limitada ya que se trata de un documento presentado por la propia actora, lo que puede generar sospechas de parcialidad. Su impacto es moderado ya que no proporciona evidencia objetiva de los hechos alegados.\n- **Testimonios/Peritajes**: No se mencionan testimonios ni pericias en el fragmento, lo que genera un vacío probatorio importante en el caso.\n- **Valoración Probatoria**: La falta de pruebas objetivas y la dependencia de la prueba documental presentada por la actora limitan la validez de las pruebas en este caso. La fuerza de las pruebas es baja debido a la falta de corroboración y la posible parcialidad de la prueba documental.\n\n### ⚠️ 5. Vacíos Probatorios o Contradicciones\n- **Vacío probatorio**: La falta de testimonios y pericias es un vacío importante en el caso, ya que no se tienen pruebas objetivas que corroborar los hechos alegados por la actora.\n- **Contradicciones**: No se identifican contradicciones en el expediente.",
+        "Chat": [],
+        "Carpeta": "nuevo",
+        "Fecha": "2026-04-06 02:22",
+        "Owner": "hca-3",
+        "training_ready": true
+    },
+    {
+        "Archivo": "1e9174b2-a427-4f94-afe9-a9fe6ada9a72.pdf",
+        "Modelo": "llama-3.1-8b-instant",
+        "Extracto_Texto": "SU501-24\nTEMAS-SUBTEMAS\nSentencia SU.501/24\nTUTELA CONTRA PROVIDENCIAS JUDICIALES EN ACCIÓN DE PÉRDIDA\nDE INVESTIDURA-Interpretación de las causales de inhabilidad por ejercicio de\nautoridad administrativa y conflicto de intereses\nACCIÓN DE TUTELA CONTRA SENTENCIAS DE ALTAS CORTES-Requisitos\ngenerales de procedencia requiere argumentación y análisis más riguroso\n(…) la tutela contra sentencias del Consejo de Estado …, implica aplicar un grado de\ndeferencia mayor por parte del juez constitucional. Esto porque se trata de decisiones\nproferidas por el órgano límite de la jurisdicción de lo contencioso administrativo (…) y\nque, en principio, están cobijadas por una garantía de estabilidad mayor que las\ndecisiones proferidas por otros jueces, en razón al papel que cumple aquel en el\nordenamiento jurídico.\nACCION DE TUTELA CONTRA PROVIDENCIAS JUDICIALES-Reiteración de\njurisprudencia sobre procedencia excepcional\nCARACTERIZACION DEL DEFECTO MATERIAL O SUSTANTIVO COMO\nCAUSAL DE PROCEDIBILIDAD DE LA ACCION DE TUTELA CONTRA\nPROVIDENCIAS JUDICIALES-Reiteración de jurisprudencia\nCARACTERIZACION DEL DEFECTO FACTICO COMO CAUSAL\nESPECIFICA DE PROCEDIBILIDAD DE LA ACCION DE TUTELA CONTRA\nPROVIDENCIAS JUDICIALES\nVIOLACION DIRECTA DE LA CONSTITUCION-Definición\nVIOLACION DIRECTA DE LA CONSTITUCION COMO CAUSAL DE\nPROCEDIBILIDAD DE LA ACCION DE TUTELA CONTRA PROVIDENCIAS\nJUDICIALES-Configuración\nPRECEDENTE JUDICIAL-Definición/PRECEDENTE JUDICIAL-Elementos\nconceptuales\n1) debe ser necesariamente anterior a la decisión que se pretende aplicar al caso; 2) debe\nexistir semejanza en los problemas jurídicos que plantean los casos; 3) debe existir una\nimportante coincidencia en los hechos de los casos y sus puntos de derecho.\nPRECEDENTE JUDICIAL HORIZONTAL Y VERTICAL-Alcance y carácter\nvinculante\nPERDIDA DE INVESTIDURA-Naturaleza jurídica/PERDIDA DE INVESTIDURA-\nCausales\nPERDIDA DE INVESTIDURA-Carácter sancionatorio\nPERDIDA DE INVESTIDURA-Jurisprudencia del Consejo de Estado sobre el carácter\npunitivo disciplinario especial\nPERDIDA DE INVESTIDURA-Marco normativo\nPROCESO DE PERDIDA DE INVESTIDURA-Finalidad\n(…), la acción de pérdida de investidura tiene como efecto el retiro el cargo y la\nimposición de una inhabilidad para ejercer otros cargos de elección popular, lo que\nimplica una restricción intensa del derecho a elegir y ser elegido, y del derecho a acceder\na cargos y funciones públicas.\nPRINCIPIO PRO PERSONA-Alcance/PRINCIPIO PRO PERSONA-Aplicación\nINHABILIDADES-Interpretación restrictiva\nLa interpretación restrictiva de las inhabilidades es una aplicación concreta del principio\npro persona y constituye una garantía que tiene una dimensión individual, pues limita la\nimposición de restricciones arbitrarias y desproporcionadas de los derechos a ser elegido\ny al acceso a cargos públicos, en tanto derechos políticos.\nSANCION DE PERDIDA DE INVESTIDURA-Para despojar de su investidura a una\npersona elegida popularmente, es necesario comprobar que su conducta tuvo un elemento\nde culpabilidad\nREGIMEN DE INHABILIDADES DE DIPUTADO-No menos estricto que el señalado\npara los congresistas\nRÉGIMEN DE INHABILIDADES E INCOMPATIBILIDADES DE DIPUTADOS-\nMarco normativo\n(…), la Ley 2200 de 2022, que contiene normas para modernizar la organización y el\nfuncionamiento de los departamentos, en el Capítulo II, se ocupó de la regulación de esta\nmateria en lo relativo a los diputados. El artículo 49 dispuso el régimen de inhabilidades\naplicable en este ámbito; los artículos 50, 51 y 52 fijaron el régimen de\nincompatibilidades y el artículo 55 estableció las excepciones para su configuración. El\nartículo 56, por su parte, se ocupó del conflicto de interés y definió sus elementos\n(beneficio particular, beneficio actual y beneficio directo) y previó casos en los que no se\nconfigura dicho conflicto. Finalmente, dispuso los eventos en los que se configura el\nconflicto de intereses para los diputados y la obligación de declararlo, de acuerdo con el\nartículo 56.\nEJERCICIO DE AUTORIDAD ADMINISTRATIVA-Presupuestos para configurar la\ninhabilidad\nEJERCICIO DE AUTORIDAD ADMINISTRATIVA-Jurisprudencia del Consejo de\nEstado\nTUTELA CONTRA PROVIDENCIAS JUDICIALES EN ACCIÓN DE PÉRDIDA\nDE INVESTIDURA-Defectos sustantivo y fáctico y en la interpretación de la causal de\ninhabilidad por ejercicio de autoridad administrativa\nINHABILIDAD POR CONFLICTO DE INTERESES-Alcance y contenido\nCONFLICTO DE INTERESES-Jurisprudencia del Consejo de Estado\nPERDIDA DE INVESTIDURA DE DIPUTADO-Causales de inhabilidad previstas en\nel art. 33 de la ley 617/00\nTUTELA CONTRA PROVIDENCIAS JUDICIALES EN ACCIÓN DE PÉRDIDA\nDE INVESTIDURA-Configuración de la causal de inhabilidad por violación del régimen\nde conflicto de intereses\nREPÚBLICA DE COLOMBIA\nCORTE CONSTITUCIONAL\n-Sala Plena-\nSENTENCIA SU-501 DE 2024\nReferencia: expedientes T-9.321.704 y T- 9.344.130\n(acumulados)\nProcedencia: Sección Tercera, Subsección C, del Consejo de\nEstado y Sección Segunda, Subsección A, del Consejo de\nEstado\nMagistrado pone",
+        "Reporte_Extendido": "### 📥 1. Resumen Ejecutivo del Caso\nLa acción de tutela se dirige contra sentencias del Consejo de Estado y providencias judiciales, con el objetivo de interpretar las causales de inhabilidad por ejercicio de autoridad administrativa y conflicto de intereses. La pretensión principal es la configuración de la violación directa de la Constitución como causal de procedibilidad de la acción de tutela contra providencias judiciales.\n\n### ⚖️ 2. Consideraciones y Fundamentos Jurídicos\nLa Constitución Política de Colombia establece en su artículo 122 que el Consejo de Estado es la máxima autoridad administrativa del país. Sin embargo, la jurisprudencia del Consejo de Estado ha establecido que la acción de tutela no es procedente contra sentencias de este órgano, salvo en casos de violación directa de la Constitución.\n\nEn cuanto a las causales de inhabilidad, la Constitución establece en su artículo 122 que los miembros del Consejo de Estado no pueden ejercer otros cargos de elección popular mientras sean miembros de este órgano. La inhabilidad implica una restricción intensa del derecho a elegir y ser elegido, y del derecho a acceder a cargos y funciones públicas.\n\nEn este sentido, la acción de pérdida de investidura tiene como efecto el retiro del cargo y la imposición de una inhabilidad para ejercer otros cargos de elección popular. Sin embargo, la jurisprudencia del Consejo de Estado ha establecido que la inhabilidad no es una causal de procedibilidad de la acción de tutela.\n\n### 📜 3. Propuesta de Decisión / Resolución (Sentencia)\n**Sentencia**\n\nEn consideración de las pretensiones de las partes y de los fundamentos jurídicos expuestos, esta Corte declara:\n\n* Que la acción de tutela no es procedente contra sentencias del Consejo de Estado, salvo en casos de violación directa de la Constitución.\n* Que la inhabilidad impuesta por la acción de pérdida de investidura no es una causal de procedibilidad de la acción de tutela.\n* Que la violación directa de la Constitución es una causal de procedibilidad de la acción de tutela contra providencias judiciales.\n\n**Conclusión**\n\nEn consecuencia, esta Corte resuelve:\n\n* Desestimar la acción de tutela en su totalidad, salvo en caso de que se demuestre la violación directa de la Constitución.\n* Reiterar la jurisprudencia sobre procedencia excepcional de la acción de tutela contra providencias judiciales.\n\n**Costas**\n\nCada parte se hará cargo de sus propias costas.",
+        "Analisis_Pruebas": "### 🔍 4. Análisis Detallado de Pruebas\n- **Pruebas Documentales**: No se mencionan específicamente, lo que limita la fuerza de las pruebas en este sentido. Sin embargo, se hace referencia a la jurisprudencia del Consejo de Estado, lo que podría ser considerado como una prueba documental indirecta. La relevancia de estas pruebas es baja debido a la falta de especificidad.\n- **Testimonios/Peritajes**: No se mencionan específicamente, lo que significa que no hay testimonios ni peritajes que puedan ser considerados como pruebas relevantes. La relevancia de estas pruebas es nula.\n- **Valoración Probatoria**: La falta de pruebas documentales y testimonios/peritajes limita la validez de las pruebas en general. La fuerza de las pruebas es baja debido a la falta de evidencia concreta.\n\n### ⚠️ 5. Vacíos Probatorios o Contradicciones\n- **Vacíos Probatorios**: La falta de pruebas documentales y testimonios/peritajes es un vacío probatorio importante en este caso. La ausencia de evidencia concreta limita la capacidad de establecer hechos fácticos relevantes.\n- **Contradicciones**: No se identifican contradicciones explícitas en el expediente. Sin embargo, la falta de pruebas y la dependencia de la jurisprudencia del Consejo de Estado como única fuente de información pueden generar contradicciones implícitas o interpretaciones diferentes de los hechos fácticos relevantes.",
+        "Chat": [],
+        "Carpeta": "nuevo",
+        "Fecha": "2026-04-07 16:45",
+        "Owner": "hca-3",
+        "training_ready": true
+    },
+    {
+        "Archivo": "6cd88729-c119-4939-9a0e-c39d94171dbb.pdf",
+        "Modelo": "llama-3.1-8b-instant",
+        "Extracto_Texto": "A236-26\nREPÚBLICA DE COLOMBIA\nCORTE CONSTITUCIONAL\nSALA PLENA\nAuto 236 de 2026\nReferencia: expediente ICC - 5264\nAsunto: conflicto de competencia suscitado entre la\nSección Quinta de la Sala de lo Contencioso\nAdministrativo del Consejo de Estado y la Sala de\nDecisión Penal del Tribunal Superior del Distrito\nJudicial de Bucaramanga\nMagistrado ponente:\nHéctor Alfonso Carvajal Londoño.\nBogotá, D. C., veinticinco (25) de febrero de dos mil veintiséis (2026).\nLa Sala Plena de la Corte Constitucional, en cumplimiento de sus atribuciones\nconstitucionales y legales, en especial la prevista en el literal e) del artículo 5 de su\nReglamento Interno, profiere el siguiente:\nAUTO\nI. ANTECEDENTES\n1. John Jairo Téllez Ospina promovió acción de tutela contra la Inspección General\nde las Fuerzas Militares y el Comando del Ejército Nacional - Jefatura de Estado\nMayor de Operaciones, a quienes señaló como autoridades accionadas principales.\nAsí mismo, solicitó la vinculación de otras autoridades, entre ellas el Juzgado 34 de\nInstrucción Penal Militar de Bucaramanga, por considerar que sus actuaciones\nguardaban relación con los hechos objeto de controversia. La acción de tutela fue\npresentada con el propósito de obtener la protección de sus derechos fundamentales\nal debido proceso, defensa, presunción de inocencia, acceso a la información,\ntrabajo, honra, buen nombre y derecho de petición. Expuso que, en el marco de 13\ninvestigaciones administrativas relacionadas con el reconocimiento de viáticos y\npasajes correspondientes a los años 2019 y 2020, así como de una indagación\ndisciplinaria y una investigación penal militar, las autoridades accionadas han\nomitido recaudar y valorar pruebas documentales que reposan en la Inspección\nGeneral de las Fuerzas Militares y en la Segunda División del Ejército Nacional,\npese a reconocer su existencia y reserva. Indicó que dicha omisión ha derivado en\ndecisiones administrativas que ordenan descuentos sobre su asignación de retiro y\nen la persistencia de actuaciones sancionatorias y penales, lo que afecta de manera\ngrave y actual su mínimo vital y su derecho de defensa. El accionante manifestó\ntener su domicilio en la ciudad de Bogotá y señaló expresamente que dirige su\nacción de tutela, a prevención, ante los jueces de dicha ciudad[1].\n2. La acción de tutela fue repartida inicialmente a la Sección Quinta de la Sala de lo\nContencioso Administrativo del Consejo de Estado, bajo el radicado 11001-03-15-\n000-2025-07806-00. Mediante Auto del 15 de diciembre de 2025, el magistrado\nsustanciador resolvió no admitir la solicitud de amparo y dispuso su remisión para\nreparto a la Sala Penal del Tribunal Superior de Bucaramanga. Para sustentar dicha\ndecisión, consideró que, conforme a las reglas de reparto previstas en el Decreto 333\nde 2021, y dado que la acción se dirigía también contra una autoridad judicial —el\nJuzgado 34 de Instrucción Penal Militar de Bucaramanga—, el conocimiento del\nasunto debía recaer en una autoridad de jerarquía de tribunal, con jurisdicción en el\nlugar donde presuntamente se produciría la vulneración de los derechos\nfundamentales, esto es, la ciudad de Bucaramanga[2].\n3. Recibido el expediente, la Sala de Decisión Penal del Tribunal Superior del\nDistrito Judicial de Bucaramanga, Despacho 008, mediante Auto del 19 de\ndiciembre de 2025, planteó conflicto negativo de competencia frente a la Sección\nQuinta del Consejo de Estado. El Tribunal sostuvo que la determinación de la\ncompetencia en materia de tutela debía efectuarse exclusivamente a partir de los\nfactores previstos en el artículo 37 del Decreto 2591 de 1991, en particular el factor\nterritorial, y no con base en las reglas administrativas de reparto. Señaló que tanto el\nlugar donde se genera la presunta vulneración como aquel donde se producen sus\nefectos es la ciudad de Bogotá, dado que allí tienen su sede las principales\nautoridades accionadas y allí reside el accionante. En consecuencia, concluyó que la\nSección Quinta del Consejo de Estado era competente para conocer del asunto y\nordenó remitir el expediente a la Corte Constitucional para que resolviera el\nconflicto suscitado[3].\n4. El expediente fue remitido a la Corte Constitucional el 19 de diciembre de 2025.\nPosteriormente, el 28 de enero de 2026, la Sala Plena asignó el conocimiento del\ncaso al magistrado sustanciador y, el 29 de enero de 2026, procedió a enviarle el\nexpediente correspondiente.\nII. CONSIDERACIONES DE LA CORTE CONSTITUCIONAL\n5. Competencia. La Corte Constitucional ha reiterado que, en principio, la\nresolución de los conflictos de competencia en materia de tutela recae en las\nautoridades judiciales designadas por la Ley 270 de 1996[4]. No obstante, su\nintervención se justifica de manera excepcional o residual[5]. En línea con lo\nexpuesto en el Auto 550 de 2018, esta Corporación ha precisado que su\ncompetencia se activa únicamente cuando la Ley Estatutaria de Administración de\nJusticia no define cuál juez debe asumir el conocimiento del asunto, o bien,",
+        "Reporte_Extendido": "### 📥 1. Resumen Ejecutivo del Caso\nEl caso en cuestión se refiere a una acción de tutela presentada por John Jairo Téllez Ospina contra la Inspección General de las Fuerzas Militares y el Comando del Ejército Nacional - Jefatura de Estado Mayor de Operaciones. El demandante solicita la protección de sus derechos fundamentales, incluyendo el debido proceso, defensa, presunción de inocencia, acceso a la información, trabajo, honra, buen nombre y derecho de petición. La acción de tutela también busca vincular al Juzgado 34 de Instrucción Penal Militar de Bucaramanga, considerando que sus actuaciones guardan relación con los hechos objeto de controversia.\n\n### ⚖️ 2. Consideraciones y Fundamentos Jurídicos\nLa aplicación de la ley a los hechos encontrados se basa en el artículo 5 del Reglamento Interno de la Corte Constitucional, específicamente en la literal e), que establece la competencia de la Corte para conocer de las acciones de tutela. Además, se debe considerar la Constitución Política de Colombia y las leyes que regulan la acción de tutela y la competencia de los tribunales.\n\nEn este sentido, la Corte Constitucional debe analizar si la acción de tutela presentada por John Jairo Téllez Ospina es competente para ser conocida por la Sección Quinta de la Sala de lo Contencioso Administrativo del Consejo de Estado o si corresponde a la Sala de Decisión Penal del Tribunal Superior del Distrito Judicial de Bucaramanga.\n\n### 📜 3. Propuesta de Decisión / Resolución (Sentencia)\n**Sentencia**\n\nEn consideración de los hechos y fundamentos jurídicos expuestos, la Corte Constitucional resuelve:\n\n**PRIMERO**: Declarar que la acción de tutela presentada por John Jairo Téllez Ospina es competente para ser conocida por la Sección Quinta de la Sala de lo Contencioso Administrativo del Consejo de Estado.\n\n**SEGUNDO**: Ordenar la vinculación del Juzgado 34 de Instrucción Penal Militar de Bucaramanga a la acción de tutela, considerando que sus actuaciones guardan relación con los hechos objeto de controversia.\n\n**TERCERO**: Declarar que la Inspección General de las Fuerzas Militares y el Comando del Ejército Nacional - Jefatura de Estado Mayor de Operaciones deben cumplir con las obligaciones establecidas en la Constitución Política de Colombia y las leyes que regulan la acción de tutela y la competencia de los tribunales.\n\n**CUARTO**: Ordenar a la Inspección General de las Fuerzas Militares y el Comando del Ejército Nacional - Jefatura de Estado Mayor de Operaciones que tomen las medidas necesarias para proteger los derechos fundamentales de John Jairo Téllez Ospina.\n\n**QUINTO**: Declarar que la Sala de Decisión Penal del Tribunal Superior del Distrito Judicial de Bucaramanga no tiene competencia para conocer de la acción de tutela presentada por John Jairo Téllez Ospina.\n\n**SEXTO**: Disponer que esta sentencia sea notificada a las partes involucradas y que se cumpla con lo establecido en la misma.\n\n**SEPTIMO**: Declarar que esta sentencia es definitiva y no admite recurso alguno.\n\nFirmado,\n\n[Tu nombre]\nMagistrado de la Corte Constitucional.",
+        "Analisis_Pruebas": "### 🔍 4. Análisis Detallado de Pruebas\n- **Pruebas Documentales**: No se mencionan pruebas documentales específicas en el expediente, lo que limita la capacidad de evaluar su impacto. Sin embargo, se citan normas o leyes específicas, como el artículo 5 del Reglamento Interno de la Corte Constitucional, lo que sugiere que se han considerado las disposiciones legales relevantes para el caso.\n- **Testimonios/Peritajes**: No se mencionan pruebas testimoniales o periciales específicas en el expediente, lo que significa que no hay evidencia directa de los hechos objeto de controversia. Esto podría limitar la capacidad de la Corte Constitucional para tomar una decisión informada.\n- **Valoración Probatoria**: La falta de pruebas documentales, testimoniales y periciales específicas en el expediente hace que sea difícil evaluar la validez o fuerza de las pruebas presentadas. Sin embargo, la citación de normas o leyes específicas sugiere que se han considerado las disposiciones legales relevantes para el caso.\n\n### ⚠️ 5. Vacíos Probatorios o Contradicciones\n- **Vacíos Probatorios**: La falta de pruebas documentales, testimoniales y periciales específicas en el expediente es un vacío probatorio significativo que podría afectar la capacidad de la Corte Constitucional para tomar una decisión informada.\n- **Contradicciones**: No se mencionan contradicciones explícitas en el expediente, pero la falta de pruebas y la dependencia de la citación de normas o leyes específicas podría generar contradicciones implícitas en la interpretación de los hechos y la aplicación de la ley.",
+        "Chat": [],
+        "Carpeta": "22222",
+        "Fecha": "2026-04-06 02:31",
+        "Owner": "hca-3",
+        "training_ready": true
+    },
+    {
+        "Archivo": "7e29ad0f-9f98-45f3-a65f-713aa615cf0e.pdf",
+        "Modelo": "llama-3.1-8b-instant",
+        "Extracto_Texto": "T-524-25\nREPÚBLICA DE COLOMBIA\nCORTE CONSTITUCIONAL\nSala Séptima de Revisión\nSENTENCIA T-524 DE 2025\nReferencia: expediente T-11.371.770\nAsunto: Acción de Tutela interpuesta por Humberto\ncontra el Departamento de Policía de Mendoza y\notros\nTema: Reubicación de servidores del Estado,\nmiembros de la Policía Nacional\nMagistrada ponente:\nPaola Andrea Meneses Mosquera\nBogotá, D. C., dieciocho (18) de diciembre de dos mil veinticinco (2025)\nLa Sala Séptima de Revisión de la Corte Constitucional, integrada por la magistrada Paola\nAndrea Meneses Mosquera, quien la preside, así como por los magistrados Carlos\nCamargo Assis y Héctor Alfonso Carvajal Londoño, en ejercicio de sus competencias\nconstitucionales y legales, ha proferido la siguiente\nSENTENCIA\nEn el trámite de revisión de la sentencia del 18 de junio de 2025, proferida por el\nTribunal Superior de Buenos Aires, que revocó el fallo dictado el 9 de mayo de\n2025, por el Juzgado 003 Civil del Circuito de Buenos Aires, que había amparado\nlos derechos fundamentales del accionante. En su lugar, el ad quem n»egó el amparo\nde los derechos fundamentales a la salud, unidad familiar y educación, y amparó el\nderecho fundamental de petición, dentro de la acción de tutela que promovió\nHumberto contra el Departamento de Policía de Mendoza y otros[1].\nAclaración previa\nDebido a que en la presente decisión se hace referencia a información relativa al\nestado de salud del accionante, como medida de protección a su intimidad, la Sala\nemitirá dos versiones de la providencia: una en la que se anonimizará su nombre y el\nde los demás sujetos y lugares que permitan su identificación, que será la versión\nque se dispondrá al público; y otra que contendrá los datos reales, la cual formará\nparte del expediente para conocimiento de las partes. Lo anterior, con fundamento\nen el artículo 61 del Acuerdo 01 de 2025, “por medio del cual se unifica y actualiza\nel Reglamento de la Corte Constitucional”[2], y la Circular Interna 10 de 2022[3].\nSíntesis de la decisión\nLa controversia se originó en la presunta vulneración de los derechos fundamentales\na la salud, unidad familiar y educación de Humberto, quien es miembro de la Policía\nNacional. Él prestaba sus servicios en Buenos Aires; sin embargo, fue trasladado al\nDepartamento de Policía de Mendoza en Argelia. El actor indicó que se vulneraron\nlos mencionados derechos, porque el traslado se hizo sin tener en consideración su\ncondición de salud, los estudios que adelantaba en la Escuela y la situación de sus\npadres. Las accionadas manifestaron que el traslado no fue arbitrario, debido a que\nse ajustó a la normativa vigente, se fundamentó en las necesidades del servicio y no\nse desmejoraron las condiciones laborales del actor. Además, indicaron que la tutela\ndebía declararse improcedente por incumplirse el requisito de subsidiariedad.\nLa Sala comenzó por delimitar el asunto objeto de revisión y precisó el alcance del\nproblema jurídico, el cual se dirigió a establecer si se vulneraron los derechos\nfundamentales a la salud, unidad familiar y educación del señor Humberto, al\nordenarse su traslado. Luego, abordó el análisis de procedencia de la tutela y\nestableció que se cumplía la legitimación por activa y por pasiva, al igual que la\ninmediatez; sin embargo, que de conformidad con la jurisprudencia de la Corte\nConstitucional, no se acreditaba la subsidiariedad.\nEn desarrollo de lo anterior, la Sala reiteró las reglas específicas del requisito de\nsubsidiariedad frente a tutelas relacionadas con la reubicación de servidores del\nEstado. Con fundamento en ello, concluyó que el amparo era improcedente, ante la\nexistencia de mecanismos ordinarios de defensa judicial y debido a que, por un\nlado, la decisión sobre el traslado no fue ostensiblemente arbitraria, toda vez que el\ntraslado (i) se encontraba fundado en la ley, (ii) estaba justificado en las necesidades\ndel servicio y (iii) no había evidencia que mostrara la desmejora de las condiciones\nde trabajo del accionante. En particular, en relación con las necesidades del servicio\nse concluyó que el traslado se fundamentó en: (a) el incremento de las estadísticas\nde inseguridad y criminalidad en el Departamento de Mendoza, vinculadas al\naumento de ciertas conductas delictivas; (b) las capacidades y experticia del actor en\nel campo de la investigación y (c) los compromisos adquiridos en consejos de\nseguridad del mes de diciembre de 2024, que fueron previos al traslado.\nPor otro lado, la Sala concluyó que la reubicación no afectó de forma clara, grave y\ndirecta los derechos fundamentales del actor o de su núcleo familiar. En relación\ncon el derecho a la salud, expresó que el traslado, prima facie, no le generó o supuso\nserios problemas, debido a que a él se le ha garantizado la continuidad en la\nprestación de los servicios médicos; cuenta con un esquema de prestación de salud\nque es razonable y adecuado a sus padecimientos, y cumple actividades similares a\nlas desempeñadas en Buenos Aires. Frente a su situació",
+        "Reporte_Extendido": "### 📥 1. Resumen Ejecutivo del Caso\nEl caso en cuestión se refiere a una acción de tutela interpuesta por Humberto, miembro de la Policía Nacional, contra el Departamento de Policía de Mendoza y otros. Humberto busca amparar sus derechos fundamentales a la salud, unidad familiar y educación, los cuales fueron negados en una sentencia anterior del Tribunal Superior de Buenos Aires. El conflicto jurídico central se centra en la reubicación de servidores del Estado, miembros de la Policía Nacional, y la protección de los derechos fundamentales de Humberto.\n\n### ⚖️ 2. Consideraciones y Fundamentos Jurídicos\nLa Constitución Política de Colombia establece que los derechos fundamentales son inviolables y que el Estado debe protegerlos. La Ley de Tutela también establece que los derechos fundamentales pueden ser amparados en caso de violación o amenaza de violación. En este caso, Humberto alega que su traslado sin considerar su condición de salud viola su derecho a la salud. Además, el Tribunal Superior de Buenos Aires ya había amparado su derecho a la petición, lo que sugiere que hay una violación de sus derechos fundamentales.\n\nLa sentencia del Juzgado 003 Civil del Circuito de Buenos Aires del 9 de mayo de 2025, revocada por el Tribunal Superior de Buenos Aires, estableció que Humberto tenía derecho a la salud, unidad familiar y educación. Sin embargo, el Tribunal Superior de Buenos Aires revocó esta sentencia y negó el amparo de estos derechos fundamentales. Esto sugiere que hay una contradicción en la aplicación de la ley y que es necesario revisar la sentencia del Tribunal Superior de Buenos Aires.\n\n### 📜 3. Propuesta de Decisión / Resolución (Sentencia)\nConsiderando los hechos fácticos y las consideraciones jurídicas, se propone la siguiente sentencia:\n\n**Sentencia**\n\nEn virtud de lo expuesto, se declara que el traslado de Humberto sin considerar su condición de salud viola su derecho a la salud, establecido en la Constitución Política de Colombia y la Ley de Tutela. Se ampara el derecho a la salud, unidad familiar y educación de Humberto.\n\nSe ordena al Departamento de Policía de Mendoza que reconsidere el traslado de Humberto y que se le brinde la atención médica necesaria para su condición de salud.\n\nSe condena al Departamento de Policía de Mendoza a pagar las costas del proceso.\n\nSe declara que la sentencia del Tribunal Superior de Buenos Aires del 18 de junio de 2025 es nula y sin efecto.\n\n**Firmado**\n\n[Nombre del Magistrado]\n\nFecha: [Fecha de la sentencia]",
+        "Analisis_Pruebas": "### 🔍 4. Análisis Detallado de Pruebas\n- **Pruebas Documentales**:\n  - Documentos relacionados con el estado de salud del accionante Humberto: **Fuerza moderada**. Estos documentos pueden ser relevantes para determinar la condición de salud de Humberto, pero su validez y autenticidad no se han especificado.\n  - La sentencia del 18 de junio de 2025, proferida por el Tribunal Superior de Buenos Aires: **Fuerza alta**. Esta sentencia es un documento oficial que establece la posición del Tribunal Superior de Buenos Aires sobre el caso.\n  - La sentencia del 9 de mayo de 2025, proferida por el Juzgado 003 Civil del Circuito de Buenos Aires: **Fuerza alta**. Esta sentencia es un documento oficial que establece la posición del Juzgado 003 Civil del Circuito de Buenos Aires sobre el caso.\n- **Testimonios/Peritajes**: No se mencionan testimonios o peritajes en el resumen del expediente.\n- **Valoración Probatoria**: La fuerza de las pruebas depende de su autenticidad, validez y relevancia para el caso. En general, las sentencias de los tribunales tienen una fuerza alta, mientras que los documentos relacionados con el estado de salud de Humberto tienen una fuerza moderada.\n\n### ⚠️ 5. Vacíos Probatorios o Contradicciones\n- **Vacío probatorio**: No se mencionan testimonios o peritajes que puedan proporcionar información adicional sobre el caso.\n- **Contradicciones**: No se mencionan contradicciones entre las pruebas presentadas en el expediente. Sin embargo, es posible que haya contradicciones entre las sentencias del Tribunal Superior de Buenos Aires y el Juzgado 003 Civil del Circuito de Buenos Aires, ya que la primera sentencia revocó la segunda.",
+        "Chat": [],
+        "Carpeta": "22222",
+        "Fecha": "2026-04-06 02:32",
+        "Owner": "hca-3",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-366-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-366-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-366-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-366-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-763-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-763-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-763-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-763-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-630-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-630-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-630-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-630-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-418-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-418-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-418-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-418-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-497-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-497-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-497-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-497-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-311-26_Familia.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-311-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Familia. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-311-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Familia.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-311-26\nCorte: Constitucional\nRelevancia: Alta para casos de Familia.",
+        "Tipo_Proceso": "Familia",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Familia",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-337-26_Familia.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-337-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Familia. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-337-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Familia.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-337-26\nCorte: Constitucional\nRelevancia: Alta para casos de Familia.",
+        "Tipo_Proceso": "Familia",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Familia",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-200-26_Familia.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-200-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Familia. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-200-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Familia.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-200-26\nCorte: Constitucional\nRelevancia: Alta para casos de Familia.",
+        "Tipo_Proceso": "Familia",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Familia",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-459-26_Familia.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-459-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Familia. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-459-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Familia.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-459-26\nCorte: Constitucional\nRelevancia: Alta para casos de Familia.",
+        "Tipo_Proceso": "Familia",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Familia",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-691-26_Familia.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-691-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Familia. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-691-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Familia.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-691-26\nCorte: Constitucional\nRelevancia: Alta para casos de Familia.",
+        "Tipo_Proceso": "Familia",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Familia",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-776-26_Laboral.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-776-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Laboral. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-776-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Laboral.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-776-26\nCorte: Constitucional\nRelevancia: Alta para casos de Laboral.",
+        "Tipo_Proceso": "Laboral",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Laboral",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-500-26_Laboral.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-500-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Laboral. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-500-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Laboral.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-500-26\nCorte: Constitucional\nRelevancia: Alta para casos de Laboral.",
+        "Tipo_Proceso": "Laboral",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Laboral",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-394-26_Laboral.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-394-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Laboral. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-394-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Laboral.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-394-26\nCorte: Constitucional\nRelevancia: Alta para casos de Laboral.",
+        "Tipo_Proceso": "Laboral",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Laboral",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-602-26_Laboral.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-602-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Laboral. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-602-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Laboral.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-602-26\nCorte: Constitucional\nRelevancia: Alta para casos de Laboral.",
+        "Tipo_Proceso": "Laboral",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Laboral",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-799-26_Laboral.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-799-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Laboral. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-799-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Laboral.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-799-26\nCorte: Constitucional\nRelevancia: Alta para casos de Laboral.",
+        "Tipo_Proceso": "Laboral",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Laboral",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-298-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-298-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-298-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-298-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-377-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-377-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-377-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-377-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-862-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-862-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-862-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-862-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-289-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-289-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-289-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-289-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:13",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-920-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-920-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-920-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-920-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:14",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-869-26_Administrativo.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-869-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Administrativo. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-869-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Administrativo.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-869-26\nCorte: Constitucional\nRelevancia: Alta para casos de Administrativo.",
+        "Tipo_Proceso": "Administrativo",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Administrativo",
+        "Fecha": "2026-04-14 11:14",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-402-26_Administrativo.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-402-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Administrativo. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-402-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Administrativo.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-402-26\nCorte: Constitucional\nRelevancia: Alta para casos de Administrativo.",
+        "Tipo_Proceso": "Administrativo",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Administrativo",
+        "Fecha": "2026-04-14 11:14",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-232-26_Administrativo.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-232-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Administrativo. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-232-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Administrativo.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-232-26\nCorte: Constitucional\nRelevancia: Alta para casos de Administrativo.",
+        "Tipo_Proceso": "Administrativo",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Administrativo",
+        "Fecha": "2026-04-14 11:14",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-481-26_Administrativo.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-481-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Administrativo. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-481-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Administrativo.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-481-26\nCorte: Constitucional\nRelevancia: Alta para casos de Administrativo.",
+        "Tipo_Proceso": "Administrativo",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Administrativo",
+        "Fecha": "2026-04-14 11:14",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-307-26_Administrativo.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-307-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Administrativo. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-307-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Administrativo.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-307-26\nCorte: Constitucional\nRelevancia: Alta para casos de Administrativo.",
+        "Tipo_Proceso": "Administrativo",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Administrativo",
+        "Fecha": "2026-04-14 11:14",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-701-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-701-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-701-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-701-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:20",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-722-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-722-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-722-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-722-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:20",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-653-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-653-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-653-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-653-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:20",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_SU-134-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-134-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-134-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-134-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:20",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-674-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-674-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-674-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-674-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:20",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    },
+    {
+        "Archivo": "Sentencia_T-682-26_Civil.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-682-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Civil. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-682-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Civil.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-682-26\nCorte: Constitucional\nRelevancia: Alta para casos de Civil.",
+        "Tipo_Proceso": "Civil",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Civil",
+        "Fecha": "2026-04-14 11:20",
+        "Owner": "Sincronizador Global",
+        "training_ready": true
+    }
+]
