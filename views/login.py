@@ -70,6 +70,8 @@ def _render_login_form(auth: AuthManager) -> None:
             st.session_state["current_user"] = user
             st.session_state["role"] = user.role
             st.session_state["display_name"] = user.display_name
+            # Guardamos persistencia en la URL
+            st.query_params["active_user"] = user.username
             st.rerun()
         else:
             st.error("❌ Credenciales incorrectas.")

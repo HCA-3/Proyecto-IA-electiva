@@ -27,6 +27,7 @@ from ui.components import (
     render_extracted_text, render_results, SidebarState,
     render_floating_assistant, render_file_explorer
 )
+from ui.styles import show_book_animation
 
 
 def render_user_panel(user: User, client: GroqClient) -> None:
@@ -211,7 +212,9 @@ def _render_analysis_tab(user: User, client: GroqClient, sidebar: SidebarState) 
 
                 st.session_state["cases_db"] = load_triage_cases()
                 progress_bar.progress(1.0, text="¡Análisis completado! Ve a la pestaña 'Workspace'.")
-                st.balloons()
+                show_book_animation()
+                time.sleep(3) # Pausa para ver la lluvia de abogados
+                st.rerun()
 
 
 def _render_workspace_tab(user: User, client: GroqClient, sidebar: SidebarState) -> None:
@@ -466,7 +469,9 @@ def _render_rama_tab(user: User, client: GroqClient, sidebar: SidebarState) -> N
                 save_triage_case(new_case, user.username, "Sincronizados API")
                 
                 st.info(f"📂 El expediente se ha descargado y organizado en: `data/organized/{res['tipo']}/Radicado_{rad}.pdf`")
-                st.balloons()
+                show_book_animation()
+                time.sleep(3) # Pausa para ver la animación
+                st.rerun()
 
 
 def _render_info_tab() -> None:
@@ -507,4 +512,5 @@ def _render_topbar(user: User) -> None:
         st.markdown(f"<br><div style='text-align:right;'><b>{user.display_name}</b></div>", unsafe_allow_html=True)
         if st.button("Salir", key="top_logout"):
             st.session_state.clear()
+            st.query_params.clear() # Limpiar persistencia de la URL
             st.rerun()

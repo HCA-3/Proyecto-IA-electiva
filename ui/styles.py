@@ -1,9 +1,21 @@
-"""
-ui/styles.py
-------------
-Reglas CSS inyectadas globalmente en Streamlit.
-Soporta múltiples temas: Moderno, Oscuro Judicial y Alto Contraste.
-"""
+def show_book_animation():
+    import streamlit as st
+    import random
+    
+    # Emojis temáticos de Abogados y Justicia
+    law_emojis = ["👨‍⚖️", "👩‍⚖️", "💼", "🏢", "⚖️", "📜", "🏛️", "🖋️", "🤝"]
+    html_code = ""
+    
+    # Creamos un contenedor para que la lluvia no se corte al instante
+    for i in range(35):
+        emoji = random.choice(law_emojis)
+        left = random.randint(0, 95)
+        delay = random.uniform(0, 1.5)
+        duration = random.uniform(2.5, 4.5)
+        size = random.uniform(2.0, 3.5)
+        html_code += f'<div class="book-particle" style="left:{left}%; animation-delay:{delay}s; animation-duration:{duration}s; font-size:{size}rem;">{emoji}</div>'
+    
+    st.markdown(html_code, unsafe_allow_html=True)
 
 def get_css_styles(theme: str = "Moderno (Default)") -> str:
     # Colores por defecto (Moderno)
@@ -45,6 +57,22 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     --border-color: {border_color};
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}}
+
+/* Animación de Libros Voladores */
+@keyframes book-fly {{
+    0% {{ transform: translateY(110vh) rotate(0deg); opacity: 0; }}
+    10% {{ opacity: 1; }}
+    90% {{ opacity: 1; }}
+    100% {{ transform: translateY(-20vh) rotate(360deg); opacity: 0; }}
+}}
+
+.book-particle {{
+    position: fixed;
+    bottom: -100px;
+    z-index: 999999;
+    pointer-events: none;
+    animation: book-fly linear forwards;
 }}
 
 .stApp {{

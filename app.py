@@ -37,10 +37,28 @@ if "api_client" not in st.session_state:
 def main():
     auth = st.session_state["auth_manager"]
     client = st.session_state["api_client"]
+    
+    # --- LÓGICA DE PERSISTENCIA ---
+    # Si no estamos autenticados en session_state, revisamos la URL (Query Params)
+    if not st.session_state.get("authenticated", False):
+        query_user = st.query_params.get("active_user")
+        if query_user:
+            # Intentar recuperar la sesión del usuario guardado
+            user_obj = next((u for u in auth.list_users() if u.username == query_user), None)
+            if user_obj:
+                st.session_state["authenticated"] = True
+                st.session_state["current_user"] = user_obj
+                st.session_state["role"] = user_obj.role
+                st.rerun()
+
     is_authenticated = st.session_state.get("authenticated", False)
 
     if not is_authenticated:
-        render_login_page(auth)
+        # Al loguearse con éxito, guardamos en query_params
+        res = render_login_page(auth)
+        if res: # Si el login fue exitoso
+            st.query_params["active_user"] = st.session_state["current_user"].username
+            st.rerun()
     else:
         role = st.session_state.get("role")
         user = st.session_state.get("current_user")

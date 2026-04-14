@@ -21,6 +21,7 @@ from core.database import (
     update_case_chat_bulk, load_folders, save_folder
 )
 from ui.components import render_sidebar, render_metrics, render_extracted_text, render_results
+from ui.styles import show_book_animation
 
 # Archivo de configuración de ajustes del panel admin
 ADMIN_CONFIG_FILE = os.path.join("data", "admin_settings.json")
@@ -161,7 +162,10 @@ def _tab_web_sync_admin(client: GroqClient) -> None:
             files = syncer.sync_from_court(cat, count, progress_callback=update_p)
             
             st.success(f"✅ ¡Sincronización Completada! Se han importado {len(files)} documentos a la base de datos de {cat}.")
-            st.balloons()
+            show_book_animation()
+            st.session_state["cases_db"] = load_triage_cases() # Recargar datos reales
+            time.sleep(2)
+            st.rerun() # Refrescar toda la UI
 
 
 # ==============================================================
@@ -624,8 +628,7 @@ def _tab_settings_v2() -> None:
                     data=pdf_data,
                     file_name="Reporte_Taller_IA_Justicia.pdf",
                     mime="application/pdf",
-                    use_container_width=True
-                )
+                    )
         else:
             st.warning("No hay datos suficientes para generar el informe.")
 
@@ -635,15 +638,15 @@ def _tab_settings_v2() -> None:
         
         with st.expander("📖 GUÍA DE FLUJO DE TRABAJO"):
             st.markdown("""
-            Para garantizar la precisión del sistema, siga este orden de operación:
+            Para garantizar la eficacia del prototipo, siga este orden de operación mejorado:
             
-            1. **Selección de Rama Judicial:** Antes de cargar archivos, elija la especialidad (Civil, Familia, etc.) en el selector inicial. Esto organiza toda la jurisprudencia futura.
-            2. **Gestión de Carpetas:** Cree una carpeta en la pestaña 'Cargar' para organizar el nuevo expediente.
-            3. **Sincronización Web (Admin):** Si es administrador, use el 'Sincronizador Global' para importar sentencias reales de la web y nutrir el sistema.
-            4. **Procesamiento (OCR + IA):** Suba los folios. El sistema generará una propuesta de sentencia y un análisis de pruebas basado en la rama seleccionada.
-            5. **Revisión en Workspace:** Compare la propuesta con el expediente original y consulte el historial de chat.
-            6. **Consulta Semántica:** Pulse **'Buscar Precedentes'** para encontrar casos similares en su repositorio local (Base de Datos Vectorial).
-            7. **Cierre de Ciclo:** Califique la respuesta como 'Correcta' o 'Incorrecta' para alimentar las métricas de precisión.
+            0. **Continuidad de Sesión:** El sistema implementa *Query Params*. Puede refrescar la página en cualquier momento sin perder su sesión activa. El cierre solo es efectivo al pulsar 'Salir'.
+            1. **Selección de Rama Judicial:** Elija la especialidad antes de procesar folios para que la IA aplique el marco legal correcto.
+            2. **Sincronización Web (Admin):** Use el sincronizador para nutrir la base de datos de precedentes con sentencias reales de la Corte.
+            3. **Procesamiento y UX:** Al subir archivos, el sistema activará la **Lluvia de Abogados** (Animación Temática) indicando que la IA ha finalizado el análisis con éxito.
+            4. **Actualización Automática:** No es necesario refrescar. Los datos se actualizan en el acto tras cada descarga o análisis masivo.
+            5. **Consulta Semántica:** En el Workspace, use 'Buscar Precedentes' para encontrar casos similares mediante la base vectorial.
+            6. **Métricas de Calidad:** Califique las respuestas para alimentar el informe técnico final.
             """)
         
         st.info("💡 **Consejo:** Use archivos PDF con texto seleccionable siempre que sea posible para mejorar la velocidad y exactitud de la IA.")
@@ -874,8 +877,20 @@ def _generate_workshop_report(cases: list) -> bytes:
     pdf.set_font("helvetica", "", 10)
     pdf.multi_cell(0, 6, (
         "1. Escalabilidad: Se recomienda integrar una base de datos vectorial real (Pinecone) para manejo nacional.\n"
-        "2. Costos: Una implementación a gran escala requeriría infraestructura dedicada para manejar picos de demanda.\n"
-        "3. Capacitación: El personal judicial debe ser entrenado en 'Prompt Engineering' para ajustar la IA a la casuística local."
+        "2. Automatización: Conexión directa mediante WebHooks a los despachos de la Rama Judicial.\n"
+        "3. Continuidad: Implementación de PWA para acceso móvil desde juzgados de circuito."
+    ))
+
+    # 7. Continuidad Operativa y UX
+    pdf.ln(5)
+    pdf.set_font("helvetica", "B", 12)
+    pdf.cell(0, 10, "7. CONTINUIDAD OPERATIVA Y EXPERIENCIA DE USUARIO (UX)", ln=True)
+    pdf.set_font("helvetica", "", 10)
+    pdf.multi_cell(0, 6, (
+        "El prototipo final ha sido optimizado para la adopción real en el entorno judicial:\n"
+        "- Persistencia de Sesión: Uso de Query Params para evitar cierres accidentales al refrescar la página.\n"
+        "- Gamificación y UX: Implementación de micro-animaciones temáticas (Lluvia de Abogados) para reducir la fricción en el uso de la herramienta.\n"
+        "- Actualización Proactiva: Recarga automática de componentes tras la ingesta de datos masiva."
     ))
 
     pdf.ln(5)
@@ -897,4 +912,5 @@ def _render_topbar(user: User) -> None:
         st.markdown(f"<br>🔴 **{user.display_name}**", unsafe_allow_html=True)
         if st.button("Cerrar Sesión", key="admin_logout_btn"):
             st.session_state.clear()
+            st.query_params.clear() # Limpiar persistencia de la URL
             st.rerun()
