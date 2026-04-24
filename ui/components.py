@@ -38,34 +38,41 @@ def render_sidebar(client: GroqClient) -> SidebarState:
         saved_key = load_api_key()
         if "groq_api_key" not in st.session_state and saved_key:
             st.session_state["groq_api_key"] = saved_key
+            client.set_api_key(saved_key)
 
-        api_key = st.text_input(
-            "API Key",
-            type="password",
-            value=st.session_state.get("groq_api_key", ""),
-            placeholder="gsk_...",
-            help="Consigue tu API Key gratis en console.groq.com",
-            label_visibility="collapsed"
-        )
+        # Solo mostramos la gestión de API Key si no hay una clave válida guardada
+        # o si el usuario quiere cambiarla explícitamente (solo administradores)
+        is_admin = st.session_state.get("role") == "admin" # O la lógica que prefieras
         
-        if api_key != st.session_state.get("groq_api_key", ""):
-            st.session_state["groq_api_key"] = api_key
-            save_api_key(api_key)
+        if not saved_key or is_admin:
+            api_key = st.text_input(
+                "API Key",
+                type="password",
+                value=st.session_state.get("groq_api_key", ""),
+                placeholder="gsk_...",
+                help="Consigue tu API Key gratis en console.groq.com",
+                label_visibility="collapsed"
+            )
             
-        if api_key:
-            client.set_api_key(api_key)
+            if api_key != st.session_state.get("groq_api_key", ""):
+                st.session_state["groq_api_key"] = api_key
+                save_api_key(api_key)
+                client.set_api_key(api_key)
+        else:
+            api_key = saved_key
 
         connected, models = client.check_connection()
 
         if connected:
-            st.markdown('<span class="status-ok">🟢 Groq Conectado</span>', unsafe_allow_html=True)
-            st.caption("Peticiones ultra-rápidas mediante LPU")
+            if is_admin:
+                st.markdown('<span class="status-ok">🟢 Groq Conectado</span>', unsafe_allow_html=True)
         else:
-            st.markdown('<span class="status-error">🔴 Sin conexión</span>', unsafe_allow_html=True)
-            if not api_key:
-                st.warning("⚠️ Introduce tu clave de API de Groq para continuar.")
-            else:
-                st.error("⚠️ Clave de API inválida.")
+            if is_admin:
+                st.markdown('<span class="status-error">🔴 Sin conexión</span>', unsafe_allow_html=True)
+                if not api_key:
+                    st.warning("⚠️ Introduce tu clave de API de Groq para continuar.")
+                else:
+                    st.error("⚠️ Clave de API inválida.")
 
         st.divider()
 
@@ -100,7 +107,7 @@ def render_sidebar(client: GroqClient) -> SidebarState:
     return SidebarState(
         api_connected=connected,
         available_models=models,
-        selected_model=selected_model or models[0],
+        selected_model=selected_model if (connected and models) else "llama-3.1-8b-instant",
         chunk_size=chunk_size,
         max_parts=max_parts,
     )
