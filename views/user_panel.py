@@ -314,21 +314,18 @@ def _render_workspace_tab(user: User, client: GroqClient, sidebar: SidebarState)
                 st.rerun()
 
             st.markdown("---")
-            st.markdown("#### 📁 Cargar Prueba Adicional (Imagen / Audio / Doc)")
-            extra_file = st.file_uploader("Adjuntar archivo:", type=["pdf", "png", "jpg", "mp3", "wav", "m4a"], key=f"extra_{fname}")
+            st.markdown("#### 📁 Cargar Prueba Adicional (Documentos de Escritura)")
+            st.caption("Solo se permiten documentos de texto (.pdf, .docx, .txt). No se admiten fotos ni videos.")
+            extra_file = st.file_uploader("Adjuntar documento de prueba:", type=["pdf", "docx", "txt"], key=f"extra_{fname}")
             if extra_file:
                 if st.button("Interpretación de Prueba", use_container_width=True):
                     with st.spinner("Analizando prueba multimedia..."):
                         extracted_text = ""
-                        if extra_file.type.startswith("audio"):
-                            # Transcribir audio
-                            extracted_text = client.transcribe(extra_file)
-                        else:
-                            # Procesar como documento/imagen
-                            from core.extractor import DocumentExtractor
-                            extractor = DocumentExtractor(client=client)
-                            ext = extractor.extract(extra_file, extra_file.type)
-                            extracted_text = ext.text
+                        # Procesar como documento de texto
+                        from core.extractor import DocumentExtractor
+                        extractor = DocumentExtractor(client=client)
+                        ext = extractor.extract(extra_file, extra_file.type)
+                        extracted_text = ext.text
                         
                         # Interpretar prueba
                         prompt = f"Analiza esta prueba específica y explica su relevancia para el caso: '{extracted_text}'"

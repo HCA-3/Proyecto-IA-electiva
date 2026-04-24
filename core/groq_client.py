@@ -31,8 +31,15 @@ class GroqClient:
 
     def __init__(self, api_key: str | None = None) -> None:
         """Inicializa validando si hay una API KEY."""
-        self._api_key = api_key or st.session_state.get("groq_api_key", "")
+        # 1. Intentar obtener de los argumentos
+        # 2. Intentar obtener de la sesión de Streamlit
+        # 3. Intentar obtener de la base de datos local (config.json)
+        from core.database import load_api_key
+        
+        self._api_key = api_key or st.session_state.get("groq_api_key", "") or load_api_key()
+        
         if self._api_key:
+            st.session_state["groq_api_key"] = self._api_key # Asegurar en sesión
             try:
                 self.client = Groq(api_key=self._api_key)
             except Exception:
