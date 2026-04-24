@@ -2,8 +2,8 @@ services:
   - type: web
     name: justicia-ia
     env: docker
-    plan: free # Puedes cambiar a 'starter' si necesitas más recursos
-    region: oregon # O la región que prefieras
+    plan: free
+    region: oregon
     dockerFilePath: ./Dockerfile
     healthCheckPath: /
     envVars:
@@ -11,9 +11,8 @@ services:
         value: 8501
       - key: PYTHON_VERSION
         value: 3.11.0
-    # Si necesitas persistencia de datos (casos.json), descomenta lo siguiente:
-    # (Nota: Los discos persistentes no están disponibles en el plan gratuito de Render)
-    # disk:
-    #   name: justicia-data
-    #   mountPath: /app/data
-    #   sizeGB: 1
+      # ── Secretos: configúralos en el Dashboard de Render (no los escribas aquí) ──
+      - key: MONGODB_URI
+        sync: false   # Render te pedirá el valor en su panel web
+      - key: GROQ_API_KEY
+        sync: false   # La API Key de Groq va aquí para máxima seguridad
