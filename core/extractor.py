@@ -34,7 +34,8 @@ class DocumentExtractor:
     _OCR_LANGUAGES: str = "spa+eng"
     _RAW_DOCS_PATH: str = os.path.join("data", "raw_documents")
 
-    def __init__(self) -> None:
+    def __init__(self, client: Any = None) -> None:
+        self.client = client
         if not os.path.exists(self._RAW_DOCS_PATH):
             os.makedirs(self._RAW_DOCS_PATH)
 
@@ -111,10 +112,22 @@ class DocumentExtractor:
         )
 
     def _extract_image(self, file: BinaryIO) -> ExtractionResult:
-        """Extrae texto de una imagen mediante OCR (Tesseract)."""
+        """Extrae texto de una imagen mediante OCR (Groq Vision o Tesseract como fallback)."""
         try:
-            image = Image.open(file)
-            text = pytesseract.image_to_string(image, lang=self._OCR_LANGUAGES)
+            image_bytes = file.read()
+            if self.client:
+                # Usamos Groq Vision para evitar depender de Tesseract en el servidor
+                text = self.client.generate_vision(
+                    prompt="Extrae todo el texto de esta imagen de forma literal. Si es un documento legal, mantén la estructura.",
+                    image_bytes=image_bytes
+                )
+            else:
+                # Fallback local con Tesseract
+                from PIL import Image
+                import pytesseract
+                import io
+                image = Image.open(io.BytesIO(image_bytes))
+                text = pytesseract.image_to_string(image, lang=self._OCR_LANGUAGES)
         except Exception as exc:
             raise RuntimeError(f"Error al procesar la imagen con OCR: {exc}") from exc
 

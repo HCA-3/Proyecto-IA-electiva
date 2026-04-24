@@ -58,6 +58,22 @@
             {
                 "role": "assistant",
                 "content": "Basado en el expediente proporcionado, la Corte Constitucional ha declarado INCONSTITUCIONAL el Decreto Ley 1094 de 2024 debido a que no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT.\n\nEn este sentido, la respuesta a la pregunta judicial sería:\n\n**La Corte Constitucional debería derogar el Decreto Ley 1094 de 2024 y no permitir su aplicación en el futuro.**\n\nAdemás, las costas del proceso correrían a cargo de las partes demandantes, según lo establecido en el artículo 176 de la Constitución Política de Colombia."
+            },
+            {
+                "role": "user",
+                "content": "resumen"
+            },
+            {
+                "role": "assistant",
+                "content": "**Resumen del Caso**\n\nLa Corte Constitucional de Colombia se enfrenta a una demanda de inconstitucionalidad contra el Decreto Ley 1094 de 2024, que reconoce el mandato de la Autoridad Territorial Económica y Ambiental (ATEA) y establece competencias, funcionamiento y mecanismos de coordinación para su ejercicio en los territorios que la conforman. Las demandas se presentaron por el presunto desconocimiento del derecho a la consulta previa de los pueblos indígenas. La Corte debe determinar la constitucionalidad o inconstitucionalidad del Decreto Ley 1094 de 2024.\n\n**Fundamentos Jurídicos**\n\nLa Constitución Política de Colombia y el Convenio 169 de la Organización Internacional del Trabajo establecen el derecho a la consulta previa de los pueblos indígenas en casos que puedan afectar sus tierras, territorios o recursos. El Decreto Ley 1094 de 2024 debe ser analizado en relación con estos derechos.\n\n**Propuesta de Decisión**\n\nLa Corte Constitucional declara INCONSTITUCIONAL el Decreto Ley 1094 de 2024, en la medida en que no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT. La declaración de inconstitucionalidad tiene como consecuencia la nulidad de la norma demandada y su derogación."
+            },
+            {
+                "role": "user",
+                "content": "cuales son los implicados del caso"
+            },
+            {
+                "role": "assistant",
+                "content": "Según el expediente proporcionado, los implicados en el caso son:\n\n1. **La Corte Constitucional de Colombia**: Es el órgano judicial que debe determinar la constitucionalidad o inconstitucionalidad del Decreto Ley 1094 de 2024.\n2. **El Estado Colombiano**: A través del Decreto Ley 1094 de 2024, el Estado Colombiano estableció competencias, funcionamiento y mecanismos de coordinación para la Autoridad Territorial Económica y Ambiental (ATEA).\n3. **Los pueblos indígenas**: Son los demandantes que presentaron las demandas de inconstitucionalidad contra el Decreto Ley 1094 de 2024, argumentando que no cumple con los requisitos de la consulta previa establecidos en la Constitución Política de Colombia y el Convenio 169 de la OIT.\n4. **La Autoridad Territorial Económica y Ambiental (ATEA)**: Es la entidad que se ve afectada por la decisión de la Corte Constitucional.\n\nEs importante destacar que también hay implicados indirectos, como:\n\n* **La Organización Internacional del Trabajo (OIT)**: A través del Convenio 169, que establece el derecho a la consulta previa de los pueblos indígenas.\n* **La comunidad internacional**: Puede estar interesada en la decisión de la Corte Constitucional, ya que el caso involucra la aplicación de un convenio internacional."
             }
         ]
     },
@@ -2623,6 +2639,66 @@
         "Chat": [],
         "Carpeta": "Jurisprudencia Familia",
         "Fecha": "2026-04-14 11:44",
+        "Owner": "Sincronizador Global"
+    },
+    {
+        "Archivo": "Sentencia_SU-140-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-140-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-140-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-140-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:52",
+        "Owner": "Sincronizador Global"
+    },
+    {
+        "Archivo": "Sentencia_SU-671-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-671-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-671-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-671-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:52",
+        "Owner": "Sincronizador Global"
+    },
+    {
+        "Archivo": "Sentencia_T-794-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-794-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-794-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-794-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:52",
+        "Owner": "Sincronizador Global"
+    },
+    {
+        "Archivo": "Sentencia_SU-307-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA SU-307-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (SU-307-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: SU-307-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:52",
+        "Owner": "Sincronizador Global"
+    },
+    {
+        "Archivo": "Sentencia_T-316-26_Penal.pdf",
+        "Modelo": "llama3-8b-8192",
+        "Extracto_Texto": "SENTENCIA T-316-26. MAGISTRADO PONENTE: Dr. Justicia IA. Tema: Protección de derechos en el ámbito Penal. Hechos: El accionante solicita el amparo de sus derechos fundamentales. Resuelve: Conceder el amparo y ordenar la reparación integral.",
+        "Reporte_Extendido": "### ANÁLISIS DE JURISPRUDENCIA (T-316-26)\nEsta sentencia ha sido importada automáticamente desde la Corte para fortalecer la base de datos de Penal.",
+        "Analisis_Pruebas": "Tipo de Sentencia: T-316-26\nCorte: Constitucional\nRelevancia: Alta para casos de Penal.",
+        "Tipo_Proceso": "Penal",
+        "Chat": [],
+        "Carpeta": "Jurisprudencia Penal",
+        "Fecha": "2026-04-14 11:52",
         "Owner": "Sincronizador Global"
     }
 ]

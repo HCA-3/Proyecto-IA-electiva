@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: justicia-ia
+    env: docker
+    plan: free # Puedes cambiar a 'starter' si necesitas más recursos
+    region: oregon # O la región que prefieras
+    dockerFilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8501
+      - key: PYTHON_VERSION
+        value: 3.11.0
+    # Si necesitas persistencia de datos (casos.json), descomenta lo siguiente:
+    # (Nota: Los discos persistentes no están disponibles en el plan gratuito de Render)
+    # disk:
+    #   name: justicia-data
+    #   mountPath: /app/data
+    #   sizeGB: 1

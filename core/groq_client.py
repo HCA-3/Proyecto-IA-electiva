@@ -123,6 +123,38 @@ class GroqClient:
                         )
                 raise RuntimeError(f"Error en la API de Groq: {exc}")
 
+    def generate_vision(self, prompt: str, image_bytes: bytes, model: str = "llama-3.2-11b-vision-preview") -> str:
+        """
+        Envía una imagen a Groq para extraer texto o analizar contenido.
+        """
+        import base64
+        if not self.client:
+            raise RuntimeError("API Key de Groq no configurada.")
+
+        base64_image = base64.b64encode(image_bytes).decode('utf-8')
+        
+        try:
+            chat_completion = self.client.chat.completions.create(
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": prompt},
+                            {
+                                "type": "image_url",
+                                "image_url": {
+                                    "url": f"data:image/jpeg;base64,{base64_image}",
+                                },
+                            },
+                        ],
+                    }
+                ],
+                model=model,
+            )
+            return chat_completion.choices[0].message.content.strip()
+        except Exception as exc:
+            raise RuntimeError(f"Error en Vision API de Groq: {exc}")
+
     def transcribe(self, audio_file: Any) -> str:
         """
         Transcribe un archivo de audio (mp3, wav, m4a, etc.) usando Whisper en Groq.

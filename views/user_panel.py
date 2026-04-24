@@ -160,7 +160,7 @@ def _render_analysis_tab(user: User, client: GroqClient, sidebar: SidebarState) 
                 st.error("❌ Groq no configurado. Verifica la API en el panel de Admin.")
             else:
                 progress_bar = st.progress(0, text="Iniciando motor de IA...")
-                extractor = DocumentExtractor()
+                extractor = DocumentExtractor(client=client)
                 total = len(up_files)
 
                 for i, f in enumerate(up_files):
@@ -326,7 +326,7 @@ def _render_workspace_tab(user: User, client: GroqClient, sidebar: SidebarState)
                         else:
                             # Procesar como documento/imagen
                             from core.extractor import DocumentExtractor
-                            extractor = DocumentExtractor()
+                            extractor = DocumentExtractor(client=client)
                             ext = extractor.extract(extra_file, extra_file.type)
                             extracted_text = ext.text
                         
