@@ -31,15 +31,14 @@ class GroqClient:
 
     def __init__(self, api_key: str | None = None) -> None:
         """Inicializa validando si hay una API KEY."""
-        # 1. Intentar obtener de los argumentos
-        # 2. Intentar obtener de la sesión de Streamlit
-        # 3. Intentar obtener de la base de datos local (config.json)
         from core.database import load_api_key
         
-        self._api_key = api_key or st.session_state.get("groq_api_key", "") or load_api_key()
+        # Prioridad: 1. Argumento -> 2. Base de datos (Admin) -> 3. Sesión
+        db_key = load_api_key()
+        self._api_key = api_key or db_key or st.session_state.get("groq_api_key", "")
         
         if self._api_key:
-            st.session_state["groq_api_key"] = self._api_key # Asegurar en sesión
+            st.session_state["groq_api_key"] = self._api_key
             try:
                 self.client = Groq(api_key=self._api_key)
             except Exception:
@@ -93,7 +92,7 @@ class GroqClient:
         import re
 
         if not self.client:
-            raise RuntimeError("API Key de Groq no configurada. Añádela en la barra lateral.")
+            raise RuntimeError("El sistema de IA no está configurado por el administrador.")
 
         max_retries = 4
         for attempt in range(max_retries):
