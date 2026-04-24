@@ -229,6 +229,11 @@ def render_floating_assistant(client: GroqClient, model: str) -> None:
                     try:
                         response = client.generate(prompt, model)
                         st.markdown(response)
+                        
+                        # GUARDAR EN DISPOSITIVO LOCAL
+                        from core.database import save_search_history
+                        save_search_history(search_query, response)
+                        
                     except Exception as e:
                         st.error(f"Error en consulta: {e}")
             

@@ -261,6 +261,30 @@ def toggle_training_flag(filename: str, owner: str, flag: bool) -> None:
             json.dump(cases, f, indent=4, ensure_ascii=False)
 
 
+SEARCHES_FILE = os.path.join(DB_PATH, "searches.json")
+
+def save_search_history(query: str, response: str) -> None:
+    """Guarda el historial de consultas legales realizadas en el buscador."""
+    _ensure_db()
+    search_entry = {
+        "fecha": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "consulta": query,
+        "respuesta_ia": response
+    }
+    
+    searches = []
+    if os.path.exists(SEARCHES_FILE):
+        try:
+            with open(SEARCHES_FILE, "r", encoding="utf-8") as f:
+                searches = json.load(f)
+        except:
+            searches = []
+            
+    searches.append(search_entry)
+    
+    with open(SEARCHES_FILE, "w", encoding="utf-8") as f:
+        json.dump(searches, f, indent=4, ensure_ascii=False)
+
 def mock_rama_judicial_search(radicado: str) -> dict[str, Any]:
     """
     Simula una búsqueda en la API de la Rama Judicial.
