@@ -1,4 +1,7 @@
 .venv/
 __pycache__/
 *.pyc
-data/config.json
+.idea/
+.streamlit/secrets.toml
+data/
+!data/.gitkeep

@@ -601,7 +601,24 @@ def _tab_settings_v2() -> None:
             key="cfg_temperature"
         )
 
+        st.divider()
+        st.markdown("#### 🔑 Credenciales de API (Groq)")
+        from core.database import load_api_key, save_api_key
+        current_api_key = st.text_input(
+            "Groq API Key",
+            value=load_api_key(),
+            type="password",
+            help="Clave global del sistema. Se usa para todos los funcionarios.",
+            key="cfg_groq_api_key"
+        )
+
         if st.button("💾 Guardar Cambios de Configuración", type="primary", use_container_width=True):
+            # Guardar API Key primero
+            if current_api_key:
+                save_api_key(current_api_key)
+                if client:
+                    client.set_api_key(current_api_key)
+
             new_settings = {
                 "theme": new_theme,
                 "max_chars": max_chars,

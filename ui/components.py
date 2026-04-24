@@ -42,8 +42,14 @@ def render_sidebar(client: GroqClient) -> SidebarState:
 
         # Solo mostramos la gestión de API Key si no hay una clave válida guardada
         # o si el usuario quiere cambiarla explícitamente (solo administradores)
-        is_admin = st.session_state.get("role") == "admin" # O la lógica que prefieras
+        from auth import Role
+        # Corregimos la lógica de detección de administrador
+        current_role = st.session_state.get("role")
+        is_admin = (getattr(current_role, "value", current_role) == Role.SUPERADMIN.value)
         
+        # El input de la API Key solo se muestra si:
+        # 1. No hay una clave guardada
+        # 2. O el usuario es administrador (para que pueda cambiarla)
         if not saved_key or is_admin:
             api_key = st.text_input(
                 "API Key",
