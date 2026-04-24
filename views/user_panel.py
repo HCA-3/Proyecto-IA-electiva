@@ -72,29 +72,31 @@ def render_user_panel(user: User, client: GroqClient) -> None:
     if f"folders_{user.username}" not in st.session_state:
         st.session_state[f"folders_{user.username}"] = load_folders(user.username)
 
-    tab_analisis, tab_workspace, tab_rama, tab_file_sys, tab_info = st.tabs([
-        "🔍 Cargar y Analizar Expediente",
-        "⚖️ Workspace: Sentencias y Pruebas",
-        "🌐 Rama Judicial (API Sync)",
-        "🗄️ Archivos (Categorización Real)",
-        "🧩 Documentación del Proyecto"
-    ])
+    # Definir pestañas según el rol
+    is_admin = getattr(user.role, "value", user.role) == Role.SUPERADMIN.value
+    
+    if is_admin:
+        tab_list = ["🔍 Cargar y Analizar", "⚖️ Workspace", "🌐 Rama Judicial", "🗄️ Archivos", "🧩 Info"]
+    else:
+        # Los usuarios normales solo ven la funcionalidad core
+        tab_list = ["🔍 Cargar y Analizar Expediente", "⚖️ Workspace: Sentencias y Pruebas", "🗄️ Archivos (Categorización Real)"]
+    
+    tabs = st.tabs(tab_list)
 
-    with tab_analisis:
-        _render_analysis_tab(user, client, sidebar)
-
-    with tab_workspace:
-        _render_workspace_tab(user, client, sidebar)
-
-    with tab_rama:
-        _render_rama_tab(user, client, sidebar)
-        
-    with tab_file_sys:
-        from core.database import ORGANIZED_PATH
-        render_file_explorer(ORGANIZED_PATH)
-
-    with tab_info:
-        _render_info_tab()
+    if is_admin:
+        with tabs[0]: _render_analysis_tab(user, client, sidebar)
+        with tabs[1]: _render_workspace_tab(user, client, sidebar)
+        with tabs[2]: _render_rama_tab(user, client, sidebar)
+        with tabs[3]: 
+            from core.database import ORGANIZED_PATH
+            render_file_explorer(ORGANIZED_PATH)
+        with tabs[4]: _render_info_tab()
+    else:
+        with tabs[0]: _render_analysis_tab(user, client, sidebar)
+        with tabs[1]: _render_workspace_tab(user, client, sidebar)
+        with tabs[2]:
+            from core.database import ORGANIZED_PATH
+            render_file_explorer(ORGANIZED_PATH)
 
 
 def _render_analysis_tab(user: User, client: GroqClient, sidebar: SidebarState) -> None:
