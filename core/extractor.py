@@ -9,11 +9,10 @@ from __future__ import annotations
 
 import os
 from dataclasses import dataclass, field
-from typing import BinaryIO, Callable
+from typing import Any, BinaryIO, Callable
 
 import pdfplumber
 from PIL import Image
-import pytesseract
 
 
 @dataclass
@@ -122,12 +121,17 @@ class DocumentExtractor:
                     image_bytes=image_bytes
                 )
             else:
-                # Fallback local con Tesseract
-                from PIL import Image
-                import pytesseract
-                import io
-                image = Image.open(io.BytesIO(image_bytes))
-                text = pytesseract.image_to_string(image, lang=self._OCR_LANGUAGES)
+                # Fallback local con Tesseract (solo disponible en entorno local)
+                try:
+                    import pytesseract
+                    import io
+                    image = Image.open(io.BytesIO(image_bytes))
+                    text = pytesseract.image_to_string(image, lang=self._OCR_LANGUAGES)
+                except ImportError:
+                    raise RuntimeError(
+                        "No hay cliente de IA disponible para procesar imágenes. "
+                        "El administrador debe configurar la API Key de Groq."
+                    )
         except Exception as exc:
             raise RuntimeError(f"Error al procesar la imagen con OCR: {exc}") from exc
 
