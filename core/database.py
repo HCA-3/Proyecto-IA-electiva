@@ -32,7 +32,7 @@ USE_MONGO: bool = bool(MONGODB_URI)
 if USE_MONGO:
     from pymongo import MongoClient
     from pymongo.collection import Collection
-    import ssl as _ssl
+    import certifi
 
     try:
         _mongo_client = MongoClient(
@@ -40,15 +40,13 @@ if USE_MONGO:
             serverSelectionTimeoutMS=10000,
             connectTimeoutMS=10000,
             socketTimeoutMS=20000,
-            tls=True,
-            tlsAllowInvalidCertificates=False,
-            # Forzar protocolo TLS compatible con OpenSSL en Python 3.12+
-            ssl_cert_reqs=_ssl.CERT_NONE,
+            tlsCAFile=certifi.where(),   # Certificados SSL actualizados (fix para Python 3.12+)
         )
         # Verificar conexión real al iniciar
         _mongo_client.admin.command("ping")
         _mongo_db = _mongo_client["justicia_ia"]
         _MONGO_OK = True
+        print("[INFO] MongoDB Atlas conectado correctamente.")
     except Exception as _mongo_err:
         import sys
         print(f"[WARNING] MongoDB no disponible: {_mongo_err}. Usando almacenamiento local.", file=sys.stderr)
