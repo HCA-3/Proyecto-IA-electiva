@@ -30,13 +30,32 @@ USE_MONGO: bool = bool(MONGODB_URI)
 # ──────────────────────────────────────────────────────────────────────────────
 
 if USE_MONGO:
-    from pymongo import MongoClient, ASCENDING
+    from pymongo import MongoClient
     from pymongo.collection import Collection
+    import ssl as _ssl
 
-    _mongo_client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=5000)
-    _mongo_db = _mongo_client["justicia_ia"]
+    try:
+        _mongo_client = MongoClient(
+            MONGODB_URI,
+            serverSelectionTimeoutMS=10000,
+            connectTimeoutMS=10000,
+            socketTimeoutMS=20000,
+            tls=True,
+            tlsAllowInvalidCertificates=False,
+            # Forzar protocolo TLS compatible con OpenSSL en Python 3.12+
+            ssl_cert_reqs=_ssl.CERT_NONE,
+        )
+        # Verificar conexión real al iniciar
+        _mongo_client.admin.command("ping")
+        _mongo_db = _mongo_client["justicia_ia"]
+        _MONGO_OK = True
+    except Exception as _mongo_err:
+        import sys
+        print(f"[WARNING] MongoDB no disponible: {_mongo_err}. Usando almacenamiento local.", file=sys.stderr)
+        _MONGO_OK = False
+        USE_MONGO = False
 
-    def _col(name: str) -> Collection:
+    def _col(name: str) -> "Collection":
         """Devuelve la colección MongoDB indicada."""
         return _mongo_db[name]
 
