@@ -341,7 +341,6 @@ def _render_workspace_tab(user: User, client: GroqClient, sidebar: SidebarState)
                         msg = {"role": "assistant", "content": f"He analizado la prueba **{extra_file.name}**. Resultados: {interpretation}"}
                         curr["Chat"].append(msg)
                         
-                        from core.database import update_case_metadata, update_case_chat_bulk
                         update_case_metadata(fname, user.username, {"Analisis_Pruebas": curr["Analisis_Pruebas"]})
                         update_case_chat_bulk(fname, [msg])
                         st.success("✅ Prueba integrada y analizada con éxito.")
