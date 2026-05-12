@@ -18,23 +18,26 @@ def show_book_animation():
     st.markdown(html_code, unsafe_allow_html=True)
 
 def get_css_styles(theme: str = "Moderno (Default)") -> str:
-    # Colores actualizados (Moderno - Más profundo y profesional)
-    bg_color = "#eff6ff"
-    card_bg = "#ffffff"
-    text_main = "#0f172a"
-    text_muted = "#475569"
-    primary_color = "#2563eb"
-    hover_color = "#1d4ed8"
-    border_color = "#bfdbfe"
+    # Colores Judiciales con Alto Contraste
+    bg_color = "#dee2e6"  # Gris azulado profesional (contraste real)
+    card_bg = "#ffffff"   # Blanco puro para los cuadros
+    text_main = "#1a202c"
+    text_muted = "#4a5568"
+    primary_color = "#1e3a8a"  # Azul marino profundo
+    hover_color = "#2c5282"
+    border_color = "#cbd5e1"
+    gold_accent = "#b8860b"    # Dorado institucional
+
     
     if theme == "Oscuro Judicial":
-        bg_color = "#020617"
-        card_bg = "#111827"
-        text_main = "#e2e8f0"
+        bg_color = "#0f172a"
+        card_bg = "#1e293b"
+        text_main = "#f8fafc"
         text_muted = "#94a3b8"
-        primary_color = "#7dd3fc"
-        hover_color = "#38bdf8"
+        primary_color = "#38bdf8"
+        hover_color = "#0ea5e9"
         border_color = "#334155"
+        gold_accent = "#fbbf24"
     elif theme == "Alto Contraste":
         bg_color = "#000000"
         card_bg = "#111111"
@@ -43,6 +46,8 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
         primary_color = "#ffff00"
         hover_color = "#ffffff"
         border_color = "#ffffff"
+        gold_accent = "#ffffff"
+
 
     return f"""
 <style>
@@ -56,107 +61,132 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     --primary-color: {primary_color};
     --hover-color: {hover_color};
     --border-color: {border_color};
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --glass-bg: {"rgba(255, 255, 255, 0.7)" if theme == "Moderno (Default)" else "rgba(15, 23, 42, 0.7)"};
-    --glass-border: {"rgba(226, 232, 240, 0.5)" if theme == "Moderno (Default)" else "rgba(51, 65, 85, 0.5)"};
+    --gold-accent: {gold_accent};
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 25px 50px rgba(0, 0, 0, 0.18);
+    --glass-bg: {"rgba(255, 255, 255, 0.95)" if theme == "Moderno (Default)" else "rgba(30, 41, 59, 0.9)"};
+    --glass-border: {"rgba(203, 213, 225, 0.8)" if theme == "Moderno (Default)" else "rgba(51, 65, 85, 0.8)"};
 }}
 
-* {{
+
+/* Aplicar la fuente Inter con toques elegantes */
+html, body, [data-testid="stAppViewContainer"] {{
     font-family: 'Inter', sans-serif !important;
 }}
 
 .stApp {{
     background-color: var(--bg-color) !important;
+    background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.02) 1px, transparent 0);
+    background-size: 24px 24px;
     color: var(--text-main) !important;
 }}
 
-/* Glassmorphism Card */
+/* Glassmorphism Card Judicial */
 .glass-card {{
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    padding: 1.5rem;
+    border-top: 4px solid var(--gold-accent);
+    border-radius: 12px;
+    padding: 1.8rem;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
 }}
 
-.glass-card:hover {{
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}}
-
 .main-title {{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 800;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.04em;
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, var(--primary-color), #8b5cf6, #d946ef);
+    background: linear-gradient(135deg, var(--primary-color), var(--gold-accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
     animation: fadeIn 1s ease-out;
 }}
+
+
 
 @keyframes fadeIn {{
     from {{ opacity: 0; transform: translateY(10px); }}
     to {{ opacity: 1; transform: translateY(0); }}
 }}
 
-/* Improved Sidebar */
+/* Improved Sidebar Judicial */
 [data-testid="stSidebar"] {{
-    background-color: var(--card-bg) !important;
-    border-right: 1px solid var(--border-color);
-    box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-right: 1px solid var(--gold-accent);
+}}
+
+[data-testid="stSidebar"] * {{
+    color: white !important;
 }}
 
 /* Custom Buttons */
 .stButton>button {{
-    border-radius: 10px !important;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
     font-weight: 600 !important;
-    padding: 0.5rem 1.5rem !important;
+    border: 1px solid var(--border-color) !important;
 }}
 
 .stButton>button:hover {{
-    transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    border-color: var(--gold-accent) !important;
+    color: var(--gold-accent) !important;
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2);
 }}
+
 
 /* Step Indicator for Tutorial */
 .step-indicator {{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: var(--primary-color);
-    color: white;
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    color: var(--primary-color);
     border-radius: 50%;
     font-weight: 800;
     margin-right: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border: 2px solid var(--primary-color);
+    animation: pulse-border 2s infinite;
+}}
+
+@keyframes pulse-border {{
+    0% {{ box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }}
+    70% {{ box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }}
+    100% {{ box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }}
 }}
 
 /* Tooltip style for tutorial */
 .tutorial-box {{
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), #0f172a);
     color: white;
-    padding: 1rem;
+    padding: 1.8rem;
     border-radius: 12px;
     position: relative;
-    margin-bottom: 1rem;
-    box-shadow: var(--shadow-lg);
-    border-left: 5px solid #ffffff;
-    animation: bounce 2s infinite;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    border-left: 6px solid var(--gold-accent);
+    animation: slideInUp 0.5s ease-out;
+    backdrop-filter: blur(10px);
+}}
+
+
+@keyframes slideInUp {{
+    from {{ transform: translateY(20px); opacity: 0; }}
+    to {{ transform: translateY(0); opacity: 1; }}
 }}
 
 @keyframes bounce {{
     0%, 100% {{ transform: translateY(0); }}
-    50% {{ transform: translateY(-5px); }}
+    50% {{ transform: translateY(-8px); }}
 }}
+
 
 /* Animación de Libros Voladores */
 @keyframes book-fly {{
@@ -200,6 +230,7 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     padding: 1.6rem;
     box-shadow: 0 18px 48px rgba(37, 99, 235, 0.08);
     margin-bottom: 1.2rem;
+    overflow: hidden;
 }}
 
 .card_black_border {{
@@ -210,6 +241,16 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     margin-bottom: 1rem;
     box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
 }}
+
+/* Fix for File Uploader text overlap */
+[data-testid="stFileUploader"] section {{
+    padding: 1rem !important;
+}}
+
+[data-testid="stFileUploader"] label {{
+    margin-bottom: 0.5rem !important;
+}}
+
 
 .feature-card {{
     background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(248,250,252,0.95));
@@ -337,6 +378,13 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     background-color: var(--card-bg) !important;
     color: var(--text-main) !important;
     border: 1px solid var(--border-color) !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}}
+
+/* Fix for Selectbox arrow alignment */
+.stSelectbox [data-testid="stMarkdownContainer"] {{
+    line-height: 1.5 !important;
 }}
 
 .stMarkdown {{

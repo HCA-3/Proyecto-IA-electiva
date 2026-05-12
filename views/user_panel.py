@@ -27,7 +27,7 @@ from ui.components import (
     render_extracted_text, render_results, SidebarState,
     render_floating_assistant, render_file_explorer,
     render_interactive_guide, render_visual_guide_cards,
-    render_floating_tour_tab, render_tour_modal,
+    render_tour_modal,
     render_tutorial
 )
 from ui.styles import show_book_animation
@@ -59,8 +59,8 @@ def render_user_panel(user: User, client: GroqClient) -> None:
         )
 
     # --- GUÍAS Y TOURS ---
-    render_floating_tour_tab("user")
     render_tour_modal("user")
+
     
     # --- MÉTRICAS RÁPIDAS ---
     cases = st.session_state.get("cases_db", [])
@@ -563,17 +563,23 @@ def _render_info_tab() -> None:
         """)
 
 def _render_topbar(user: User) -> None:
-    c1, c2, c3 = st.columns([5, 1.5, 1])
+    c1, c2, c3, c4 = st.columns([4, 1.5, 1.5, 1])
     with c1:
         st.markdown('<p class="main-title">⚖️ Justicia IA — Asistente</p>', unsafe_allow_html=True)
     with c2:
         st.write("<br>", unsafe_allow_html=True)
-        if st.button("📖 Guía Interactiva", key="btn_tutorial", use_container_width=True):
+        if st.button("📖 Guía Interactiva", key="btn_tutorial_v2", use_container_width=True):
             st.session_state["show_tutorial"] = True
             st.rerun()
     with c3:
+        st.write("<br>", unsafe_allow_html=True)
+        if st.button("🎯 Tutorial Completo", key="btn_tour_v2", use_container_width=True, type="primary"):
+            st.query_params["tour"] = "true"
+            st.rerun()
+    with c4:
         st.markdown(f"<br><div style='text-align:right;'><b>{user.display_name}</b></div>", unsafe_allow_html=True)
         if st.button("Salir", key="top_logout"):
             st.session_state.clear()
             st.query_params.clear() # Limpiar persistencia de la URL
             st.rerun()
+

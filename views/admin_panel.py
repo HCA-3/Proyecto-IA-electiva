@@ -20,7 +20,7 @@ from core.database import (
     load_triage_cases, toggle_training_flag, save_triage_case,
     update_case_chat_bulk, load_folders, save_folder
 )
-from ui.components import render_sidebar, render_metrics, render_extracted_text, render_results, render_interactive_guide, render_visual_guide_cards, render_floating_tour_tab, render_tour_modal
+from ui.components import render_sidebar, render_metrics, render_extracted_text, render_results, render_interactive_guide, render_visual_guide_cards, render_tour_modal
 from ui.styles import show_book_animation
 
 # Archivo de configuración de ajustes del panel admin
@@ -55,8 +55,8 @@ def render_admin_panel(user: User, client: GroqClient, auth: AuthManager) -> Non
     _render_topbar(user)
 
     sidebar = render_sidebar(client)
-    render_floating_tour_tab("admin")
     render_tour_modal("admin")
+
 
     # Guía interactiva paso a paso
     render_interactive_guide("admin")
@@ -928,12 +928,23 @@ def _generate_workshop_report(cases: list) -> bytes:
 # ==============================================================
 
 def _render_topbar(user: User) -> None:
-    c1, c2 = st.columns([4, 1])
+    c1, c2, c3, c4 = st.columns([4, 1.5, 1.5, 1])
     with c1:
         st.markdown('<p class="main-title">⚖️ Justicia IA — Administración</p>', unsafe_allow_html=True)
     with c2:
-        st.markdown(f"<br>🔴 **{user.display_name}**", unsafe_allow_html=True)
-        if st.button("Cerrar Sesión", key="admin_logout_btn"):
+        st.write("<br>", unsafe_allow_html=True)
+        if st.button("📖 Guía Interactiva", key="admin_tutorial_btn", use_container_width=True):
+            st.session_state["show_tutorial"] = True
+            st.rerun()
+    with c3:
+        st.write("<br>", unsafe_allow_html=True)
+        if st.button("🎯 Tutorial Completo", key="admin_tour_btn", use_container_width=True, type="primary"):
+            st.query_params["tour"] = "true"
+            st.rerun()
+    with c4:
+        st.markdown(f"<br><div style='text-align:right;'>🔴 <b>{user.display_name}</b></div>", unsafe_allow_html=True)
+        if st.button("Salir", key="admin_logout_btn"):
             st.session_state.clear()
             st.query_params.clear() # Limpiar persistencia de la URL
             st.rerun()
+

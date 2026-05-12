@@ -31,6 +31,7 @@ class User:
     password_hash: str
     role: Role
     display_name: str
+    has_seen_tutorial: bool = False
 
     def to_dict(self) -> dict:
         d = asdict(self)
@@ -44,7 +45,9 @@ class User:
             password_hash=data["password_hash"],
             role=Role(data["role"]),
             display_name=data["display_name"],
+            has_seen_tutorial=data.get("has_seen_tutorial", False),
         )
+
 
 
 # ---------------------------------------------------------------------------
@@ -112,6 +115,13 @@ class AuthManager:
             display_name=display_name,
         )
         self._save()
+
+    def mark_tutorial_seen(self, username: str) -> None:
+        """Marca que el usuario ya ha visto el tutorial inicial."""
+        key = username.lower().strip()
+        if key in self._users:
+            self._users[key].has_seen_tutorial = True
+            self._save()
 
     def delete_user(self, username: str) -> None:
         """Elimina un usuario. No permite eliminar al último superadmin."""

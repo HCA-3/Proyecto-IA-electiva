@@ -305,147 +305,82 @@ def render_welcome_dashboard() -> None:
         )
 
 
-def render_floating_tour_tab(view: str = "user") -> None:
-    """Crea un botón flotante que abre el tutorial completo de la aplicación."""
-    params = dict(st.query_params)
-    params["tour"] = ["true"]
-    href = "?" + urllib.parse.urlencode(params, doseq=True)
-
-    st.markdown(
-        """
-        <style>
-        .floating-tour-tab {{
-            position: fixed;
-            bottom: 22px;
-            right: 22px;
-            z-index: 99999;
-            background: linear-gradient(135deg, rgba(59,130,246,0.95), rgba(16,185,129,0.95));
-            border-radius: 999px;
-            padding: 0.6rem 1rem;
-            box-shadow: 0 18px 40px rgba(15,23,42,0.18);
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }}
-        .floating-tour-tab:hover {{
-            transform: translateY(-2px);
-            box-shadow: 0 24px 48px rgba(15,23,42,0.24);
-        }}
-        </style>
-        <a class="floating-tour-tab" href="{href}">🎯 Tutorial de la App</a>
-        """.format(href=href),
-        unsafe_allow_html=True,
-    )
 
 
 def render_tour_modal(view: str = "user") -> None:
-    """Muestra un panel flotante con el tour interactivo de la aplicación."""
-    params = dict(st.query_params)
-    if params.get("tour"):
-        close_params = dict(params)
-        close_params.pop("tour", None)
-        close_href = "?" + urllib.parse.urlencode(close_params, doseq=True) if close_params else "./"
-
-        steps = [
-            {
-                "title": "1. Iniciar sesión o registrarse",
-                "description": "Accede con tu cuenta judicial para desbloquear el panel de carga y workspace.",
-            },
-            {
-                "title": "2. Cargar expediente",
-                "description": "Selecciona un PDF o imagen y asígnalo a la carpeta correcta del proceso.",
-            },
-            {
-                "title": "3. Seleccionar rama judicial",
-                "description": "Elige el tipo de proceso (Civil, Penal, Laboral, etc.) antes de procesar.",
-            },
-            {
-                "title": "4. Ejecutar análisis",
-                "description": "Presiona el botón de inicio para generar el informe y ver el progreso de Groq.",
-            },
-            {
-                "title": "5. Revisar y descargar",
-                "description": "Consulta el informe, el texto extraído y descarga el PDF o TXT resultante.",
-            },
-        ]
-
-        if view == "admin":
-            steps.insert(3, {
-                "title": "4. Administrar y sincronizar",
-                "description": "Desde el panel admin puedes crear usuarios, revisar el repositorio y sincronizar jurisprudencia.",
-            })
-
-        steps_html = ""
-        for step in steps:
-            steps_html += f"<div class='tour-step'><h4>{step['title']}</h4><p>{step['description']}</p></div>"
-
+    """Muestra una tarjeta flotante lateral con el resumen del tour."""
+    if st.query_params.get("tour") == "true":
         st.markdown(
-            f"""
+            """
             <style>
-            .tour-overlay {{
+            .floating-tour-card {
                 position: fixed;
-                inset: 0;
-                background: rgba(15, 23, 42, 0.75);
-                z-index: 10000;
-            }}
-            .tour-panel {{
-                position: fixed;
-                top: 5%;
-                left: 50%;
-                transform: translateX(-50%);
-                width: min(95%, 920px);
-                max-height: 90vh;
-                overflow-y: auto;
-                background: #ffffff;
-                border-radius: 24px;
-                padding: 2rem;
-                box-shadow: 0 28px 80px rgba(15, 23, 42, 0.24);
-                z-index: 10001;
-                border: 1px solid rgba(59, 130, 246, 0.22);
-            }}
-            .tour-panel h2 {{
-                margin: 0 0 0.75rem;
-                color: #0f172a;
-            }}
-            .tour-close-button {{
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                background: #2563eb;
-                color: white;
-                padding: 0.55rem 1rem;
-                border-radius: 999px;
-                text-decoration: none;
-                font-weight: 700;
-            }}
-            .tour-step {{
-                background: rgba(59, 130, 246, 0.08);
-                border-left: 4px solid #2563eb;
-                border-radius: 16px;
-                padding: 1rem 1.1rem;
-                margin-bottom: 1rem;
-            }}
-            .tour-step h4 {{
-                margin: 0 0 0.35rem;
-            }}
-            .tour-step p {{
-                margin: 0;
-                color: #334155;
-            }}
+                top: 80px;
+                right: 20px;
+                width: 380px;
+                background: var(--card-bg);
+                border-radius: 12px;
+                padding: 1.5rem;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+                z-index: 9999;
+                border: 1px solid var(--border-color);
+                border-top: 5px solid var(--gold-accent);
+                animation: slideInRight 0.4s ease-out;
+            }
+            @keyframes slideInRight {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            .tour-step-mini {
+                padding: 8px 12px;
+                border-left: 4px solid var(--gold-accent);
+                background: rgba(26, 54, 93, 0.03);
+                margin-bottom: 8px;
+                border-radius: 4px;
+            }
             </style>
-            <div class="tour-overlay"></div>
-            <div class="tour-panel">
-                <a class="tour-close-button" href="{close_href}">Cerrar</a>
-                <h2>Tour Interactivo de Justicia IA</h2>
-                <p>Descubre las funciones clave de la aplicación en este recorrido guiado.</p>
-                {steps_html}
-            </div>
             """,
-            unsafe_allow_html=True,
+            unsafe_allow_html=True
         )
+
+        with st.container():
+            st.markdown('<div class="floating-tour-card">', unsafe_allow_html=True)
+            
+            c1, c2 = st.columns([4, 1])
+            with c1:
+                st.markdown(f"#### <span style='color:var(--primary-color);'>🎯 Guía Rápida</span>", unsafe_allow_html=True)
+            with c2:
+                if st.button("✖️", key=f"tour_close_mini_{view}"):
+                    del st.query_params["tour"]
+                    st.rerun()
+
+            st.markdown("<p style='font-size:0.85rem; color:var(--text-muted);'>Sigue estos pasos para dominar Justicia IA:</p>", unsafe_allow_html=True)
+            
+            steps = [
+                ("1. Inicio", "Accede con tu usuario."),
+                ("2. Carga", "Sube tus expedientes."),
+                ("3. Proceso", "Analiza con IA Groq."),
+                ("4. Workspace", "Gestiona y descarga.")
+            ]
+
+            for title, desc in steps:
+                st.markdown(f"""
+                <div class="tour-step-mini">
+                    <b style="color:var(--primary-color); font-size:0.9rem;">{title}</b><br>
+                    <span style="color:var(--text-main); font-size:0.8rem;">{desc}</span>
+                </div>
+                """, unsafe_allow_html=True)
+
+            
+            if st.button("Abrir Guía Interactiva 📖", key=f"tour_open_full_{view}", use_container_width=True, type="primary"):
+                st.session_state["show_tutorial"] = True
+                del st.query_params["tour"]
+                st.rerun()
+
+            st.markdown('</div>', unsafe_allow_html=True)
+
+
+
 
 
 def render_interactive_guide(view: str = "user") -> None:
@@ -514,16 +449,20 @@ def render_interactive_guide(view: str = "user") -> None:
             unsafe_allow_html=True,
         )
 
-        c1, c2, c3 = st.columns([1, 1, 1])
-        if c1.button("◀️ Anterior", disabled=current_index == 0, key=f"tutorial_prev_{view}"):
-            st.session_state[key] = max(0, current_index - 1)
-            st.experimental_rerun()
-        if c2.button("🔄 Reiniciar guía", key=f"tutorial_reset_{view}"):
-            st.session_state[key] = 0
-            st.experimental_rerun()
-        if c3.button("▶️ Siguiente", disabled=current_index == total_steps - 1, key=f"tutorial_next_{view}"):
-            st.session_state[key] = min(total_steps - 1, current_index + 1)
-            st.experimental_rerun()
+        # Usar una disposición más simple para evitar errores de reconciliación en el DOM
+        col_nav = st.container()
+        with col_nav:
+            btn_prev, btn_reset, btn_next = st.columns(3)
+            if btn_prev.button("◀️ Anterior", disabled=current_index == 0, key=f"tutorial_prev_{view}", use_container_width=True):
+                st.session_state[key] = max(0, current_index - 1)
+                st.rerun()
+            if btn_reset.button("🔄 Reiniciar", key=f"tutorial_reset_{view}", use_container_width=True):
+                st.session_state[key] = 0
+                st.rerun()
+            if btn_next.button("▶️ Siguiente", disabled=current_index == total_steps - 1, key=f"tutorial_next_{view}", use_container_width=True, type="primary"):
+                st.session_state[key] = min(total_steps - 1, current_index + 1)
+                st.rerun()
+
 
 
 def render_floating_assistant(client: GroqClient, model: str) -> None:
@@ -650,29 +589,48 @@ def render_tutorial():
     step = st.session_state["tutorial_step"]
     current = steps[step]
     
-    st.markdown(f"""
-    <div class="tutorial-box">
-        <h4 style="color:white;"><span class="step-indicator">{step + 1}</span> {current['icon']} {current['title']}</h4>
-        <p style="color:white; margin-top:10px;">{current['content']}</p>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    c1, c2, c3 = st.columns([1, 1, 1])
-    if step > 0:
-        if c1.button("⬅️ Anterior", key="tut_prev", use_container_width=True):
-            st.session_state["tutorial_step"] -= 1
-            st.rerun()
-    
-    if step < len(steps) - 1:
-        if c2.button("Siguiente ➡️", key="tut_next", use_container_width=True, type="primary"):
-            st.session_state["tutorial_step"] += 1
-            st.rerun()
-    else:
-        if c2.button("Finalizar 🎉", key="tut_finish", use_container_width=True, type="primary"):
+    # Usar un contenedor dedicado para el contenido dinámico
+    tutorial_container = st.container()
+    with tutorial_container:
+        st.markdown(f"""
+        <div class="tutorial-box">
+            <h4 style="color:white;"><span class="step-indicator">{step + 1}</span> {current['icon']} {current['title']}</h4>
+            <p style="color:white; margin-top:10px;">{current['content']}</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        c1, c2, c3 = st.columns([1, 1, 1])
+        if step > 0:
+            if c1.button("⬅️ Anterior", key="tut_prev", use_container_width=True):
+                st.session_state["tutorial_step"] -= 1
+                st.rerun()
+        
+        if step < len(steps) - 1:
+            if c2.button("Siguiente ➡️", key="tut_next", use_container_width=True, type="primary"):
+                st.session_state["tutorial_step"] += 1
+                st.rerun()
+        else:
+            if c2.button("Finalizar 🎉", key="tut_finish", use_container_width=True, type="primary"):
+                # Persistir que ya vio el tutorial
+                auth = st.session_state.get("auth_manager")
+                user = st.session_state.get("current_user")
+                if auth and user:
+                    auth.mark_tutorial_seen(user.username)
+                    user.has_seen_tutorial = True
+                
+                st.session_state["show_tutorial"] = False
+                st.session_state["tutorial_step"] = 0
+                st.rerun()
+        
+        if c3.button("Cerrar ✖️", key="tut_close", use_container_width=True):
+            # También persistimos si decide cerrarlo para no molestarlo cada vez
+            auth = st.session_state.get("auth_manager")
+            user = st.session_state.get("current_user")
+            if auth and user:
+                auth.mark_tutorial_seen(user.username)
+                user.has_seen_tutorial = True
+                
             st.session_state["show_tutorial"] = False
-            st.session_state["tutorial_step"] = 0
             st.rerun()
-    
-    if c3.button("Cerrar ✖️", key="tut_close", use_container_width=True):
-        st.session_state["show_tutorial"] = False
-        st.rerun()
+
+

@@ -49,6 +49,9 @@ def main():
                 st.session_state["authenticated"] = True
                 st.session_state["current_user"] = user_obj
                 st.session_state["role"] = user_obj.role
+                # Si el usuario no ha visto el tutorial, marcar para mostrar
+                if not getattr(user_obj, "has_seen_tutorial", False):
+                    st.session_state["show_tutorial"] = True
                 st.rerun()
 
     is_authenticated = st.session_state.get("authenticated", False)
@@ -57,8 +60,12 @@ def main():
         # Al loguearse con éxito, guardamos en query_params
         res = render_login_page(auth)
         if res: # Si el login fue exitoso
-            st.query_params["active_user"] = st.session_state["current_user"].username
+            user_obj = st.session_state["current_user"]
+            st.query_params["active_user"] = user_obj.username
+            if not getattr(user_obj, "has_seen_tutorial", False):
+                st.session_state["show_tutorial"] = True
             st.rerun()
+
     else:
         role = st.session_state.get("role")
         user = st.session_state.get("current_user")
