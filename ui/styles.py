@@ -68,11 +68,18 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
 }}
 
 
-/* Forzar color negro en todo el sitio y corregir sobreposición */
-html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stApp, p, h1, h2, h3, h4, h5, h6, span, div, li, a, label, .stMarkdown {{
+/* Forzar color negro de forma selectiva para evitar romper iconos internos */
+.stApp, .stMarkdown, .stMarkdown p, h1, h2, h3, h4, h5, h6, .stButton button, label[data-testid="stWidgetLabel"] p {{
     color: #000000 !important;
     font-family: 'Inter', sans-serif !important;
-    line-height: 1.5 !important; /* Espaciado entre líneas para evitar choques */
+    line-height: 1.5 !important;
+}}
+
+/* Asegurar que los expanders y otros componentes nativos mantengan su layout */
+[data-testid="stExpander"] summary p {{
+    color: #000000 !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
 }}
 
 .stApp {{
@@ -80,6 +87,7 @@ html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stApp
     background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.02) 1px, transparent 0);
     background-size: 24px 24px;
 }}
+
 
 /* Glassmorphism Card Judicial */
 .glass-card {{
@@ -116,15 +124,16 @@ html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stApp
     to {{ opacity: 1; transform: translateY(0); }}
 }}
 
-/* Improved Sidebar Judicial con Letras Negras */
+/* Improved Sidebar Judicial con Letras Negras (Selectivo) */
 [data-testid="stSidebar"] {{
     background-color: #f8fafc !important;
     border-right: 1px solid var(--gold-accent);
 }}
 
-[data-testid="stSidebar"] * {{
+[data-testid="stSidebar"] .stMarkdown p, [data-testid="stSidebar"] label, [data-testid="stSidebar"] button p {{
     color: #000000 !important;
 }}
+
 
 /* Custom Buttons */
 .stButton>button {{
