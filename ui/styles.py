@@ -18,36 +18,34 @@ def show_book_animation():
     st.markdown(html_code, unsafe_allow_html=True)
 
 def get_css_styles(theme: str = "Moderno (Default)") -> str:
-    # Colores Judiciales con Alto Contraste
-    bg_color = "#dee2e6"  # Gris azulado profesional (contraste real)
-    card_bg = "#ffffff"   # Blanco puro para los cuadros
-    text_main = "#1a202c"
-    text_muted = "#4a5568"
-    primary_color = "#1e3a8a"  # Azul marino profundo
+    # Colores Judiciales con Alto Contraste y Letras Negras
+    bg_color = "#dee2e6"
+    card_bg = "#ffffff"
+    text_main = "#000000"  # Negro puro
+    text_muted = "#000000" # Negro puro
+    primary_color = "#1e3a8a"
     hover_color = "#2c5282"
     border_color = "#cbd5e1"
-    gold_accent = "#b8860b"    # Dorado institucional
-
+    gold_accent = "#b8860b"
     
     if theme == "Oscuro Judicial":
         bg_color = "#0f172a"
-        card_bg = "#1e293b"
-        text_main = "#f8fafc"
-        text_muted = "#94a3b8"
+        card_bg = "#ffffff" # Forzamos blanco para que se vea la letra negra
+        text_main = "#000000"
+        text_muted = "#000000"
         primary_color = "#38bdf8"
         hover_color = "#0ea5e9"
         border_color = "#334155"
         gold_accent = "#fbbf24"
     elif theme == "Alto Contraste":
-        bg_color = "#000000"
-        card_bg = "#111111"
-        text_main = "#ffffff"
-        text_muted = "#ffff00"
-        primary_color = "#ffff00"
-        hover_color = "#ffffff"
-        border_color = "#ffffff"
-        gold_accent = "#ffffff"
-
+        bg_color = "#ffffff"
+        card_bg = "#ffffff"
+        text_main = "#000000"
+        text_muted = "#000000"
+        primary_color = "#000000"
+        hover_color = "#000000"
+        border_color = "#000000"
+        gold_accent = "#000000"
 
     return f"""
 <style>
@@ -65,13 +63,14 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.12);
     --shadow-lg: 0 25px 50px rgba(0, 0, 0, 0.18);
-    --glass-bg: {"rgba(255, 255, 255, 0.95)" if theme == "Moderno (Default)" else "rgba(30, 41, 59, 0.9)"};
-    --glass-border: {"rgba(203, 213, 225, 0.8)" if theme == "Moderno (Default)" else "rgba(51, 65, 85, 0.8)"};
+    --glass-bg: {"rgba(255, 255, 255, 0.95)"};
+    --glass-border: {"rgba(203, 213, 225, 0.8)"};
 }}
 
 
-/* Aplicar la fuente Inter con toques elegantes */
-html, body, [data-testid="stAppViewContainer"] {{
+/* Forzar color negro en todo el sitio */
+html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stApp, p, h1, h2, h3, h4, h5, h6, span, div, li, a, label, .stMarkdown {{
+    color: #000000 !important;
     font-family: 'Inter', sans-serif !important;
 }}
 
@@ -79,7 +78,6 @@ html, body, [data-testid="stAppViewContainer"] {{
     background-color: var(--bg-color) !important;
     background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.02) 1px, transparent 0);
     background-size: 24px 24px;
-    color: var(--text-main) !important;
 }}
 
 /* Glassmorphism Card Judicial */
@@ -113,15 +111,14 @@ html, body, [data-testid="stAppViewContainer"] {{
     to {{ opacity: 1; transform: translateY(0); }}
 }}
 
-/* Improved Sidebar Judicial */
+/* Improved Sidebar Judicial con Letras Negras */
 [data-testid="stSidebar"] {{
-    background-color: var(--primary-color) !important;
-    color: white !important;
+    background-color: #f8fafc !important;
     border-right: 1px solid var(--gold-accent);
 }}
 
 [data-testid="stSidebar"] * {{
-    color: white !important;
+    color: #000000 !important;
 }}
 
 /* Custom Buttons */
@@ -130,51 +127,32 @@ html, body, [data-testid="stAppViewContainer"] {{
     transition: all 0.2s ease !important;
     font-weight: 600 !important;
     border: 1px solid var(--border-color) !important;
+    color: #000000 !important;
 }}
 
 .stButton>button:hover {{
     border-color: var(--gold-accent) !important;
-    color: var(--gold-accent) !important;
-    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }}
 
-
-/* Step Indicator for Tutorial */
-.step-indicator {{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: #ffffff;
-    color: var(--primary-color);
-    border-radius: 50%;
-    font-weight: 800;
-    margin-right: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    border: 2px solid var(--primary-color);
-    animation: pulse-border 2s infinite;
-}}
-
-@keyframes pulse-border {{
-    0% {{ box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }}
-    70% {{ box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }}
-    100% {{ box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }}
-}}
-
-/* Tooltip style for tutorial */
+/* Tooltip style for tutorial con Letras Negras */
 .tutorial-box {{
-    background: linear-gradient(135deg, var(--primary-color), #0f172a);
-    color: white;
+    background: #ffffff;
+    color: #000000 !important;
     padding: 1.8rem;
     border-radius: 12px;
     position: relative;
     margin-bottom: 1.5rem;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
     border-left: 6px solid var(--gold-accent);
     animation: slideInUp 0.5s ease-out;
-    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
 }}
+
+.tutorial-box * {{
+    color: #000000 !important;
+}}
+
 
 
 @keyframes slideInUp {{
