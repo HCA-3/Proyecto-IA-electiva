@@ -302,7 +302,7 @@ def render_floating_tour_tab(view: str = "user") -> None:
     href = "?" + urllib.parse.urlencode(params, doseq=True)
 
     st.markdown(
-        f"""
+        """
         <style>
         .floating-tour-tab {{
             position: fixed;
@@ -319,14 +319,14 @@ def render_floating_tour_tab(view: str = "user") -> None:
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-        }
+        }}
         .floating-tour-tab:hover {{
             transform: translateY(-2px);
             box-shadow: 0 24px 48px rgba(15,23,42,0.24);
         }}
         </style>
         <a class="floating-tour-tab" href="{href}">🎯 Tutorial de la App</a>
-        """,
+        """.format(href=href),
         unsafe_allow_html=True,
     )
 
