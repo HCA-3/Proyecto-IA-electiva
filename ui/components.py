@@ -333,7 +333,7 @@ def render_floating_tour_tab(view: str = "user") -> None:
 
 def render_tour_modal(view: str = "user") -> None:
     """Muestra un modal paso a paso con el tour interactivo de la aplicación."""
-    params = st.experimental_get_query_params()
+    params = dict(st.query_params)
     if params.get("tour"):
         with st.modal("Tour Interactivo de Justicia IA"):
             st.markdown("### Guía Paso a Paso")
@@ -374,9 +374,12 @@ def render_tour_modal(view: str = "user") -> None:
                 st.divider()
 
             if st.button("Cerrar Tour", type="primary", use_container_width=True, key=f"tour_close_{view}"):
-                params = st.experimental_get_query_params()
+                params = dict(st.query_params)
                 params.pop("tour", None)
-                st.experimental_set_query_params(**params)
+                if hasattr(st, "set_query_params"):
+                    st.set_query_params(**params)
+                else:
+                    st.experimental_set_query_params(**params)
                 st.experimental_rerun()
 
 
