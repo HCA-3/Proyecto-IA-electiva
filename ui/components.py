@@ -10,6 +10,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 import os
+import urllib.parse
 import streamlit as st
 
 import config
@@ -294,9 +295,46 @@ def render_welcome_dashboard() -> None:
         )
 
 
+def render_floating_tour_tab(view: str = "user") -> None:
+    """Crea un botón flotante que abre el tutorial completo de la aplicación."""
+    params = st.experimental_get_query_params()
+    params["tour"] = ["true"]
+    href = "?" + urllib.parse.urlencode(params, doseq=True)
+
+    st.markdown(
+        f"""
+        <style>
+        .floating-tour-tab {{
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            z-index: 99999;
+            background: linear-gradient(135deg, rgba(59,130,246,0.95), rgba(16,185,129,0.95));
+            border-radius: 999px;
+            padding: 0.6rem 1rem;
+            box-shadow: 0 18px 40px rgba(15,23,42,0.18);
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .floating-tour-tab:hover {{
+            transform: translateY(-2px);
+            box-shadow: 0 24px 48px rgba(15,23,42,0.24);
+        }}
+        </style>
+        <a class="floating-tour-tab" href="{href}">🎯 Tutorial de la App</a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def render_tour_modal(view: str = "user") -> None:
     """Muestra un modal paso a paso con el tour interactivo de la aplicación."""
-    if st.button("🎯 Ver tour paso a paso", key=f"tour_button_{view}"):
+    params = st.experimental_get_query_params()
+    if params.get("tour"):
         with st.modal("Tour Interactivo de Justicia IA"):
             st.markdown("### Guía Paso a Paso")
             st.write("Sigue cada paso para conocer el flujo principal de la plataforma.")
@@ -335,7 +373,11 @@ def render_tour_modal(view: str = "user") -> None:
                 st.markdown(step['description'])
                 st.divider()
 
-            st.button("Cerrar", use_container_width=True, key=f"tour_close_{view}")
+            if st.button("Cerrar Tour", type="primary", use_container_width=True, key=f"tour_close_{view}"):
+                params = st.experimental_get_query_params()
+                params.pop("tour", None)
+                st.experimental_set_query_params(**params)
+                st.experimental_rerun()
 
 
 def render_interactive_guide(view: str = "user") -> None:

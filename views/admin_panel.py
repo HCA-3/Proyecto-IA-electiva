@@ -20,7 +20,7 @@ from core.database import (
     load_triage_cases, toggle_training_flag, save_triage_case,
     update_case_chat_bulk, load_folders, save_folder
 )
-from ui.components import render_sidebar, render_metrics, render_extracted_text, render_results, render_interactive_guide, render_visual_guide_cards, render_initial_animation, render_tour_modal, render_welcome_dashboard
+from ui.components import render_sidebar, render_metrics, render_extracted_text, render_results, render_interactive_guide, render_visual_guide_cards, render_floating_tour_tab, render_tour_modal
 from ui.styles import show_book_animation
 
 # Archivo de configuración de ajustes del panel admin
@@ -53,11 +53,10 @@ def _save_admin_settings(settings: dict) -> None:
 
 def render_admin_panel(user: User, client: GroqClient, auth: AuthManager) -> None:
     _render_topbar(user)
-    render_initial_animation()
-    render_tour_modal("admin")
-    render_welcome_dashboard()
 
     sidebar = render_sidebar(client)
+    render_floating_tour_tab("admin")
+    render_tour_modal("admin")
 
     # Guía interactiva paso a paso
     render_interactive_guide("admin")

@@ -27,16 +27,13 @@ from ui.components import (
     render_extracted_text, render_results, SidebarState,
     render_floating_assistant, render_file_explorer,
     render_interactive_guide, render_visual_guide_cards,
-    render_initial_animation, render_tour_modal, render_welcome_dashboard,
+    render_floating_tour_tab, render_tour_modal,
 )
 from ui.styles import show_book_animation
 
 
 def render_user_panel(user: User, client: GroqClient) -> None:
     _render_topbar(user)
-    render_initial_animation()
-    render_tour_modal("user")
-    render_welcome_dashboard()
 
     if user.role == Role.SUPERADMIN:
         sidebar = render_sidebar(client)
@@ -59,7 +56,10 @@ def render_user_panel(user: User, client: GroqClient) -> None:
             chunk_size=config.DEFAULT_CHUNK_SIZE,
             max_parts=config.DEFAULT_MAX_PARTS
         )
-    
+
+    render_floating_tour_tab("user")
+    render_tour_modal("user")
+
     # Renderizamos el nuevo asistente legal flotante en la sidebar
     render_floating_assistant(client, sidebar.selected_model)
 
