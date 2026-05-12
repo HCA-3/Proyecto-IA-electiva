@@ -436,43 +436,6 @@ def render_tour_modal(view: str = "user") -> None:
             """,
             unsafe_allow_html=True,
         )
-                {
-                    "title": "2. Cargar expediente",
-                    "description": "Selecciona un PDF o imagen y asocialo a la carpeta correcta del proceso.",
-                },
-                {
-                    "title": "3. Seleccionar rama judicial",
-                    "description": "Elige el tipo de proceso (Civil, Penal, Laboral, etc.) antes de procesar.",
-                },
-                {
-                    "title": "4. Ejecutar análisis",
-                    "description": "Presiona el botón de inicio para generar el informe y ver el progreso de Groq.",
-                },
-                {
-                    "title": "5. Revisar y descargar",
-                    "description": "Consulta el informe, el texto extraído y descarga el PDF o TXT resultante.",
-                },
-            ]
-
-            if view == "admin":
-                steps.insert(3, {
-                    "title": "4. Administrar y sincronizar",
-                    "description": "Desde el panel admin puedes crear usuarios, revisar el repositorio y sincronizar jurisprudencia.",
-                })
-
-            for step in steps:
-                st.markdown(f"**{step['title']}**")
-                st.markdown(step['description'])
-                st.divider()
-
-            if st.button("Cerrar Tour", type="primary", use_container_width=True, key=f"tour_close_{view}"):
-                params = dict(st.query_params)
-                params.pop("tour", None)
-                if hasattr(st, "set_query_params"):
-                    st.set_query_params(**params)
-                else:
-                    st.experimental_set_query_params(**params)
-                st.experimental_rerun()
 
 
 def render_interactive_guide(view: str = "user") -> None:
