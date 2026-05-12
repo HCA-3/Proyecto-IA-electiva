@@ -307,7 +307,7 @@ def render_welcome_dashboard() -> None:
 
 def render_floating_tour_tab(view: str = "user") -> None:
     """Crea un botón flotante que abre el tutorial completo de la aplicación."""
-    params = st.experimental_get_query_params()
+    params = dict(st.query_params)
     params["tour"] = ["true"]
     href = "?" + urllib.parse.urlencode(params, doseq=True)
 
@@ -342,52 +342,110 @@ def render_floating_tour_tab(view: str = "user") -> None:
 
 
 def render_tour_modal(view: str = "user") -> None:
-    """Muestra un modal paso a paso con el tour interactivo de la aplicación."""
-    params = st.experimental_get_query_params()
+    """Muestra un panel flotante con el tour interactivo de la aplicación."""
+    params = dict(st.query_params)
     if params.get("tour"):
-        with st.modal("Tour Interactivo de Justicia IA"):
-            st.markdown("### Guía Paso a Paso")
-            st.write("Sigue cada paso para conocer el flujo principal de la plataforma.")
+        close_params = dict(params)
+        close_params.pop("tour", None)
+        close_href = "?" + urllib.parse.urlencode(close_params, doseq=True) if close_params else "./"
 
-            steps = [
-                {
-                    "title": "1. Iniciar sesión o registrarse",
-                    "description": "Accede con tu cuenta judicial para desbloquear el panel de carga y workspace.",
-                },
-                {
-                    "title": "2. Cargar expediente",
-                    "description": "Selecciona un PDF o imagen y asocialo a la carpeta correcta del proceso.",
-                },
-                {
-                    "title": "3. Seleccionar rama judicial",
-                    "description": "Elige el tipo de proceso (Civil, Penal, Laboral, etc.) antes de procesar.",
-                },
-                {
-                    "title": "4. Ejecutar análisis",
-                    "description": "Presiona el botón de inicio para generar el informe y ver el progreso de Groq.",
-                },
-                {
-                    "title": "5. Revisar y descargar",
-                    "description": "Consulta el informe, el texto extraído y descarga el PDF o TXT resultante.",
-                },
-            ]
+        steps = [
+            {
+                "title": "1. Iniciar sesión o registrarse",
+                "description": "Accede con tu cuenta judicial para desbloquear el panel de carga y workspace.",
+            },
+            {
+                "title": "2. Cargar expediente",
+                "description": "Selecciona un PDF o imagen y asígnalo a la carpeta correcta del proceso.",
+            },
+            {
+                "title": "3. Seleccionar rama judicial",
+                "description": "Elige el tipo de proceso (Civil, Penal, Laboral, etc.) antes de procesar.",
+            },
+            {
+                "title": "4. Ejecutar análisis",
+                "description": "Presiona el botón de inicio para generar el informe y ver el progreso de Groq.",
+            },
+            {
+                "title": "5. Revisar y descargar",
+                "description": "Consulta el informe, el texto extraído y descarga el PDF o TXT resultante.",
+            },
+        ]
 
-            if view == "admin":
-                steps.insert(3, {
-                    "title": "4. Administrar y sincronizar",
-                    "description": "Desde el panel admin puedes crear usuarios, revisar el repositorio y sincronizar jurisprudencia.",
-                })
+        if view == "admin":
+            steps.insert(3, {
+                "title": "4. Administrar y sincronizar",
+                "description": "Desde el panel admin puedes crear usuarios, revisar el repositorio y sincronizar jurisprudencia.",
+            })
 
-            for step in steps:
-                st.markdown(f"**{step['title']}**")
-                st.markdown(step['description'])
-                st.divider()
+        steps_html = ""
+        for step in steps:
+            steps_html += f"<div class='tour-step'><h4>{step['title']}</h4><p>{step['description']}</p></div>"
 
-            if st.button("Cerrar Tour", type="primary", use_container_width=True, key=f"tour_close_{view}"):
-                params = st.experimental_get_query_params()
-                params.pop("tour", None)
-                st.experimental_set_query_params(**params)
-                st.experimental_rerun()
+        st.markdown(
+            f"""
+            <style>
+            .tour-overlay {{
+                position: fixed;
+                inset: 0;
+                background: rgba(15, 23, 42, 0.75);
+                z-index: 10000;
+            }}
+            .tour-panel {{
+                position: fixed;
+                top: 5%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: min(95%, 920px);
+                max-height: 90vh;
+                overflow-y: auto;
+                background: #ffffff;
+                border-radius: 24px;
+                padding: 2rem;
+                box-shadow: 0 28px 80px rgba(15, 23, 42, 0.24);
+                z-index: 10001;
+                border: 1px solid rgba(59, 130, 246, 0.22);
+            }}
+            .tour-panel h2 {{
+                margin: 0 0 0.75rem;
+                color: #0f172a;
+            }}
+            .tour-close-button {{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                background: #2563eb;
+                color: white;
+                padding: 0.55rem 1rem;
+                border-radius: 999px;
+                text-decoration: none;
+                font-weight: 700;
+            }}
+            .tour-step {{
+                background: rgba(59, 130, 246, 0.08);
+                border-left: 4px solid #2563eb;
+                border-radius: 16px;
+                padding: 1rem 1.1rem;
+                margin-bottom: 1rem;
+            }}
+            .tour-step h4 {{
+                margin: 0 0 0.35rem;
+            }}
+            .tour-step p {{
+                margin: 0;
+                color: #334155;
+            }}
+            </style>
+            <div class="tour-overlay"></div>
+            <div class="tour-panel">
+                <a class="tour-close-button" href="{close_href}">Cerrar</a>
+                <h2>Tour Interactivo de Justicia IA</h2>
+                <p>Descubre las funciones clave de la aplicación en este recorrido guiado.</p>
+                {steps_html}
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
 
 def render_interactive_guide(view: str = "user") -> None:

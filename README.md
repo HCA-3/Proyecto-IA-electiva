@@ -54,9 +54,18 @@ Justicia/
 │   ├── user_panel.py       # Flujo de 3 pasos: Carpeta -> Archivos -> Inicio
 │   ├── admin_panel.py      # Gestión de sistema y persistencia de ajustes
 │   └── login.py            # Autenticación segura
-└── ui/                     # Diseño y Estilos
-    ├── styles.py           # CSS Dinámico para temas Claro/Oscuro
-    └── components.py       # Sidebar y componentes reutilizables
+├── ui/                     # Diseño y Estilos
+│   ├── styles.py           # CSS Dinámico para temas Claro/Oscuro
+│   └── components.py       # Sidebar y componentes reutilizables
+├── scripts/                # Utilidades y herramientas de soporte
+│   └── extract_pdf.py      # Extracción de texto de PDFs para pruebas o análisis
+├── tests/                  # Pruebas y ejemplos de componentes auxiliares
+│   ├── test_fpdf.py
+│   ├── test_fpdf_loop.py
+│   ├── test_fpdf_wrap.py
+│   └── test_fpdf_y.py
+└── docs/                   # Documentación y recursos adicionales
+    └── README.md           # Guía de organización de documentos
 ```
 
 ---

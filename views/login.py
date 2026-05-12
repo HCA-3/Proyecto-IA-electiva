@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import streamlit as st
 from auth import AuthManager, Role
-from ui.components import render_initial_animation, render_floating_tour_tab, render_tour_modal, render_welcome_dashboard
 
 
 def render_login_page(auth: AuthManager) -> None:
@@ -48,11 +47,6 @@ def render_login_page(auth: AuthManager) -> None:
             """,
             unsafe_allow_html=True,
         )
-
-        render_initial_animation()
-        render_welcome_dashboard()
-        render_floating_tour_tab("login")
-        render_tour_modal("login")
 
         st.info("""
         **🎓 Proyecto de Investigación Académica:**  
