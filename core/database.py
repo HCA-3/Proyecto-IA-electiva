@@ -447,6 +447,22 @@ def save_search_history(query: str, response: str) -> None:
 #  UTILIDADES
 # ══════════════════════════════════════════════════════════════════════════════
 
+def load_search_history() -> list[dict]:
+    """Carga el historial de consultas legales."""
+    if USE_MONGO:
+        return list(_col("searches").find({}, {"_id": 0}).sort("fecha", -1).limit(10))
+
+    _ensure_db()
+    if os.path.exists(SEARCHES_FILE):
+        try:
+            with open(SEARCHES_FILE, "r", encoding="utf-8") as f:
+                history = json.load(f)
+                return sorted(history, key=lambda x: x["fecha"], reverse=True)[:10]
+        except Exception:
+            return []
+    return []
+
+
 def mock_rama_judicial_search(radicado: str) -> dict[str, Any]:
     """Simula una búsqueda en la API de la Rama Judicial (fines académicos)."""
     import random

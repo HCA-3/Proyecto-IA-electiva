@@ -187,20 +187,30 @@ def render_results(filename: str, result: AnalysisResult) -> None:
 
     base_name = filename.rsplit(".", 1)[0]
     
-    col_d1, col_d2 = st.columns([1, 1])
+    col_d1, col_d2, col_d3 = st.columns([1, 1, 1])
     with col_d1:
         st.download_button(
-            label="📄 Descargar Informe (PDF)",
+            label="📄 Descargar PDF",
             data=result.to_pdf(filename),
             file_name=f"{base_name}_judicial.pdf",
             mime="application/pdf",
+            use_container_width=True
         )
     with col_d2:
         st.download_button(
-            label="📝 Descargar (TXT)",
+            label="📝 Descargar DOCX",
+            data=result.to_docx(filename),
+            file_name=f"{base_name}_judicial.docx",
+            mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            use_container_width=True
+        )
+    with col_d3:
+        st.download_button(
+            label="🗒️ Descargar TXT",
             data=result.to_text(filename),
             file_name=f"{base_name}_judicial.txt",
             mime="text/plain",
+            use_container_width=True
         )
 
 
@@ -506,6 +516,17 @@ def render_floating_assistant(client: GroqClient, model: str) -> None:
                         st.error(f"Error en consulta: {e}")
             
             st.info("💡 Consejo: Sé específico con el número de artículo para mayor precisión.")
+            
+            # MOSTRAR HISTORIAL
+            from core.database import load_search_history
+            history = load_search_history()
+            if history:
+                st.divider()
+                st.markdown("#### 🕒 Consultas Recientes")
+                for h in history:
+                    with st.expander(f"📌 {h['consulta'][:30]}...", expanded=False):
+                        st.caption(f"Fecha: {h['fecha']}")
+                        st.markdown(h['respuesta_ia'])
 
 
 def render_file_explorer(organized_path: str) -> None:
@@ -534,3 +555,66 @@ def render_file_explorer(organized_path: str) -> None:
                         # Botón MOCK para abrir/ver (en un app real abriría el archivo)
                         if c2.button("👁️", key=f"view_{cat}_{f}"):
                             st.info(f"Abriendo vista previa de: {f}")
+
+def render_tutorial():
+    """Muestra una guía interactiva paso a paso para el usuario."""
+    if "tutorial_step" not in st.session_state:
+        st.session_state["tutorial_step"] = 0
+    
+    steps = [
+        {
+            "title": "¡Bienvenido a Justicia IA!",
+            "content": "Esta plataforma optimiza tu trabajo judicial mediante Inteligencia Artificial de vanguardia. Sigue esta guía para aprender a usarla en segundos.",
+            "icon": "⚖️"
+        },
+        {
+            "title": "Paso 1: Organiza tu Despacho",
+            "content": "Primero, selecciona la **Rama Judicial** y crea una **Carpeta** para organizar tus procesos (ej: 'Civiles 2024').",
+            "icon": "📂"
+        },
+        {
+            "title": "Paso 2: Carga de Expedientes",
+            "content": "Sube tus archivos PDF o imágenes. Justicia IA extraerá el texto automáticamente usando OCR de alta precisión sobre Groq.",
+            "icon": "📤"
+        },
+        {
+            "title": "Paso 3: Análisis Inteligente",
+            "content": "Haz clic en **INICIAR PROCESO**. La IA generará un borrador de sentencia y analizará las pruebas con tecnología Llama 3.",
+            "icon": "🚀"
+        },
+        {
+            "title": "Paso 4: Workspace 360°",
+            "content": "En la pestaña **Workspace**, podrás ver la sentencia, el análisis de pruebas y chatear directamente con el expediente para resolver dudas.",
+            "icon": "💬"
+        }
+    ]
+    
+    step = st.session_state["tutorial_step"]
+    current = steps[step]
+    
+    st.markdown(f"""
+    <div class="tutorial-box">
+        <h4 style="color:white;"><span class="step-indicator">{step + 1}</span> {current['icon']} {current['title']}</h4>
+        <p style="color:white; margin-top:10px;">{current['content']}</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    c1, c2, c3 = st.columns([1, 1, 1])
+    if step > 0:
+        if c1.button("⬅️ Anterior", key="tut_prev", use_container_width=True):
+            st.session_state["tutorial_step"] -= 1
+            st.rerun()
+    
+    if step < len(steps) - 1:
+        if c2.button("Siguiente ➡️", key="tut_next", use_container_width=True, type="primary"):
+            st.session_state["tutorial_step"] += 1
+            st.rerun()
+    else:
+        if c2.button("Finalizar 🎉", key="tut_finish", use_container_width=True, type="primary"):
+            st.session_state["show_tutorial"] = False
+            st.session_state["tutorial_step"] = 0
+            st.rerun()
+    
+    if c3.button("Cerrar ✖️", key="tut_close", use_container_width=True):
+        st.session_state["show_tutorial"] = False
+        st.rerun()

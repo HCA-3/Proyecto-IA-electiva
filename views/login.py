@@ -21,19 +21,20 @@ def render_login_page(auth: AuthManager) -> None:
 
     with col_c:
         st.markdown("""
-        <div style="text-align:center; padding: 2rem 0 1rem;">
-            <span style="font-size:3.5rem;">⚖️</span>
-            <h1 style="
-                font-size:2rem; font-weight:700; margin:0.5rem 0 0.2rem;
-                background: linear-gradient(90deg,#a78bfa,#60a5fa,#34d399);
-                -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-                background-clip:text;">
-                Justicia IA
-            </h1>
-            <p style="color:#9ca3af; font-size:0.9rem; margin-bottom:1rem;">
-                Asistente Judicial Inteligente
-            </p>
-        </div>
+        <div class="glass-card" style="padding: 2rem;">
+            <div style="text-align:center; padding-bottom: 1rem;">
+                <span style="font-size:3.5rem;">⚖️</span>
+                <h1 style="
+                    font-size:2rem; font-weight:700; margin:0.5rem 0 0.2rem;
+                    background: linear-gradient(90deg,#a78bfa,#60a5fa,#34d399);
+                    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                    background-clip:text;">
+                    Justicia IA
+                </h1>
+                <p style="color:#9ca3af; font-size:0.9rem; margin-bottom:1.5rem;">
+                    Asistente Judicial Inteligente
+                </p>
+            </div>
         """, unsafe_allow_html=True)
 
         st.markdown(
@@ -55,8 +56,7 @@ def render_login_page(auth: AuthManager) -> None:
 
         st.info("""
         **🎓 Proyecto de Investigación Académica:**  
-        Justicia IA es un prototipo desarrollado para la asignatura *'Descubrimiento de problemas y diseño de soluciones con IA'*. 
-        El uso de esta plataforma está limitado a fines experimentales y de investigación académica sobre la descongestión judicial.
+        Desarrollado para la asignatura *'Descubrimiento de problemas y diseño de soluciones con IA'*. 
         """)
 
         _render_login_guide()
@@ -67,6 +67,8 @@ def render_login_page(auth: AuthManager) -> None:
             _render_login_form(auth)
         else:
             _render_signup_form(auth)
+        
+        st.markdown('</div>', unsafe_allow_html=True)
 
 
 def _render_login_form(auth: AuthManager) -> None:

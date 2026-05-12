@@ -28,6 +28,7 @@ from ui.components import (
     render_floating_assistant, render_file_explorer,
     render_interactive_guide, render_visual_guide_cards,
     render_floating_tour_tab, render_tour_modal,
+    render_tutorial
 )
 from ui.styles import show_book_animation
 
@@ -57,22 +58,45 @@ def render_user_panel(user: User, client: GroqClient) -> None:
             max_parts=config.DEFAULT_MAX_PARTS
         )
 
+    # --- GUÍAS Y TOURS ---
     render_floating_tour_tab("user")
     render_tour_modal("user")
+    
+    # --- MÉTRICAS RÁPIDAS ---
+    cases = st.session_state.get("cases_db", [])
+    total_cases = len(cases)
+    folders = st.session_state.get(f"folders_{user.username}", ["Sin carpeta"])
+    
+    m1, m2, m3, m4 = st.columns(4)
+    with m1:
+        st.markdown(f'<div class="glass-card" style="padding:15px; text-align:center;"><p style="margin:0; font-size:0.8rem; color:var(--text-secondary);">📂 Expedientes</p><h3 style="margin:0;">{total_cases}</h3></div>', unsafe_allow_html=True)
+    with m2:
+        st.markdown(f'<div class="glass-card" style="padding:15px; text-align:center;"><p style="margin:0; font-size:0.8rem; color:var(--text-secondary);">📁 Carpetas</p><h3 style="margin:0;">{len(folders)}</h3></div>', unsafe_allow_html=True)
+    with m3:
+        st.markdown(f'<div class="glass-card" style="padding:15px; text-align:center;"><p style="margin:0; font-size:0.8rem; color:var(--text-secondary);">🤖 Modelo</p><h3 style="margin:0; font-size:1.1rem;">Llama 3</h3></div>', unsafe_allow_html=True)
+    with m4:
+        status_color = "#10b981" if sidebar.api_connected else "#ef4444"
+        st.markdown(f'<div class="glass-card" style="padding:15px; text-align:center;"><p style="margin:0; font-size:0.8rem; color:var(--text-secondary);">⚡ Estado API</p><h3 style="margin:0; color:{status_color};">● Conectado</h3></div>', unsafe_allow_html=True)
+
+    st.write("<br>", unsafe_allow_html=True)
 
     # Renderizamos el nuevo asistente legal flotante en la sidebar
     render_floating_assistant(client, sidebar.selected_model)
 
-    # Guía interactiva paso a paso
+    # --- GUÍA INTERACTIVA (MÉTODO 1) ---
     render_interactive_guide("user")
     render_visual_guide_cards("user")
 
-    st.warning(
-        "⚖️ **Asistente de Soporte Judicial:** Esta herramienta genera borradores de decisiones basados en el contenido "
-        "de los expedientes cargados. La responsabilidad final de la providencia recae en el funcionario judicial humano."
-    )
+    # --- GUÍA INTERACTIVA (MÉTODO 2: TUTORIAL FLOTANTE) ---
+    if st.session_state.get("show_tutorial"):
+        render_tutorial()
 
-    st.divider()
+    st.markdown("""
+        <div class="glass-card" style="margin-bottom: 2rem; border-left: 5px solid var(--primary-color);">
+            <p style="margin:0;">⚖️ <b>Asistente de Soporte Judicial:</b> Esta herramienta genera borradores de decisiones basados en el contenido 
+            de los expedientes cargados. La responsabilidad final de la providencia recae en el funcionario judicial humano.</p>
+        </div>
+    """, unsafe_allow_html=True)
 
     # --- Cargar datos ---
     if "cases_db" not in st.session_state:
@@ -109,6 +133,7 @@ def render_user_panel(user: User, client: GroqClient) -> None:
 
 
 def _render_analysis_tab(user: User, client: GroqClient, sidebar: SidebarState) -> None:
+    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.markdown("### 🔍 Configuración del Análisis")
     
     folders = st.session_state.get(f"folders_{user.username}", ["Sin carpeta"])
@@ -226,9 +251,11 @@ def _render_analysis_tab(user: User, client: GroqClient, sidebar: SidebarState) 
                 show_book_animation()
                 time.sleep(3) # Pausa para ver la lluvia de abogados
                 st.rerun()
+    st.markdown('</div>', unsafe_allow_html=True)
 
 
 def _render_workspace_tab(user: User, client: GroqClient, sidebar: SidebarState) -> None:
+    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.markdown("### ⚖️ Gestión de Expedientes y Sentencias")
     
     folders = st.session_state.get(f"folders_{user.username}", ["Sin carpeta"])
@@ -290,6 +317,29 @@ def _render_workspace_tab(user: User, client: GroqClient, sidebar: SidebarState)
     curr = next((c for c in cases_db if c.get("Archivo") == fname), None)
 
     if curr:
+        st.divider()
+        
+        # --- RECONSTRUCCIÓN PARA EXPORTAR ---
+        from core.analyzer import AnalysisResult
+        res_obj = AnalysisResult(
+            model=curr.get("Modelo", "Desconocido"),
+            final_report=curr.get("Reporte_Extendido", ""),
+            evidence_analysis=curr.get("Analisis_Pruebas", ""),
+            process_type=curr.get("Tipo_Proceso", "Otros")
+        )
+        fname_doc = curr.get("Archivo", "documento")
+        base_name_doc = fname_doc.rsplit(".", 1)[0]
+
+        # Botones de exportación en Workspace
+        c_exp1, c_exp2, c_exp3 = st.columns(3)
+        with c_exp1:
+            st.download_button("📄 Descargar PDF", data=res_obj.to_pdf(fname_doc), file_name=f"{base_name_doc}_sentencia.pdf", mime="application/pdf", use_container_width=True, key="ws_dl_pdf")
+        with c_exp2:
+            st.download_button("📝 Descargar Word", data=res_obj.to_docx(fname_doc), file_name=f"{base_name_doc}_sentencia.docx", mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document", use_container_width=True, key="ws_dl_docx")
+        with c_exp3:
+            st.download_button("🗒️ Descargar Texto", data=res_obj.to_text(fname_doc), file_name=f"{base_name_doc}_sentencia.txt", mime="text/plain", use_container_width=True, key="ws_dl_txt")
+
+        st.write("<br>", unsafe_allow_html=True)
         with st.expander("🛠️ ACCIONES RÁPIDAS (Mover / Borrar)", expanded=False):
             m1, m2 = st.columns(2)
             with m1:
@@ -431,6 +481,7 @@ def _render_workspace_tab(user: User, client: GroqClient, sidebar: SidebarState)
                             ans = client.generate(f"Contexto: {ctx[:4000]}\n\nPregunta: {q}", sidebar.selected_model)
                             st.markdown(ans)
                 update_case_chat_bulk(fname, [{"role":"user","content":q}, {"role":"assistant","content":ans}])
+    st.markdown('</div>', unsafe_allow_html=True)
 
 
 def _render_rama_tab(user: User, client: GroqClient, sidebar: SidebarState) -> None:
@@ -512,10 +563,15 @@ def _render_info_tab() -> None:
         """)
 
 def _render_topbar(user: User) -> None:
-    c1, c2 = st.columns([5, 1])
+    c1, c2, c3 = st.columns([5, 1.5, 1])
     with c1:
         st.markdown('<p class="main-title">⚖️ Justicia IA — Asistente</p>', unsafe_allow_html=True)
     with c2:
+        st.write("<br>", unsafe_allow_html=True)
+        if st.button("📖 Guía Interactiva", key="btn_tutorial", use_container_width=True):
+            st.session_state["show_tutorial"] = True
+            st.rerun()
+    with c3:
         st.markdown(f"<br><div style='text-align:right;'><b>{user.display_name}</b></div>", unsafe_allow_html=True)
         if st.button("Salir", key="top_logout"):
             st.session_state.clear()

@@ -18,22 +18,22 @@ def show_book_animation():
     st.markdown(html_code, unsafe_allow_html=True)
 
 def get_css_styles(theme: str = "Moderno (Default)") -> str:
-    # Colores por defecto (Moderno)
-    bg_color = "#f8fafc"
+    # Colores actualizados (Moderno - Más profundo y profesional)
+    bg_color = "#eff6ff"
     card_bg = "#ffffff"
-    text_main = "#1e293b"
-    text_muted = "#64748b"
-    primary_color = "#3b82f6"
-    hover_color = "#2563eb"
-    border_color = "#e2e8f0"
+    text_main = "#0f172a"
+    text_muted = "#475569"
+    primary_color = "#2563eb"
+    hover_color = "#1d4ed8"
+    border_color = "#bfdbfe"
     
     if theme == "Oscuro Judicial":
-        bg_color = "#0f172a"
-        card_bg = "#1e293b"
-        text_main = "#f1f5f9"
+        bg_color = "#020617"
+        card_bg = "#111827"
+        text_main = "#e2e8f0"
         text_muted = "#94a3b8"
-        primary_color = "#60a5fa"
-        hover_color = "#3b82f6"
+        primary_color = "#7dd3fc"
+        hover_color = "#38bdf8"
         border_color = "#334155"
     elif theme == "Alto Contraste":
         bg_color = "#000000"
@@ -46,7 +46,8 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
 
     return f"""
 <style>
-/* Variables dinámicas según el tema */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
 :root {{
     --bg-color: {bg_color};
     --card-bg: {card_bg};
@@ -57,6 +58,104 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     --border-color: {border_color};
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --glass-bg: {"rgba(255, 255, 255, 0.7)" if theme == "Moderno (Default)" else "rgba(15, 23, 42, 0.7)"};
+    --glass-border: {"rgba(226, 232, 240, 0.5)" if theme == "Moderno (Default)" else "rgba(51, 65, 85, 0.5)"};
+}}
+
+* {{
+    font-family: 'Inter', sans-serif !important;
+}}
+
+.stApp {{
+    background-color: var(--bg-color) !important;
+    color: var(--text-main) !important;
+}}
+
+/* Glassmorphism Card */
+.glass-card {{
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}}
+
+.glass-card:hover {{
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}}
+
+.main-title {{
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), #8b5cf6, #d946ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-out;
+}}
+
+@keyframes fadeIn {{
+    from {{ opacity: 0; transform: translateY(10px); }}
+    to {{ opacity: 1; transform: translateY(0); }}
+}}
+
+/* Improved Sidebar */
+[data-testid="stSidebar"] {{
+    background-color: var(--card-bg) !important;
+    border-right: 1px solid var(--border-color);
+    box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+}}
+
+/* Custom Buttons */
+.stButton>button {{
+    border-radius: 10px !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1.5rem !important;
+}}
+
+.stButton>button:hover {{
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}}
+
+/* Step Indicator for Tutorial */
+.step-indicator {{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    font-weight: 800;
+    margin-right: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}}
+
+/* Tooltip style for tutorial */
+.tutorial-box {{
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-lg);
+    border-left: 5px solid #ffffff;
+    animation: bounce 2s infinite;
+}}
+
+@keyframes bounce {{
+    0%, 100% {{ transform: translateY(0); }}
+    50% {{ transform: translateY(-5px); }}
 }}
 
 /* Animación de Libros Voladores */
@@ -75,41 +174,41 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     animation: book-fly linear forwards;
 }}
 
-.stApp {{
-    background-color: var(--bg-color) !important;
-    color: var(--text-main) !important;
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {{
+    gap: 8px;
 }}
 
-/* Forzar color de texto en todos los elementos markdown */
-.stMarkdown, .stMarkdown p, .stMarkdown span, .stMarkdown div, h1, h2, h3, h4, h5, h6 {{
-    color: var(--text-main) !important;
+.stTabs [data-baseweb="tab"] {{
+    height: 45px;
+    background-color: var(--card-bg);
+    border-radius: 8px 8px 0 0;
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    padding: 0 20px;
 }}
 
-.main-title {{
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 0;
-    background: linear-gradient(90deg, var(--primary-color), #8b5cf6, #ec4899);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.stTabs [aria-selected="true"] {{
+    background-color: var(--primary-color) !important;
+    color: white !important;
 }}
 
 .card {{
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: var(--shadow-sm);
-    margin-bottom: 1rem;
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    border-radius: 18px;
+    padding: 1.6rem;
+    box-shadow: 0 18px 48px rgba(37, 99, 235, 0.08);
+    margin-bottom: 1.2rem;
 }}
 
 .card_black_border {{
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1rem;
+    border: 1px solid rgba(37, 99, 235, 0.22);
+    border-radius: 18px;
+    padding: 1.2rem;
     margin-bottom: 1rem;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
 }}
 
 .feature-card {{
@@ -233,11 +332,6 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     margin-bottom: 0.75rem;
 }}
 
-[data-testid="stSidebar"] {{
-    background-color: var(--card-bg) !important;
-    border-right: 1px solid var(--border-color);
-}}
-
 /* Inputs y Selectores */
 .stTextInput>div>div>input, .stSelectbox>div>div>div, .stTextArea>div>div>textarea {{
     background-color: var(--card-bg) !important;
@@ -252,7 +346,7 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
 /* Botones */
 button[kind="primary"] {{
     background: var(--primary-color) !important;
-    color: { "#000000" if theme == "Alto Contraste" else "#ffffff" } !important;
+    color: #ffffff !important;
     border: none !important;
 }}
 

@@ -47,6 +47,36 @@ class AnalysisResult:
             f"{self.evidence_analysis}\n"
         )
 
+    def to_docx(self, filename: str) -> bytes:
+        """Exporta el reporte en formato Word (DOCX)."""
+        from docx import Document
+        from docx.shared import Pt, RGBColor
+        from io import BytesIO
+
+        doc = Document()
+        
+        # Título
+        h = doc.add_heading("INFORME JUDICIAL — JUSTICIA IA", 0)
+        for run in h.runs:
+            run.font.color.rgb = RGBColor(0x1A, 0x1A, 0x8C)
+
+        doc.add_paragraph(f"Expediente: {filename}")
+        doc.add_paragraph(f"Modelo IA: {self.model}")
+        doc.add_paragraph("-" * 50)
+
+        # 1. Resumen y Propuesta
+        doc.add_heading("1. RESUMEN Y PROPUESTA DE SENTENCIA", level=1)
+        doc.add_paragraph(self.final_report)
+
+        # 2. Análisis de Pruebas
+        doc.add_heading("2. ANÁLISIS DE PRUEBAS Y HECHOS", level=1)
+        doc.add_paragraph(self.evidence_analysis)
+
+        # Guardar en buffer
+        buffer = BytesIO()
+        doc.save(buffer)
+        return buffer.getvalue()
+
     def to_pdf(self, filename: str) -> bytes:
         """Exporta el reporte en formato PDF."""
         from fpdf import FPDF
