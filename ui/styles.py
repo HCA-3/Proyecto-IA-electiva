@@ -19,21 +19,21 @@ def show_book_animation():
 
 def get_css_styles(theme: str = "Moderno (Default)") -> str:
     # Colores por defecto (Moderno)
-    bg_color = "#f8fafc"
+    bg_color = "#eff6ff"
     card_bg = "#ffffff"
-    text_main = "#1e293b"
-    text_muted = "#64748b"
-    primary_color = "#3b82f6"
-    hover_color = "#2563eb"
-    border_color = "#e2e8f0"
+    text_main = "#0f172a"
+    text_muted = "#475569"
+    primary_color = "#2563eb"
+    hover_color = "#1d4ed8"
+    border_color = "#bfdbfe"
     
     if theme == "Oscuro Judicial":
-        bg_color = "#0f172a"
-        card_bg = "#1e293b"
-        text_main = "#f1f5f9"
+        bg_color = "#020617"
+        card_bg = "#111827"
+        text_main = "#e2e8f0"
         text_muted = "#94a3b8"
-        primary_color = "#60a5fa"
-        hover_color = "#3b82f6"
+        primary_color = "#7dd3fc"
+        hover_color = "#38bdf8"
         border_color = "#334155"
     elif theme == "Alto Contraste":
         bg_color = "#000000"
@@ -96,22 +96,20 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
 
 .card {{
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: var(--shadow-sm);
-    margin-bottom: 1rem;
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    border-radius: 18px;
+    padding: 1.6rem;
+    box-shadow: 0 18px 48px rgba(37, 99, 235, 0.08);
+    margin-bottom: 1.2rem;
 }}
 
 .card_black_border {{
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1rem;
+    border: 1px solid rgba(37, 99, 235, 0.22);
+    border-radius: 18px;
+    padding: 1.2rem;
     margin-bottom: 1rem;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-}}
-
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
 .feature-card {{
     background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(248,250,252,0.95));
     border: 1px solid rgba(59,130,246,0.16);
