@@ -68,10 +68,11 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
 }}
 
 
-/* Forzar color negro en todo el sitio */
+/* Forzar color negro en todo el sitio y corregir sobreposición */
 html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stApp, p, h1, h2, h3, h4, h5, h6, span, div, li, a, label, .stMarkdown {{
     color: #000000 !important;
     font-family: 'Inter', sans-serif !important;
+    line-height: 1.5 !important; /* Espaciado entre líneas para evitar choques */
 }}
 
 .stApp {{
@@ -90,19 +91,23 @@ html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stApp
     padding: 1.8rem;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    height: auto !important; /* Evitar alturas fijas que causan sobreposición */
 }}
 
 .main-title {{
-    font-size: 3.2rem;
+    font-size: 2rem !important; /* Reducido para evitar choques en el topbar */
     font-weight: 800;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.02em;
     margin-bottom: 0.5rem;
+    line-height: 1.1 !important;
     background: linear-gradient(135deg, var(--primary-color), var(--gold-accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     animation: fadeIn 1s ease-out;
 }}
+
 
 
 
@@ -139,19 +144,22 @@ html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stApp
 .tutorial-box {{
     background: #ffffff;
     color: #000000 !important;
-    padding: 1.8rem;
+    padding: 1.5rem;
     border-radius: 12px;
     position: relative;
     margin-bottom: 1.5rem;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     border-left: 6px solid var(--gold-accent);
     animation: slideInUp 0.5s ease-out;
     border: 1px solid var(--border-color);
+    height: auto !important;
 }}
 
 .tutorial-box * {{
     color: #000000 !important;
+    line-height: 1.4 !important;
 }}
+
 
 
 
