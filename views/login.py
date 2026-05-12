@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import streamlit as st
 from auth import AuthManager, Role
+from ui.components import render_initial_animation, render_tour_modal, render_welcome_dashboard
 
 
 def render_login_page(auth: AuthManager) -> None:
@@ -35,11 +36,29 @@ def render_login_page(auth: AuthManager) -> None:
         </div>
         """, unsafe_allow_html=True)
 
+        st.markdown(
+            """
+            <div style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25); border-radius: 18px; padding: 1rem; margin-bottom: 1rem;">
+                <h3 style="margin:0; color: #0f172a;">🚀 Bienvenido a Justicia IA</h3>
+                <p style="margin:0.4rem 0 0; color: #475569;">
+                    Usa esta plataforma para organizar expedientes, analizar documentos legales y generar borradores de decisiones con asistencia de IA.
+                </p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        render_initial_animation()
+        render_welcome_dashboard()
+        render_tour_modal("login")
+
         st.info("""
         **🎓 Proyecto de Investigación Académica:**  
         Justicia IA es un prototipo desarrollado para la asignatura *'Descubrimiento de problemas y diseño de soluciones con IA'*. 
         El uso de esta plataforma está limitado a fines experimentales y de investigación académica sobre la descongestión judicial.
         """)
+
+        _render_login_guide()
 
         mode = st.radio("Selecciona una opción", ["Iniciar Sesión", "Registrarse"], horizontal=True, label_visibility="collapsed")
 
@@ -75,6 +94,22 @@ def _render_login_form(auth: AuthManager) -> None:
             st.rerun()
         else:
             st.error("❌ Credenciales incorrectas.")
+
+
+def _render_login_guide() -> None:
+    st.markdown("---")
+    with st.expander("📘 Guía rápida de inicio", expanded=True):
+        st.markdown(
+            """
+            **Sigue estos pasos para usar Justicia IA:**
+            1. Regístrate o inicia sesión con tu cuenta judicial.
+            2. En el panel principal, carga tu expediente en PDF o imagen.
+            3. Selecciona la carpeta de destino y la rama judicial correspondiente.
+            4. Presiona `INICIAR PROCESO DE ANÁLISIS` para generar el borrador.
+            5. Revisa el informe, descarga archivos y consulta el Workspace para seguimiento.
+            """
+        )
+        st.info("Puedes volver a esta guía desde el panel principal si necesitas repasar el flujo de trabajo.")
 
 
 def _render_signup_form(auth: AuthManager) -> None:

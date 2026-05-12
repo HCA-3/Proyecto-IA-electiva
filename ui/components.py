@@ -203,6 +203,219 @@ def render_results(filename: str, result: AnalysisResult) -> None:
         )
 
 
+def render_visual_guide_cards(view: str = "user") -> None:
+    """Muestra tarjetas de ayuda visual e iconos para reforzar el flujo de trabajo."""
+    items = [
+        {
+            "icon": "📂",
+            "title": "Carga expedientes",
+            "text": "Sube documentos legales y organiza en carpetas con un solo clic.",
+        },
+        {
+            "icon": "⚙️",
+            "title": "Configura Groq",
+            "text": "Verifica la API, selecciona el mejor modelo y ajusta fragmentos.",
+        },
+        {
+            "icon": "📈",
+            "title": "Revisa resultados",
+            "text": "Descarga informes y consulta el Workspace para seguimiento.",
+        },
+    ]
+    cols = st.columns(len(items))
+    for col, item in zip(cols, items):
+        col.markdown(
+            f"<div class='feature-card'>"
+            f"<div class='feature-icon'>{item['icon']}</div>"
+            f"<h4>{item['title']}</h4>"
+            f"<p>{item['text']}</p>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+
+
+def render_initial_animation() -> None:
+    """Muestra una animación inicial más visible con efecto de luz judicial."""
+    st.markdown(
+        """
+        <div class='hero-animation'>
+            <div class='hero-pill hero-pill-1'></div>
+            <div class='hero-pill hero-pill-2'></div>
+            <div class='hero-pill hero-pill-3'></div>
+            <div class='hero-text'>
+                <h2>Bienvenido a Justicia IA</h2>
+                <p>Organiza expedientes, analiza documentos y genera borradores legales con un flujo guiado.</p>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_welcome_dashboard() -> None:
+    """Muestra un pequeño tablero de bienvenida con botones grandes e íconos."""
+    st.markdown(
+        """
+        <div class='welcome-panel'>
+            <h3>Inicio rápido</h3>
+            <p>Elige una acción clave para comenzar tu trabajo judicial.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    cards = [
+        {
+            "icon": "📂",
+            "title": "Cargar expediente",
+            "text": "Sube tu PDF o imagen de prueba y comienza el análisis.",
+        },
+        {
+            "icon": "⚙️",
+            "title": "Configurar Groq",
+            "text": "Verifica la conexión, selecciona el modelo y ajusta fragmentos.",
+        },
+        {
+            "icon": "📋",
+            "title": "Revisar resultados",
+            "text": "Descarga informes y consulta el workspace de seguimiento.",
+        },
+    ]
+
+    cols = st.columns(3)
+    for col, card in zip(cols, cards):
+        col.markdown(
+            f"<div class='welcome-card'>"
+            f"<div class='welcome-icon'>{card['icon']}</div>"
+            f"<h4>{card['title']}</h4>"
+            f"<p>{card['text']}</p>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+
+
+def render_tour_modal(view: str = "user") -> None:
+    """Muestra un modal paso a paso con el tour interactivo de la aplicación."""
+    if st.button("🎯 Ver tour paso a paso", key=f"tour_button_{view}"):
+        with st.modal("Tour Interactivo de Justicia IA"):
+            st.markdown("### Guía Paso a Paso")
+            st.write("Sigue cada paso para conocer el flujo principal de la plataforma.")
+
+            steps = [
+                {
+                    "title": "1. Iniciar sesión o registrarse",
+                    "description": "Accede con tu cuenta judicial para desbloquear el panel de carga y workspace.",
+                },
+                {
+                    "title": "2. Cargar expediente",
+                    "description": "Selecciona un PDF o imagen y asocialo a la carpeta correcta del proceso.",
+                },
+                {
+                    "title": "3. Seleccionar rama judicial",
+                    "description": "Elige el tipo de proceso (Civil, Penal, Laboral, etc.) antes de procesar.",
+                },
+                {
+                    "title": "4. Ejecutar análisis",
+                    "description": "Presiona el botón de inicio para generar el informe y ver el progreso de Groq.",
+                },
+                {
+                    "title": "5. Revisar y descargar",
+                    "description": "Consulta el informe, el texto extraído y descarga el PDF o TXT resultante.",
+                },
+            ]
+
+            if view == "admin":
+                steps.insert(3, {
+                    "title": "4. Administrar y sincronizar",
+                    "description": "Desde el panel admin puedes crear usuarios, revisar el repositorio y sincronizar jurisprudencia.",
+                })
+
+            for step in steps:
+                st.markdown(f"**{step['title']}**")
+                st.markdown(step['description'])
+                st.divider()
+
+            st.button("Cerrar", use_container_width=True, key=f"tour_close_{view}")
+
+
+def render_interactive_guide(view: str = "user") -> None:
+    """Muestra una guía paso a paso adaptada al rol de usuario."""
+    tutorial_steps = [
+        {
+            "title": "Bienvenida al flujo judicial",
+            "description": (
+                "Aquí puedes cargar expedientes, revisar el estado de la API y procesar documentos legales. "
+                "Sigue cada paso para obtener un análisis estructurado de tus archivos."
+            ),
+        },
+        {
+            "title": "Configura tu API y modelo",
+            "description": (
+                "En la barra lateral revisa la conexión con Groq, actualiza tu clave API si es necesario y selecciona el modelo adecuado. "
+                "Un modelo correcto mejora la calidad del análisis."
+            ),
+        },
+        {
+            "title": "Carga y organiza tu expediente",
+            "description": (
+                "Sube uno o varios archivos PDF, imágenes o documentos legales. "
+                "Asocia cada expediente a una carpeta para mantener tu trabajo ordenado."
+            ),
+        },
+        {
+            "title": "Procesa el documento",
+            "description": (
+                "Pulsa el botón de inicio para extraer y analizar el contenido. "
+                "La aplicación mostrará progreso y luego te permitirá descargar resultados."
+            ),
+        },
+        {
+            "title": "Revisa el resultado y descarga",
+            "description": (
+                "Consulta el informe generado, visualiza el texto extraído y descarga el PDF o TXT. "
+                "Si eres administrador, explora también el workspace y la configuración avanzada."
+            ),
+        },
+    ]
+
+    if view == "admin":
+        tutorial_steps.insert(2, {
+            "title": "Administra usuarios y datos",
+            "description": (
+                "Desde el panel de administración puedes crear usuarios, revisar el repositorio de entrenamiento "
+                "y sincronizar jurisprudencia para mejorar la base de conocimiento."
+            ),
+        })
+
+    key = f"tutorial_step_{view}"
+    if key not in st.session_state:
+        st.session_state[key] = 0
+
+    current_index = st.session_state[key]
+    total_steps = len(tutorial_steps)
+
+    with st.expander("📘 Guía Interactiva de la Aplicación", expanded=False):
+        st.markdown(
+            f"<div class='tutorial-card'>"
+            f"<p class='step-badge'>Paso {current_index + 1} de {total_steps}</p>"
+            f"<h4>{tutorial_steps[current_index]['title']}</h4>"
+            f"<p>{tutorial_steps[current_index]['description']}</p>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+
+        c1, c2, c3 = st.columns([1, 1, 1])
+        if c1.button("◀️ Anterior", disabled=current_index == 0, key=f"tutorial_prev_{view}"):
+            st.session_state[key] = max(0, current_index - 1)
+            st.experimental_rerun()
+        if c2.button("🔄 Reiniciar guía", key=f"tutorial_reset_{view}"):
+            st.session_state[key] = 0
+            st.experimental_rerun()
+        if c3.button("▶️ Siguiente", disabled=current_index == total_steps - 1, key=f"tutorial_next_{view}"):
+            st.session_state[key] = min(total_steps - 1, current_index + 1)
+            st.experimental_rerun()
+
+
 def render_floating_assistant(client: GroqClient, model: str) -> None:
     """Renderiza un asistente legal flotante mediante un Popover."""
     

@@ -112,6 +112,127 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }}
 
+.feature-card {{
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(248,250,252,0.95));
+    border: 1px solid rgba(59,130,246,0.16);
+    border-radius: 18px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 16px 40px rgba(15,23,42,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 1rem;
+}}
+
+.feature-card:hover {{
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px rgba(15,23,42,0.12);
+}}
+
+.feature-icon {{
+    font-size: 2.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.75rem;
+    border-radius: 50%;
+    background: rgba(59,130,246,0.15);
+}}
+
+.hero-animation {{
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(135deg, rgba(59,130,246,0.15), rgba(59,130,246,0.05));
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(59,130,246,0.18);
+}}
+
+.hero-pill {{
+    position: absolute;
+    border-radius: 999px;
+    opacity: 0.65;
+    filter: blur(12px);
+}}
+
+.hero-pill-1 {{
+    width: 120px;
+    height: 120px;
+    background: rgba(59,130,246,0.35);
+    top: 10px;
+    left: -30px;
+}}
+
+.hero-pill-2 {{
+    width: 90px;
+    height: 90px;
+    background: rgba(16,185,129,0.28);
+    top: 20px;
+    right: -20px;
+}}
+
+.hero-pill-3 {{
+    width: 140px;
+    height: 140px;
+    background: rgba(236,72,153,0.25);
+    bottom: -30px;
+    left: 20%;
+}}
+
+.hero-text {{
+    position: relative;
+    z-index: 1;
+}}
+
+.hero-text h2 {{
+    margin: 0;
+    font-size: 2rem;
+}}
+
+.hero-text p {{
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}}
+
+.welcome-panel {{
+    background: rgba(59,130,246,0.09);
+    border: 1px solid rgba(59,130,246,0.22);
+    border-radius: 18px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}}
+
+.welcome-card {{
+    border-radius: 20px;
+    padding: 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid rgba(59,130,246,0.12);
+    box-shadow: 0 14px 30px rgba(15,23,42,0.05);
+}}
+
+.welcome-card h4 {{
+    margin: 0.5rem 0 0.5rem;
+}}
+
+.welcome-card p {{
+    color: var(--text-muted);
+    margin: 0;
+}}
+
+.welcome-icon {{
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(59,130,246,0.14);
+    margin-bottom: 0.75rem;
+}}
+
 [data-testid="stSidebar"] {{
     background-color: var(--card-bg) !important;
     border-right: 1px solid var(--border-color);
@@ -124,11 +245,38 @@ def get_css_styles(theme: str = "Moderno (Default)") -> str:
     border: 1px solid var(--border-color) !important;
 }}
 
+.stMarkdown {{
+    color: var(--text-main) !important;
+}}
+
 /* Botones */
 button[kind="primary"] {{
     background: var(--primary-color) !important;
     color: { "#000000" if theme == "Alto Contraste" else "#ffffff" } !important;
     border: none !important;
+}}
+
+button[kind="primary"]:hover {{
+    opacity: 0.92;
+}}
+
+.tutorial-card {{
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,250,251,0.95));
+    border: 1px solid rgba(59,130,246,0.25);
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(15,23,42,0.08);
+    margin-bottom: 1rem;
+}}
+
+.step-badge {{
+    display: inline-block;
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
 }}
 </style>
 """

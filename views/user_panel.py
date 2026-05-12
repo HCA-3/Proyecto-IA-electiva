@@ -25,13 +25,18 @@ from core.vector_db import MockVectorDB
 from ui.components import (
     render_sidebar, render_metrics,
     render_extracted_text, render_results, SidebarState,
-    render_floating_assistant, render_file_explorer
+    render_floating_assistant, render_file_explorer,
+    render_interactive_guide, render_visual_guide_cards,
+    render_initial_animation, render_tour_modal, render_welcome_dashboard,
 )
 from ui.styles import show_book_animation
 
 
 def render_user_panel(user: User, client: GroqClient) -> None:
     _render_topbar(user)
+    render_initial_animation()
+    render_tour_modal("user")
+    render_welcome_dashboard()
 
     if user.role == Role.SUPERADMIN:
         sidebar = render_sidebar(client)
@@ -57,6 +62,10 @@ def render_user_panel(user: User, client: GroqClient) -> None:
     
     # Renderizamos el nuevo asistente legal flotante en la sidebar
     render_floating_assistant(client, sidebar.selected_model)
+
+    # Guía interactiva paso a paso
+    render_interactive_guide("user")
+    render_visual_guide_cards("user")
 
     st.warning(
         "⚖️ **Asistente de Soporte Judicial:** Esta herramienta genera borradores de decisiones basados en el contenido "
