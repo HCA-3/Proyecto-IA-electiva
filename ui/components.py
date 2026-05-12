@@ -297,7 +297,7 @@ def render_welcome_dashboard() -> None:
 
 def render_floating_tour_tab(view: str = "user") -> None:
     """Crea un botón flotante que abre el tutorial completo de la aplicación."""
-    params = st.experimental_get_query_params()
+    params = dict(st.query_params)
     params["tour"] = ["true"]
     href = "?" + urllib.parse.urlencode(params, doseq=True)
 
